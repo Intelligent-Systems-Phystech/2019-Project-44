@@ -734,7 +734,7 @@ def LoadData(url = "https://raw.githubusercontent.com/ttgadaev/SampleSize/master
     X = data.values
     return X, y
 
-def DataLoader(name = "servo", is_binary_answ = True, folder_path = 'datasets/'):
+def DataLoader(name = "servo", is_binary_answ = True, folder_path = '../data/datasets/'):
     """
     1. boston reg
     2. servo reg

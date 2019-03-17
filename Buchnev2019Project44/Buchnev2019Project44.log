@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.3.6)  17 MAR 2019 18:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.3.6)  17 MAR 2019 20:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1481,70 +1481,80 @@ Normal \count register pool exhausted, switching to extended pool.
 \c@Rule=\count305
 \c@Condition=\count306
 )
+(/usr/share/texlive/texmf-dist/tex/latex/tools/tabularx.sty
+Package: tabularx 2016/02/03 v2.11 `tabularx' package (DPC)
+\TX@col@width=\dimen281
+\TX@old@table=\dimen282
+\TX@old@col=\dimen283
+\TX@target=\dimen284
+\TX@delta=\dimen285
+\TX@cols=\count307
+\TX@ftn=\toks55
+)
 (./Buchnev2019Project44.aux)
 \openout1 = `Buchnev2019Project44.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
 <<ot1.cmap>><<oml.cmap>><<oms.cmap>><<omx.cmap>>
-LaTeX Font Info:    Try loading font information for U+msa on input line 28.
+LaTeX Font Info:    Try loading font information for U+msa on input line 29.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 28.
+LaTeX Font Info:    Try loading font information for U+msb on input line 29.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 28.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 29.
 
 (/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-Package xypdf Info: Line width: 0.47998pt on input line 28.
+Package xypdf Info: Line width: 0.47998pt on input line 29.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count307
-\scratchdimen=\dimen281
+\scratchcounter=\count308
+\scratchdimen=\dimen286
 \scratchbox=\box51
-\nofMPsegments=\count308
-\nofMParguments=\count309
-\everyMPshowfont=\toks55
-\MPscratchCnt=\count310
-\MPscratchDim=\dimen282
-\MPnumerator=\count311
-\makeMPintoPDFobject=\count312
-\everyMPtoPDFconversion=\toks56
+\nofMPsegments=\count309
+\nofMParguments=\count310
+\everyMPshowfont=\toks56
+\MPscratchCnt=\count311
+\MPscratchDim=\dimen287
+\MPnumerator=\count312
+\makeMPintoPDFobject=\count313
+\everyMPtoPDFconversion=\toks57
 ) ABD: EveryShipout initializing macros
 
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
 ick labels; missing features). Consider writing \pgfplotsset{compat=1.15} into 
 your preamble.
- on input line 28.
+ on input line 29.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Try loading font information for T2A+cmss on input line 29.
+LaTeX Font Info:    Try loading font information for T2A+cmss on input line 30.
 
 (/usr/share/texlive/texmf-dist/tex/latex/cyrillic/t2acmss.fd
 File: t2acmss.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
 )
-LaTeX Font Info:    Try loading font information for U+euf on input line 45.
+LaTeX Font Info:    Try loading font information for U+euf on input line 46.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/ueuf.fd
 File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
@@ -1568,56 +1578,81 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  []
 
 [2]
-<../data/ACC_modified.pdf, id=39, 1734.48pt x 867.24pt>
-File: ../data/ACC_modified.pdf Graphic file (type pdf)
-<use ../data/ACC_modified.pdf>
-Package pdftex.def Info: ../data/ACC_modified.pdf  used on input line 150.
-(pdftex.def)             Requested size: 483.69684pt x 241.8463pt.
 
-Underfull \hbox (badness 10000) has occurred while \output is active
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
- []
-
-[3 <../data/ACC_modified.pdf>]
+<../data/pics/ALC_modified_servo.pdf, id=39, 1734.48pt x 867.24pt>
+File: ../data/pics/ALC_modified_servo.pdf Graphic file (type pdf)
+<use ../data/pics/ALC_modified_servo.pdf>
+Package pdftex.def Info: ../data/pics/ALC_modified_servo.pdf  used on input lin
+e 193.
+(pdftex.def)             Requested size: 241.84842pt x 120.92314pt.
+<../data/pics/ALC_modified_boston.pdf, id=40, 1734.48pt x 867.24pt>
+File: ../data/pics/ALC_modified_boston.pdf Graphic file (type pdf)
+<use ../data/pics/ALC_modified_boston.pdf>
+Package pdftex.def Info: ../data/pics/ALC_modified_boston.pdf  used on input li
+ne 194.
+(pdftex.def)             Requested size: 241.84842pt x 120.92314pt.
+<../data/pics/ALC_modified_diabetes.pdf, id=41, 1734.48pt x 867.24pt>
+File: ../data/pics/ALC_modified_diabetes.pdf Graphic file (type pdf)
+<use ../data/pics/ALC_modified_diabetes.pdf>
+Package pdftex.def Info: ../data/pics/ALC_modified_diabetes.pdf  used on input 
+line 195.
+(pdftex.def)             Requested size: 241.84842pt x 120.92314pt.
 No file Buchnev2019Project44.bbl.
 
 Underfull \hbox (badness 10000) has occurred while \output is active
 
  []
 
-[4] (./Buchnev2019Project44.aux) ) 
+[3]
+Underfull \hbox (badness 10000) has occurred while \output is active
+
+ []
+
+[4 <../data/pics/ALC_modified_servo.pdf> <../data/pics/ALC_modified_boston.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ../data/pics/ALC_modified_boston.pdf): 
+PDF inclusion: multiple pdfs with page group included in a single page
+> <../data/pics/ALC_modified_diabetes.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ../data/pics/ALC_modified_diabetes.pdf)
+: PDF inclusion: multiple pdfs with page group included in a single page
+>] (./Buchnev2019Project44.aux) ) 
 Here is how much of TeX's memory you used:
- 29300 strings out of 492982
- 667456 string characters out of 6134897
- 894859 words of memory out of 5000000
- 32207 multiletter control sequences out of 15000+600000
- 28382 words of font info for 72 fonts, out of 8000000 for 9000
+ 29363 strings out of 492982
+ 668597 string characters out of 6134897
+ 896859 words of memory out of 5000000
+ 32263 multiletter control sequences out of 15000+600000
+ 29256 words of font info for 73 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 69i,14n,98p,3263b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/cm-super/cm
--super-t2a.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-ex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.p
-fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
-sfonts/euler/eufm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
-nts/symbols/msbm10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbi1200.p
-fb></usr/share/texmf/fonts/type1/public/cm-super/sfbx0800.pfb></usr/share/texmf
-/fonts/type1/public/cm-super/sfbx1095.pfb></usr/share/texmf/fonts/type1/public/
-cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pf
-b></usr/share/texmf/fonts/type1/public/cm-super/sfrm1095.pfb></usr/share/texmf/
-fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/c
-m-super/sfsx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1728.pfb
-></usr/share/texmf/fonts/type1/public/cm-super/sfti1095.pfb>
-Output written on Buchnev2019Project44.pdf (4 pages, 327283 bytes).
+ 69i,14n,98p,3278b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-
+super-t2a.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cme
+x10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pf
+b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr
+/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
+fonts/euler/eufm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
+s/symbols/msbm10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbi1200.pfb
+></usr/share/texmf/fonts/type1/public/cm-super/sfbx0800.pfb></usr/share/texmf/f
+onts/type1/public/cm-super/sfbx1095.pfb></usr/share/texmf/fonts/type1/public/cm
+-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb>
+</usr/share/texmf/fonts/type1/public/cm-super/sfrm1095.pfb></usr/share/texmf/fo
+nts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-
+super/sfsx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1728.pfb><
+/usr/share/texmf/fonts/type1/public/cm-super/sfti1000.pfb></usr/share/texmf/fon
+ts/type1/public/cm-super/sfti1095.pfb>
+Output written on Buchnev2019Project44.pdf (4 pages, 396680 bytes).
 PDF statistics:
- 161 PDF objects out of 1000 (max. 8388607)
- 86 compressed objects within 1 object stream
+ 262 PDF objects out of 1000 (max. 8388607)
+ 102 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 38 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 48 words of extra memory for PDF output out of 10000 (max. 10000000)
 
