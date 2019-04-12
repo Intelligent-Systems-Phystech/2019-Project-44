@@ -139,7 +139,7 @@ $$
 
 Методы байесовских оценок объема выборки основаны на ограничении некоторой выбранной характеристики модели. Для анализа эффективности вводится функция от объема выборки, увеличение значений которой интерпретируется как уменьшение эффективности модели. Объем выборки $m^{*}$ выбирается таким, при котором исследуемая функция не превышает некоторого порогового значения $\epsilon$.
 
-\subsection{Критерий средней длины}
+\subsection{Критерий средней длины (ALC)}
 
 Пусть $A(\mathfrak{D}) \subset \mathbb{R}^n$ --- множество значений параметров модели \textbf{w}:
 
@@ -159,11 +159,11 @@ $$
 $$
 где $r_m$ --- радиус шара $A(\mathfrak{D}_m)$, $l$ --- некоторое наперед заданное достаточно малое значение.
 
-\subsection{Критерий среднего покрытия}
+\subsection{Критерий среднего покрытия (ACC)}
 
 Данный критерий также опирается на покрытие множества значений параметров модели \textbf{w}.
 
-Критерий реднего покрытия для определения $m^{*}$:
+Критерий среднего покрытия для определения $m^{*}$:
 
 $$
 \forall m \geqslant m^{*}~\mathsf{E}_{\mathfrak D_m} \mathsf{P}\{\textbf{w} \in A(\mathfrak D_m)\} \geqslant 1 - \alpha,
@@ -172,7 +172,7 @@ $$
 
 \section{Описание алгоритма}
 
-\subsection{Критерий средней длины.}  Для вычисления радиуса доверительного шара вспользуемся несмещеностью и состоятельностью оценки $\hat{\textbf{w}}$:
+\subsection{Методы байесовских оценок объема выборки.}  Для вычисления функции эффективности в методах ALC и ACC  вспользуемся несмещеностью и состоятельностью оценки $\hat{\textbf{w}}$:
 
 $$
 \mathsf{E}\hat{\textbf{w}} = \textbf{m}, ~~~\mathsf{D}\hat{\textbf{w}} = \textbf{I}^{-1}(\mathfrak D_m),
@@ -202,7 +202,7 @@ $$
 
 Матрица $\hat{\textbf{I}}(\mathfrak D_m)^{-1}$  является ковариационной матрицой оценки вектора параметров для $m$ наблюдений.
 
-Таким образом, построена аппроксимация параметров распределения $\hat{\textbf{w}}$ для $m$ наблюдений для вычисления приближенного значения $r_m$:
+Таким образом, построена аппроксимация параметров распределения $\hat{\textbf{w}}$ для $m$ наблюдений для вычисления приближенного значения функции эффективности:
 
 $$
 \hat{\textbf{w}} \sim \mathcal{N}(\textbf{m},  \frac{m}{m^{*}}~\textbf{I}^{-1}(\mathfrak D_{m^{*}})).
@@ -215,7 +215,7 @@ $$
 \begin{table}[h!]
 \begin{center}
 \caption{Описание выборок}
-\label{table2}
+\label{table1}
 \begin{tabularx}{\textwidth}{|p{1in}|X|X|c|}
 \hline
 	\centering Выборка &\centeringТип задачи&\centering Размер выборки& Число признаков\\
@@ -230,18 +230,73 @@ $$
 \end{center}
 \end{table}
 
-В ходе эксперимента был модифицирован критерий средней длины для линейной регрессии, а именно была построена аппроксимация функции эффективности при большем объеме выборки при помощи аппроксимации ковариационной матрицы вектора параметров через матрицу информации Фишера.
+В ходе эксперимента были модифицированы критерии средней длины и среднего покрытия для линейной регрессии, а именно была построена аппроксимация функции эффективности при большем объеме выборки при помощи аппроксимации ковариационной матрицы вектора параметров через матрицу информации Фишера.
+
+На графике 1 показана зависимость значения функции эффективности от объема выборки для разных методов при разных данных. Синим цветом обозначено посчитанное значение при данном объеме, красным - аппроксимация при подвыборке фиксированного размера. Реальное значение функции эффективности попадает в доверительный интервал, что говорит о работоспособности предлагаемого метода.
 
 \begin{figure}[h!t]\center
-\subfloat[Servo]{\includegraphics[width=0.5\textwidth]{../data/pics/ALC_modified_servo.pdf}}
-\subfloat[Boston]{\includegraphics[width=0.5\textwidth]{../data/pics/ALC_modified_boston.pdf}}\\
-\subfloat[Diabetes]{\includegraphics[width=0.5\textwidth]{../data/pics/ALC_modified_diabetes.pdf}}\\
+\centering\begin{tabular}{@{}c@{ }c@{ }c@{}}
+\textbf{ALC метод} & \textbf{ACC метод}\\
+\subfloat[Servo]{\includegraphics[width=0.5\textwidth]{../data/pics/ALC_modified_servo.pdf}}&
+\subfloat[Servo]{\includegraphics[width=0.5\textwidth]{../data/pics/ACC_modified_servo.pdf}}\\
+\subfloat[Boston]{\includegraphics[width=0.5\textwidth]{../data/pics/ALC_modified_boston.pdf}}&
+\subfloat[Boston]{\includegraphics[width=0.5\textwidth]{../data/pics/ACC_modified_boston.pdf}}\\
+\subfloat[Diabetes]{\includegraphics[width=0.5\textwidth]{../data/pics/ALC_modified_diabetes.pdf}}&
+\subfloat[Diabetes]{\includegraphics[width=0.5\textwidth]{../data/pics/ACC_modified_diabetes.pdf}}\\
+\end{tabular}
 
-\caption{ALC метод}
+\caption{Зависимость значения функции эффективности от объема выборки}
 \label{fig1}
 \end{figure}
 
-На графике 1 показана зависимость значения функции эффективности от объема выборки при разных данных. Синим цветом обозначено посчитанное значение при данном объеме, красным - аппроксимация при подвыборке фиксированного размера. Реальное значение функции эффективности попадает в доверительный интервал, что говорит о работоспособности метода.
+$\newline$
+$\newline$
+$\newline$
+$\newline$
+$\newline$
+$\newline$
+$\newline$
+
+В таблицах 2, 3 представлены результаты предсказания различными методами.
+
+
+$\newline$
+
+\begin{table}[h]
+\begin{center}
+\caption{Предсказание достаточного объема выборки, ALC метод}
+\label{table2}
+\begin{tabularx}{0.7\textwidth}{|p{1in}|X|c|}
+\hline
+	\centering Выборка & \centering Реальное значение &Предсказание\\
+	\hline
+	 Servo & \centering не хватает данных & 450\\
+	\hline
+	Boston & \centering не хватает данных &1370\\
+	\hline
+	Diabetes & \centering 235 & 240\\
+\hline
+\end{tabularx}
+\end{center}
+\end{table}
+
+\begin{table}[h]
+\begin{center}
+\caption{Предсказание достаточного объема выборки, ACC метод}
+\label{table3}
+\begin{tabularx}{0.7\textwidth}{|p{1in}|X|c|}
+\hline
+	\centering Выборка & \centering Реальное значение &Предсказание\\
+	\hline
+	 Servo & \centering не хватает данных & 405\\
+	\hline
+	Boston & \centering не хватает данных &1410\\
+	\hline
+	Diabetes & \centering 235 &245\\
+\hline
+\end{tabularx}
+\end{center}
+\end{table}
 
 \bibliographystyle{unsrt}
 \bibliography{jmlda-bib}
@@ -283,3 +338,13 @@ experiments }~//
 \end{thebibliography}
 
 \end{document}
+
+%ACC diabetes = 245 ???
+%ACC boston = 1390
+%ACC servo = 455
+
+%ALC diabetes = ???
+%ALC boston = ???
+%ALC servo = ???
+
+
