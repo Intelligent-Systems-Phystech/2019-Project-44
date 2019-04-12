@@ -47,12 +47,6 @@ $$
 $$
 где $\textbf{x}_i \in \mathbb{R}^{n}$ - вектор признаков, $~y_i \in \mathbb{Y}$.
 
-Выборка $\mathfrak D_m$ разбита случайно на обучение и контроль:
-
-$$
-\mathfrak D_{\mathcal T_m} = \{\textbf{x}_i, y_i\}_{i \in \mathcal T_m} ~~~ \mathfrak D_{\mathcal L_m} = \{\textbf{x}_i, y_i\}_{i \in \mathcal L_m}, ~~~ \mathcal T_m \sqcup \mathcal L_m = \{1, ..., m\}. 
-$$
-
 Предполагается, что выборка $\mathfrak D_m$ не противоречит гипотезе порождения данных.
 
 Рассмотрим параметрическое семейство функций для аппроксимации неизвестного распределения $p(y | \textbf{x}, \textbf{w})$, где $\textbf{w} \in \mathbb{W}$ - вектор параметров:
@@ -105,17 +99,17 @@ $$
 \hat{\textbf{w}} = \argmax_{\textbf{w} \in \mathbb{W}} L(\mathfrak D_{\mathcal L_m}, \textbf{w}).
 $$
 
-Рассмотрим матрицу информации Фишера:
+%Рассмотрим матрицу информации Фишера:
 
-$$
-\textbf{I}(\mathfrak D, \textbf{w}) = -\nabla\nabla l(\mathfrak D, \textbf{w}).
-$$
+%$$
+%\textbf{I}(\mathfrak D, \textbf{w}) = -\nabla\nabla l(\mathfrak D, \textbf{w}).
+%$$
 
-Будем считать, что $\hat{\textbf{w}}$ имеет следующее распределение:
+%Будем считать, что $\hat{\textbf{w}}$ имеет следующее распределение:
 
-$$
-\hat{\textbf{w}} \sim \mathcal{N}(\textbf{m}, \textbf{V}),~~~ \textbf{V} = \textbf{I}^{-1}(\mathfrak D, m).
-$$
+%$$
+%\hat{\textbf{w}} \sim \mathcal{N}(\textbf{m}, \textbf{V}),~~~ \textbf{V} = \textbf{I}^{-1}(\mathfrak D, m).
+%$$
 
 Для линейной регрессии $\mathbb{Y} = \mathbb{R}$, где $y$ представимо в виде:
 
@@ -178,46 +172,40 @@ $$
 
 \section{Описание алгоритма}
 
-\subsection{Базовый алгоритм}
-
-Рассмотрим критерий средней длины. Радиус доверительного шара аппроксимируется следующим образом: используется несмещенность оценки вектора параметров:
+\subsection{Критерий средней длины.}  Для вычисления радиуса доверительного шара вспользуемся несмещеностью и состоятельностью оценки $\hat{\textbf{w}}$:
 
 $$
-\mathsf{E}\hat{\textbf{w}} = \textbf{m},
+\mathsf{E}\hat{\textbf{w}} = \textbf{m}, ~~~\mathsf{D}\hat{\textbf{w}} = \textbf{I}^{-1}(\mathfrak D_m),
 $$
-а также эффективность и равенство Рао-Крамера:
-$$
-\mathsf{D}\hat{\textbf{w}} = \textbf{I}^{-1}(\mathfrak D, m)
-$$
-где $\textbf{I}(\mathfrak{D}, m)$ --- информационная матрица Фишера.
+где $\textbf{I}(\mathfrak D_m)$ --- информационная матрица Фишера.
 
 Далее используется предположение о распределении оценки вектора параметров:
 
 $$
-\hat{\textbf{w}} \sim \mathcal{N}(\textbf{m},  \textbf{I}^{-1}(\mathfrak D, m)),
+\hat{\textbf{w}} \sim \mathcal{N}(\textbf{m},  \textbf{I}^{-1}(\mathfrak D_m)),
 $$
 и с помощью сэмплирования вычисляется приближенное значение $r_m$.
 
 \subsection{Модификация алгоритма}
 
-Для аппроксимации $r_m$ при $m \geqslant m^{*}$  используем свойство информационной матрицы Фишера:
+В случае, когда $m \geq m^*$, воспользуемся свойством информационной матрицы Фишера:
 
 $$
-\textbf{I}(\mathfrak{D}, m) =  m~\textbf{I}(\mathfrak{D}, 1).
+\textbf{I}(\mathfrak D_m) =  m~\textbf{I}(\mathfrak D_1).
 $$
 
 Получаем аппроксимацию матрицы Фишера для $m$ наблюдений:
 
 $$
-\hat{\textbf{I}}(\mathfrak{D}, m) = \frac{m}{m^{*}} ~\textbf{I}(\mathfrak{D}, m^{*}).
+\hat{\textbf{I}}(\mathfrak D_m) = \frac{m}{m^{*}} ~\textbf{I}(\mathfrak D_{m^{*}}).
 $$
 
-Матрица $\hat{\textbf{I}}(\mathfrak{D}, m)^{-1}$  является ковариационной матрицой оценки вектора параметров для $m$ наблюдений.
+Матрица $\hat{\textbf{I}}(\mathfrak D_m)^{-1}$  является ковариационной матрицой оценки вектора параметров для $m$ наблюдений.
 
 Таким образом, построена аппроксимация параметров распределения $\hat{\textbf{w}}$ для $m$ наблюдений для вычисления приближенного значения $r_m$:
 
 $$
-\hat{\textbf{w}} \sim \mathcal{N}(\textbf{m},  \frac{m}{m^{*}}~\textbf{I}^{-1}(\mathfrak D, m^{*})).
+\hat{\textbf{w}} \sim \mathcal{N}(\textbf{m},  \frac{m}{m^{*}}~\textbf{I}^{-1}(\mathfrak D_{m^{*}})).
 $$
 
 \section{Вычислительный эксперимент}
