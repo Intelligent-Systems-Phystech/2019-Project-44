@@ -1,79 +1,5 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Beamer Presentation
-% LaTeX Template
-% Version 1.0 (10/11/12)
-%
-% This template has been downloaded from:
-% http://www.LaTeXTemplates.com
-%
-% License:
-% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass{beamer}
 
-%----------------------------------------------------------------------------------------
-%	PACKAGES AND THEMES
-%----------------------------------------------------------------------------------------
-
-\documentclass[12pt]{beamer}
-\mode<presentation> {
-
-% The Beamer class comes with a number of default slide themes
-% which change the colors and layouts of slides. Below this is a list
-% of all the themes, uncomment each in turn to see what they look like.
-
-%\usetheme{default}
-%\usetheme{AnnArbor}
-%\usetheme{Antibes}
-%\usetheme{Bergen}
-%\usetheme{Berkeley}
-%\usetheme{Berlin}
-%\usetheme{Boadilla}
-%\usetheme{CambridgeUS}
-%\usetheme{Copenhagen}
-%\usetheme{Darmstadt}
-%\usetheme{Dresden}
-%\usetheme{Frankfurt}
-%\usetheme{Goettingen}
-%\usetheme{Hannover}
-%\usetheme{Ilmenau}
-%\usetheme{JuanLesPins}
-%\usetheme{Luebeck}
-\usetheme{Madrid}
-%\usetheme{Malmoe}
-%\usetheme{Marburg}
-%\usetheme{Montpellier}
-%\usetheme{PaloAlto}
-%\usetheme{Pittsburgh}
-%\usetheme{Rochester}
-%\usetheme{Singapore}
-%\usetheme{Szeged}
-%\usetheme{Warsaw}
-
-% As well as themes, the Beamer class has a number of color themes
-% for any slide theme. Uncomment each of these in turn to see how it
-% changes the colors of your current slide theme.
-
-%\usecolortheme{albatross}
-%\usecolortheme{beaver}
-%\usecolortheme{beetle}
-%\usecolortheme{crane}
-%\usecolortheme{dolphin}
-%\usecolortheme{dove}
-%\usecolortheme{fly}
-%\usecolortheme{lily}
-%\usecolortheme{orchid}
-%\usecolortheme{rose}
-%\usecolortheme{seagull}
-%\usecolortheme{seahorse}
-%\usecolortheme{whale}
-%\usecolortheme{wolverine}
-
-%\setbeamertemplate{footline} % To remove the footer line in all slides uncomment this line
-%\setbeamertemplate{footline}[page number] % To replace the footer line in all slides with a simple slide count uncomment this line
-
-%\setbeamertemplate{navigation symbols}{} % To remove the navigation symbols from the bottom of all slides uncomment this line
-}
 \usepackage[utf8]{inputenc}
 \usepackage{adjustbox}
 \usepackage[T2A]{fontenc}
@@ -86,7 +12,6 @@
 \usepackage{array}
 \usepackage{theorem}
 \usepackage[all]{xy}
-\usepackage{graphicx}
 \usepackage{subfig}
 \usepackage{epstopdf}   
 \usepackage{tikz}       
@@ -99,32 +24,36 @@
 \usepackage{balance}
 \usepackage{multirow} 
 \usepackage{bibentry}
-\usepackage{graphicx} % Allows including images
 \usepackage{booktabs}
-\usepackage{graphics}
 \usepackage{cmap}
 \usepackage{amsthm}
 \usepackage[linesnumbered,ruled,vlined]{algorithm2e}
 \usepackage[absolute]{textpos}
 \usepackage{fleqn,psfrag,wrapfig,tikz}
 \usepackage{algpseudocode}
+\usepackage{amsmath}
+
+\usepackage{graphics}
+\usepackage{graphicx} % Allows including images
 \usepackage{tabularx}
- 
-%----------------------------------------------------------------------------------------
-%	TITLE PAGE
-%----------------------------------------------------------------------------------------
+%\usepackage{jmlda}
+\usetheme{Warsaw}
+\usecolortheme{sidebartab}
+%\definecolor{beamer@blendedblue}{RGB}{15,80,120}
+\DeclareMathOperator*{\argmax}{arg\,max}
+%----------------------------------------------------------------------------------------------------------
+\title[\hbox to 56mm{Достаточный объем выборки  \hfill\insertframenumber\,/\,\inserttotalframenumber}]
+{Раннее прогнозирование достаточного объема выборки для обобщенной линейной модели}
+\author[В.\,С.~Бучнев]{Валентин Бучнев}
+\institute{Московский физико-технический институт}
+\date{\footnotesize{
+\par\emph{Курс:} Численные методы обучения по прецедентам
+(практика, В. В. Стрижов), группа 694, весна 2019
+\par\emph{консультант:} А.\,В.~Грабовой
+\date{qq}
+}}
 
-\title[Достаточный объем выборки]{Раннее прогнозирование достаточного объема выборки для обобщенной линейной модели.} % The short title appears at the bottom of every slide, the full title is only on the title page
 
-\author{Валентин Бучнев} % Your name
-\institute[МФТИ] % Your institution as it will appear on the bottom of every slide, may be shorthand to save space
-{
-МФТИ\\ 
-ФИВТ \\ % Your institution for the title page
-\medskip
-\textit{buchnev.valentin@gmail.com} % Your email address
-}
-\date{\today} % Date, can be changed to a custom date
 
 \begin{document}
 
@@ -132,20 +61,16 @@
 \titlepage % Print the title page as the first slide
 \end{frame}
 
-%----------------------------------------------------------------------------------------
-%	PRESENTATION SLIDES
-%----------------------------------------------------------------------------------------
-
 \begin{frame}
-\frametitle{Цели исследования}
-\begin{block}{Цель работы}
-Предложить метод предсказания достаточного объема выборки для обобщенной линейной модели.
+\frametitle{Прогнозирование объема выборки}
+\begin{block}{Цель исследования}
+Предложить метод предсказания достаточного объема выборки для обобщенной линейной модели на ранних этапах сбора данных.
 \end{block}
 \begin{block}{Проблема}
-Большинство неассимптотических методов требуют заведомо большого объема выборки.
+Большинство неассимптотических методов требуют заведомо избыточного объема выборки.
 \end{block}
 \begin{block}{Метод решения}
-Модификация таких методов путем введения нескольких аппроксимаций для получения возможности  прогнозирования изменений зависимостей при увеличении размера выборки.
+Оценка объема строится по собранной выборке путем анализа свойств функции ошибки обобщенной линейной модели.
 \end{block}
 
 \end{frame}
@@ -180,9 +105,9 @@ models~//~Biometrics, 1988
 \begin{block}{Функция правдоподобия}
 Определим функцию правдоподобия и логарифмическую функцию правдоподобия выборки $\mathfrak D$:
 $$
-L(\mathfrak{D}, \textbf{w}) = \prod_{y, \textbf{x} \in \mathfrak D} f(y, \textbf{x}, \textbf{w}),~~~ l(\mathfrak D, \textbf w) = \sum_{y, \textbf{x} \in \mathfrak D}\log f(y, \textbf{x}, \textbf{w}),
+L(\mathfrak D_m, \textbf{w}) = \prod_{y, \textbf{x} \in \mathfrak D_m} f(y, \textbf{x}, \textbf{w}),~~~ l(\mathfrak D_m, \textbf w) = \sum_{y, \textbf{x} \in \mathfrak D_m}\log f(y, \textbf{x}, \textbf{w}),
 $$
-где $f(y, \textbf{x}, \textbf{w})$ - аппроксимация плотности апостериорной вероятности выборки $\mathfrak D_{\mathcal L_m}$ при заданном векторе параметров $\textbf{w}$.
+где $f(y, \textbf{x}, \textbf{w})$ - аппроксимация плотности апостериорной вероятности выборки $\mathfrak D_m$ при заданном векторе параметров $\textbf{w}$.
 \end{block}
 \end{frame}
 
@@ -239,9 +164,23 @@ $$
 \end{frame}
 
 \begin{frame}
-\frametitle{Предлагаемый метод решения}
-\begin{block}{Модификация критерия}
-Предлагается заменить ковариационную матрицу вектора параметров на её аппроксимацию через матрицу информации Фишера, далее строить аппроксимацию зависимости значения функции эффективности от размера выборки.
+\frametitle{Модификация критерия средней длины}
+
+\begin{block}{Оценка вектора параметров}
+Для оценки вектора параметров используется принцип максимума правдоподобия:
+$$
+\hat{\textbf{w}} = \argmax_{\textbf{w} \in \mathbb{W}} L(\mathfrak D_{\mathcal L_m}, \textbf{w}).
+$$
+\end{block}
+
+
+\begin{block}{Вычисление функции эффективности}
+Воспользуемся несмещеностью и состоятельностью оценки $\hat{\textbf{w}}$:
+
+$$
+\mathsf{E}\hat{\textbf{w}} = \textbf{m}, ~~~\mathsf{D}\hat{\textbf{w}} = \textbf{I}^{-1}(\mathfrak D_m),
+$$
+где $\textbf{I}(\mathfrak D_m)$ --- информационная матрица Фишера.
 \end{block}
 \end{frame}
 
@@ -276,13 +215,33 @@ $\newline$
 \begin{frame}
 \frametitle{Результаты}
 \begin{figure}[h!t]\center
-\subfloat[Servo]{\includegraphics[width=0.5\textwidth]{../data/pics/ALC_modified_servo.pdf}}
-\subfloat[Boston]{\includegraphics[width=0.5\textwidth]{../data/pics/ALC_modified_boston.pdf}}\\
-\subfloat[Diabetes]{\includegraphics[width=0.5\textwidth]{../data/pics/ALC_modified_diabetes.pdf}}\\
+\subfloat{\includegraphics[width=1\textwidth]{../data/pics/ALC_modified_diabetes.pdf}}\\
 
-\caption{ALC метод}
+\caption{ALC метод, выборка Diabetes}
 \label{fig1}
 \end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{Результаты}
+
+
+\textbf{Предсказание достаточного объема выборки, ALC метод.}
+\begin{table}[h]
+\label{table2}
+\begin{tabularx}{0.7\textwidth}{|p{1in}|X|c|}
+\hline
+	\centering Выборка & \centering Реальное значение &Предсказание\\
+	\hline
+	 Servo & \centering не хватает данных & 450\\
+	\hline
+	Boston & \centering не хватает данных &1370\\
+	\hline
+	Diabetes & \centering 235 & 240\\
+\hline
+\end{tabularx}
+\end{table}
+
 \end{frame}
 
 \begin{frame}
@@ -291,9 +250,10 @@ $\newline$
 \begin{itemize}
   \item Задача прогнозирования достаточного объема выборки сведена к задаче аппроксимации корреляционной матрицы вектора параметров.
   \item Показана работоспособность предложенного метода на тестовых выборках.
-  \item Далее можно строить аппроксимацию зависимости ожидаемого значения логарифма правдоподобия от размера выборки.
+  \item Далее предлагается строить аппроксимацию зависимости ожидаемого значения логарифма правдоподобия от размера выборки.
 \end{itemize}
 
 \end{frame}
+
 
 \end{document}
