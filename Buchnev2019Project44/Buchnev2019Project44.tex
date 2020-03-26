@@ -1,6 +1,7 @@
 \documentclass[12pt,twoside]{article}
 \usepackage{jmlda}
 \usepackage{tabularx}
+\usepackage{ dsfont }
 %\NOREVIEWERNOTES
 \title
     {Раннее прогнозирование достаточного объема выборки для обобщенной линейной модели.}
@@ -177,7 +178,11 @@ $$
 $$
 \mathsf{E}\hat{\textbf{w}} = \textbf{m}, ~~~\mathsf{D}\hat{\textbf{w}} = \textbf{I}^{-1}(\mathfrak D_m),
 $$
-где $\textbf{I}(\mathfrak D_m)$ --- информационная матрица Фишера.
+где $\textbf{I}(\mathfrak D_m)$ --- информационная матрица Фишера:
+
+$$
+\textbf{I}(\mathfrak D_m) = \mathsf{E}_{\textbf{w}}\left(\frac{\partial L(\mathfrak D_m, \textbf{w})}{\partial \textbf{w}}\right)^2
+$$
 
 Далее используется предположение о распределении оценки вектора параметров:
 
@@ -207,6 +212,66 @@ $$
 $$
 \hat{\textbf{w}} \sim \mathcal{N}(\textbf{m},  \frac{m}{m^{*}}~\textbf{I}^{-1}(\mathfrak D_{m^{*}})).
 $$
+
+\section{Эксперимент на синтетической выборке}
+
+Рассматривается такая выборка $x_1, ..., x_n$, что компоненты вектора $x_i \in \mathds{R}^4$ --- реализации случайной величины из распределения  $\mathcal{N}(0, 1)$, 
+
+$$
+\epsilon_1, ..., \epsilon_n \sim \mathcal{N}(0, 1).
+$$
+
+Решается задача линейной регрессии с целевой переменной 
+$$
+y_i = x_i \textbf{w} + \epsilon_i
+$$
+
+и функцией ошибки $MSE(\textbf{x}, y, \textbf{w}) = \frac{1}{n}\sum\limits_{i=1}^{n}(y_i - x_i \textbf{w})^2$.
+
+где $\textbf{w}$ --- реализация случайной величины из многомерного равномерного  распределения $\mathcal{U}(\textbf{0}, \textbf{1})$.
+
+Оценка параметра $\hat{\textbf{w}}$ определяется следующим образом:
+
+$$
+\hat{\textbf{w}} = \argmin_{\textbf{w}} MSE(\textbf{x}, y, \textbf{w}).
+$$
+
+На графике 1 отображена зависимость значения функции ошибки от объема выборки. Видно, что при $m > 100$ значение функции ошибки почти не меняется, и увеличение объёма выборки не приводит к улучшению модели.
+
+На графике 2 представлена зависимость элементов ковариационной матрицы вектора параметров от объема выборки. [Комментарий?].
+
+На графике 3 представлена зависимость элементов матрицы Фишера от объема выборки. [Комментарий?].
+
+\begin{figure}[h!t]\center
+\includegraphics[width=1\textwidth]{../data/pics/synthetic_S.pdf}
+\caption{Зависимость значения функции ошибки от объема выборки}
+\label{fig1}
+\end{figure}
+
+\begin{figure}[h!t]\center
+\includegraphics[width=1\textwidth]{../data/pics/synthetic_W.pdf}
+\caption{Зависимость значения элементов ковариационной матрицы от объема выборки}
+\label{fig2}
+\end{figure}
+
+\begin{figure}[h!t]\center
+\includegraphics[width=1\textwidth]{../data/pics/synthetic_I.pdf}
+\caption{Зависимость значения элементов матрицы Фишера от объема выборки}
+\label{fig3}
+\end{figure}
+
+\begin{figure}[h!t]\center
+\includegraphics[width=1\textwidth]{../data/pics/synthetic_approximation_l.pdf}
+\caption{Аппроксимация функции l(m) при $m_0 = 200$}
+\label{fig4}
+\end{figure}
+
+$\newline$
+$\newline$
+$\newline$
+$\newline$
+$\newline$
+
 
 \section{Вычислительный эксперимент}
 
@@ -246,7 +311,7 @@ $$
 \end{tabular}
 
 \caption{Зависимость значения функции эффективности от объема выборки}
-\label{fig1}
+\label{fig5}
 \end{figure}
 
 $\newline$
