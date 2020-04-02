@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.3.10)  26 MAR 2020 19:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.3.10)  2 APR 2020 19:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1612,8 +1612,16 @@ File: ../data/pics/synthetic_approximation_l.pdf Graphic file (type pdf)
 Package pdftex.def Info: ../data/pics/synthetic_approximation_l.pdf  used on in
 put line 264.
 (pdftex.def)             Requested size: 483.69684pt x 241.8463pt.
+<../data/pics/synthetic_approximation_m_opt_diff.pdf, id=47, 1078.0275pt x 722.
+7pt>
+File: ../data/pics/synthetic_approximation_m_opt_diff.pdf Graphic file (type pd
+f)
+<use ../data/pics/synthetic_approximation_m_opt_diff.pdf>
+Package pdftex.def Info: ../data/pics/synthetic_approximation_m_opt_diff.pdf  u
+sed on input line 270.
+(pdftex.def)             Requested size: 483.69684pt x 324.26363pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 269--274
+Underfull \hbox (badness 10000) in paragraph at lines 277--292
 
  []
 
@@ -1635,8 +1643,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 pdfTeX warning: /usr/bin/pdflatex (file ../data/pics/synthetic_W.pdf): PDF incl
 usion: multiple pdfs with page group included in a single page
 >]
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \hbox (badness 10000) has occurred while \output is active
@@ -1648,49 +1655,62 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 pdfTeX warning: /usr/bin/pdflatex (file ../data/pics/synthetic_approximation_l.
 pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-<../data/pics/ALC_modified_servo.pdf, id=228, 1734.48pt x 867.24pt>
+<../data/pics/ALC_modified_servo.pdf, id=230, 1734.48pt x 867.24pt>
 File: ../data/pics/ALC_modified_servo.pdf Graphic file (type pdf)
 <use ../data/pics/ALC_modified_servo.pdf>
 Package pdftex.def Info: ../data/pics/ALC_modified_servo.pdf  used on input lin
-e 305.
+e 323.
 (pdftex.def)             Requested size: 241.84842pt x 120.92314pt.
-<../data/pics/ACC_modified_servo.pdf, id=229, 1734.48pt x 867.24pt>
+<../data/pics/ACC_modified_servo.pdf, id=231, 1734.48pt x 867.24pt>
 File: ../data/pics/ACC_modified_servo.pdf Graphic file (type pdf)
 <use ../data/pics/ACC_modified_servo.pdf>
 Package pdftex.def Info: ../data/pics/ACC_modified_servo.pdf  used on input lin
-e 306.
+e 324.
 (pdftex.def)             Requested size: 241.84842pt x 120.92314pt.
-<../data/pics/ALC_modified_boston.pdf, id=230, 1734.48pt x 867.24pt>
+<../data/pics/ALC_modified_boston.pdf, id=232, 1734.48pt x 867.24pt>
 File: ../data/pics/ALC_modified_boston.pdf Graphic file (type pdf)
 <use ../data/pics/ALC_modified_boston.pdf>
 Package pdftex.def Info: ../data/pics/ALC_modified_boston.pdf  used on input li
-ne 307.
+ne 325.
 (pdftex.def)             Requested size: 241.84842pt x 120.92314pt.
-<../data/pics/ACC_modified_boston.pdf, id=231, 1734.48pt x 867.24pt>
+<../data/pics/ACC_modified_boston.pdf, id=233, 1734.48pt x 867.24pt>
 File: ../data/pics/ACC_modified_boston.pdf Graphic file (type pdf)
 <use ../data/pics/ACC_modified_boston.pdf>
 Package pdftex.def Info: ../data/pics/ACC_modified_boston.pdf  used on input li
-ne 308.
+ne 326.
 (pdftex.def)             Requested size: 241.84842pt x 120.92314pt.
-<../data/pics/ALC_modified_diabetes.pdf, id=232, 1734.48pt x 867.24pt>
+<../data/pics/ALC_modified_diabetes.pdf, id=234, 1734.48pt x 867.24pt>
 File: ../data/pics/ALC_modified_diabetes.pdf Graphic file (type pdf)
 <use ../data/pics/ALC_modified_diabetes.pdf>
 Package pdftex.def Info: ../data/pics/ALC_modified_diabetes.pdf  used on input 
-line 309.
+line 327.
 (pdftex.def)             Requested size: 241.84842pt x 120.92314pt.
-<../data/pics/ACC_modified_diabetes.pdf, id=233, 1734.48pt x 867.24pt>
+<../data/pics/ACC_modified_diabetes.pdf, id=235, 1734.48pt x 867.24pt>
 File: ../data/pics/ACC_modified_diabetes.pdf Graphic file (type pdf)
 <use ../data/pics/ACC_modified_diabetes.pdf>
 Package pdftex.def Info: ../data/pics/ACC_modified_diabetes.pdf  used on input 
-line 310.
+line 328.
 (pdftex.def)             Requested size: 241.84842pt x 120.92314pt.
 
-Overfull \hbox (7.83142pt too wide) in paragraph at lines 303--312
+Overfull \hbox (7.83142pt too wide) in paragraph at lines 321--330
  [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 317--324
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+
+ []
+
+[7 <../data/pics/synthetic_approximation_m_opt_diff.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 335--342
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 346--347
 
  []
 
@@ -1702,7 +1722,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
  []
 
-[7 <../data/pics/ALC_modified_servo.pdf> <../data/pics/ACC_modified_servo.pdf
+[8 <../data/pics/ALC_modified_servo.pdf> <../data/pics/ACC_modified_servo.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ../data/pics/ACC_modified_servo.pdf): P
 DF inclusion: multiple pdfs with page group included in a single page
@@ -1723,26 +1743,22 @@ pdfTeX warning: /usr/bin/pdflatex (file ../data/pics/ALC_modified_diabetes.pdf)
 pdfTeX warning: /usr/bin/pdflatex (file ../data/pics/ACC_modified_diabetes.pdf)
 : PDF inclusion: multiple pdfs with page group included in a single page
 >]
-Underfull \hbox (badness 10000) in paragraph at lines 328--329
-
- []
-
 No file Buchnev2019Project44.bbl.
 
 Underfull \hbox (badness 10000) has occurred while \output is active
 
  []
 
-[8] (./Buchnev2019Project44.aux)
+[9] (./Buchnev2019Project44.aux)
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 29446 strings out of 492982
- 670814 string characters out of 6134896
- 895857 words of memory out of 5000000
- 32322 multiletter control sequences out of 15000+600000
+ 29452 strings out of 492982
+ 671105 string characters out of 6134896
+ 896857 words of memory out of 5000000
+ 32327 multiletter control sequences out of 15000+600000
  32177 words of font info for 87 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  69i,16n,98p,3278b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1770,10 +1786,10 @@ rm1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/sha
 re/texmf/fonts/type1/public/cm-super/sfsx1440.pfb></usr/share/texmf/fonts/type1
 /public/cm-super/sfsx1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sft
 i1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1095.pfb>
-Output written on Buchnev2019Project44.pdf (8 pages, 692351 bytes).
+Output written on Buchnev2019Project44.pdf (9 pages, 761477 bytes).
 PDF statistics:
- 587 PDF objects out of 1000 (max. 8388607)
- 174 compressed objects within 2 object streams
+ 598 PDF objects out of 1000 (max. 8388607)
+ 180 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 83 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 88 words of extra memory for PDF output out of 10000 (max. 10000000)
 
