@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.3.10)  23 APR 2020 17:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.3.10)  30 APR 2020 19:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1586,57 +1586,113 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  []
 
 [3]
-LaTeX Font Info:    Try loading font information for U+dsrom on input line 292.
-
- (/usr/share/texlive/texmf-dist/tex/latex/doublestroke/Udsrom.fd
-File: Udsrom.fd 1995/08/01 v0.1 Double stroke roman font definitions
-)
 Underfull \hbox (badness 10000) has occurred while \output is active
 
  []
 
 [4]
+LaTeX Font Info:    Try loading font information for U+dsrom on input line 300.
+
+ (/usr/share/texlive/texmf-dist/tex/latex/doublestroke/Udsrom.fd
+File: Udsrom.fd 1995/08/01 v0.1 Double stroke roman font definitions
+)
+<../data/pics/synthetic_S.pdf, id=49, 1734.48pt x 867.24pt>
+File: ../data/pics/synthetic_S.pdf Graphic file (type pdf)
+<use ../data/pics/synthetic_S.pdf>
+Package pdftex.def Info: ../data/pics/synthetic_S.pdf  used on input line 322.
+(pdftex.def)             Requested size: 483.69684pt x 241.8463pt.
+
 Underfull \hbox (badness 10000) in paragraph at lines 327--341
 
  []
 
+<../data/pics/synthetic_l_comparison.pdf, id=50, 1734.48pt x 867.24pt>
+File: ../data/pics/synthetic_l_comparison.pdf Graphic file (type pdf)
+<use ../data/pics/synthetic_l_comparison.pdf>
+Package pdftex.def Info: ../data/pics/synthetic_l_comparison.pdf  used on input
+ line 347.
+(pdftex.def)             Requested size: 483.69684pt x 241.8463pt.
 
 Underfull \hbox (badness 10000) has occurred while \output is active
 
  []
 
 [5]
-<../data/pics/synthetic_S.pdf, id=53, 1734.48pt x 867.24pt>
-File: ../data/pics/synthetic_S.pdf Graphic file (type pdf)
-<use ../data/pics/synthetic_S.pdf>
-Package pdftex.def Info: ../data/pics/synthetic_S.pdf  used on input line 343.
+<../data/pics/synthetic_l_MAPE_comparison.pdf, id=55, 1734.48pt x 867.24pt>
+File: ../data/pics/synthetic_l_MAPE_comparison.pdf Graphic file (type pdf)
+<use ../data/pics/synthetic_l_MAPE_comparison.pdf>
+Package pdftex.def Info: ../data/pics/synthetic_l_MAPE_comparison.pdf  used on 
+input line 355.
 (pdftex.def)             Requested size: 483.69684pt x 241.8463pt.
-<../data/pics/synthetic_W.pdf, id=54, 1734.48pt x 867.24pt>
+<../data/pics/synthetic_l_MAPE_cheat_examples.pdf, id=56, 1734.48pt x 867.24pt>
+
+File: ../data/pics/synthetic_l_MAPE_cheat_examples.pdf Graphic file (type pdf)
+<use ../data/pics/synthetic_l_MAPE_cheat_examples.pdf>
+Package pdftex.def Info: ../data/pics/synthetic_l_MAPE_cheat_examples.pdf  used
+ on input line 361.
+(pdftex.def)             Requested size: 483.69684pt x 241.8463pt.
+<../data/pics/synthetic_l_MAPE_honest_examples.pdf, id=57, 1734.48pt x 867.24pt
+>
+File: ../data/pics/synthetic_l_MAPE_honest_examples.pdf Graphic file (type pdf)
+
+<use ../data/pics/synthetic_l_MAPE_honest_examples.pdf>
+Package pdftex.def Info: ../data/pics/synthetic_l_MAPE_honest_examples.pdf  use
+d on input line 367.
+(pdftex.def)             Requested size: 483.69684pt x 241.8463pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 373--380
+
+ []
+
+
+Underfull \vbox (badness 1147) has occurred while \output is active []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+
+ []
+
+[6 <../data/pics/synthetic_S.pdf> <../data/pics/synthetic_l_comparison.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ../data/pics/synthetic_l_comparison.pdf
+): PDF inclusion: multiple pdfs with page group included in a single page
+>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+
+ []
+
+[7 <../data/pics/synthetic_l_MAPE_comparison.pdf> <../data/pics/synthetic_l_MAP
+E_cheat_examples.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ../data/pics/synthetic_l_MAPE_cheat_exa
+mples.pdf): PDF inclusion: multiple pdfs with page group included in a single p
+age
+>]
+Underfull \hbox (badness 10000) in paragraph at lines 398--412
+
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+
+ []
+
+[8 <../data/pics/synthetic_l_MAPE_honest_examples.pdf>]
+<../data/pics/synthetic_W.pdf, id=316, 1734.48pt x 867.24pt>
 File: ../data/pics/synthetic_W.pdf Graphic file (type pdf)
 <use ../data/pics/synthetic_W.pdf>
-Package pdftex.def Info: ../data/pics/synthetic_W.pdf  used on input line 349.
+Package pdftex.def Info: ../data/pics/synthetic_W.pdf  used on input line 414.
 (pdftex.def)             Requested size: 483.69684pt x 241.8463pt.
-<../data/pics/synthetic_I.pdf, id=55, 1734.48pt x 867.24pt>
+<../data/pics/synthetic_I.pdf, id=317, 1734.48pt x 867.24pt>
 File: ../data/pics/synthetic_I.pdf Graphic file (type pdf)
 <use ../data/pics/synthetic_I.pdf>
-Package pdftex.def Info: ../data/pics/synthetic_I.pdf  used on input line 355.
+Package pdftex.def Info: ../data/pics/synthetic_I.pdf  used on input line 420.
 (pdftex.def)             Requested size: 483.69684pt x 241.8463pt.
-<../data/pics/synthetic_approximation_l.pdf, id=56, 1734.48pt x 867.24pt>
-File: ../data/pics/synthetic_approximation_l.pdf Graphic file (type pdf)
-<use ../data/pics/synthetic_approximation_l.pdf>
-Package pdftex.def Info: ../data/pics/synthetic_approximation_l.pdf  used on in
-put line 361.
-(pdftex.def)             Requested size: 483.69684pt x 241.8463pt.
-<../data/pics/synthetic_approximation_m_opt_diff.pdf, id=57, 1078.0275pt x 722.
-7pt>
-File: ../data/pics/synthetic_approximation_m_opt_diff.pdf Graphic file (type pd
-f)
-<use ../data/pics/synthetic_approximation_m_opt_diff.pdf>
-Package pdftex.def Info: ../data/pics/synthetic_approximation_m_opt_diff.pdf  u
-sed on input line 367.
-(pdftex.def)             Requested size: 483.69684pt x 324.26363pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 373--383
+Underfull \hbox (badness 10000) in paragraph at lines 438--448
 
  []
 
@@ -1648,43 +1704,31 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
  []
 
-[6 <../data/pics/synthetic_S.pdf> <../data/pics/synthetic_W.pdf
+[9 <../data/pics/synthetic_W.pdf> <../data/pics/synthetic_I.pdf
 
-pdfTeX warning: /usr/bin/pdflatex (file ../data/pics/synthetic_W.pdf): PDF incl
+pdfTeX warning: /usr/bin/pdflatex (file ../data/pics/synthetic_I.pdf): PDF incl
 usion: multiple pdfs with page group included in a single page
 >]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-
- []
-
-[7 <../data/pics/synthetic_I.pdf> <../data/pics/synthetic_approximation_l.pdf
-
-pdfTeX warning: /usr/bin/pdflatex (file ../data/pics/synthetic_approximation_l.
-pdf): PDF inclusion: multiple pdfs with page group included in a single page
->]
-<../data/pics/synthetic_lasso_W.pdf, id=239, 1734.48pt x 867.24pt>
+<../data/pics/synthetic_lasso_W.pdf, id=398, 1734.48pt x 867.24pt>
 File: ../data/pics/synthetic_lasso_W.pdf Graphic file (type pdf)
 <use ../data/pics/synthetic_lasso_W.pdf>
 Package pdftex.def Info: ../data/pics/synthetic_lasso_W.pdf  used on input line
- 398.
+ 463.
 (pdftex.def)             Requested size: 483.69684pt x 241.8463pt.
-<../data/pics/synthetic_MSE_surface.pdf, id=240, 2168.1pt x 1156.32pt>
+<../data/pics/synthetic_MSE_surface.pdf, id=399, 2168.1pt x 1156.32pt>
 File: ../data/pics/synthetic_MSE_surface.pdf Graphic file (type pdf)
 <use ../data/pics/synthetic_MSE_surface.pdf>
 Package pdftex.def Info: ../data/pics/synthetic_MSE_surface.pdf  used on input 
-line 404.
+line 469.
 (pdftex.def)             Requested size: 483.69684pt x 257.95528pt.
-<../data/pics/synthetic_MSE_std_surface.pdf, id=241, 2168.1pt x 1156.32pt>
+<../data/pics/synthetic_MSE_std_surface.pdf, id=400, 2168.1pt x 1156.32pt>
 File: ../data/pics/synthetic_MSE_std_surface.pdf Graphic file (type pdf)
 <use ../data/pics/synthetic_MSE_std_surface.pdf>
 Package pdftex.def Info: ../data/pics/synthetic_MSE_std_surface.pdf  used on in
-put line 410.
+put line 475.
 (pdftex.def)             Requested size: 483.69684pt x 257.95528pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 416--426
+Underfull \hbox (badness 10000) in paragraph at lines 481--491
 
  []
 
@@ -1693,7 +1737,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
  []
 
-[8 <../data/pics/synthetic_approximation_m_opt_diff.pdf>]
+[10 <../data/pics/synthetic_lasso_W.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -1701,112 +1745,98 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
  []
 
-[9 <../data/pics/synthetic_lasso_W.pdf> <../data/pics/synthetic_MSE_surface.pdf
+[11 <../data/pics/synthetic_MSE_surface.pdf> <../data/pics/synthetic_MSE_std_su
+rface.pdf
 
-
-pdfTeX warning: /usr/bin/pdflatex (file ../data/pics/synthetic_MSE_surface.pdf)
-: PDF inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: /usr/bin/pdflatex (file ../data/pics/synthetic_MSE_std_surface.
+pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-<../data/pics/synthetic_W_from_N.pdf, id=332, 1734.48pt x 867.24pt>
+
+LaTeX Warning: Reference `MSE' on page 12 undefined on input line 492.
+
+
+LaTeX Warning: Reference `argmax_MSE' on page 12 undefined on input line 494.
+
+<../data/pics/synthetic_W_from_N.pdf, id=547, 1734.48pt x 867.24pt>
 File: ../data/pics/synthetic_W_from_N.pdf Graphic file (type pdf)
 <use ../data/pics/synthetic_W_from_N.pdf>
 Package pdftex.def Info: ../data/pics/synthetic_W_from_N.pdf  used on input lin
-e 432.
+e 497.
 (pdftex.def)             Requested size: 483.69684pt x 241.8463pt.
-<../data/pics/synthetic_W_from_tau.pdf, id=333, 1734.48pt x 867.24pt>
+<../data/pics/synthetic_W_from_tau.pdf, id=548, 1734.48pt x 867.24pt>
 File: ../data/pics/synthetic_W_from_tau.pdf Graphic file (type pdf)
 <use ../data/pics/synthetic_W_from_tau.pdf>
 Package pdftex.def Info: ../data/pics/synthetic_W_from_tau.pdf  used on input l
-ine 438.
+ine 503.
 (pdftex.def)             Requested size: 483.69684pt x 241.8463pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 444--460
+Underfull \hbox (badness 10000) in paragraph at lines 509--525
 
  []
-
-
-Underfull \vbox (badness 6944) has occurred while \output is active []
 
 
 Underfull \hbox (badness 10000) has occurred while \output is active
 
  []
 
-[10 <../data/pics/synthetic_MSE_std_surface.pdf>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-
- []
-
-[11 <../data/pics/synthetic_W_from_N.pdf> <../data/pics/synthetic_W_from_tau.pd
-f
-
-pdfTeX warning: /usr/bin/pdflatex (file ../data/pics/synthetic_W_from_tau.pdf):
- PDF inclusion: multiple pdfs with page group included in a single page
->]
-<../data/pics/ALC_modified_servo.pdf, id=465, 1734.48pt x 867.24pt>
+[12 <../data/pics/synthetic_W_from_N.pdf>]
+<../data/pics/ALC_modified_servo.pdf, id=596, 1734.48pt x 867.24pt>
 File: ../data/pics/ALC_modified_servo.pdf Graphic file (type pdf)
 <use ../data/pics/ALC_modified_servo.pdf>
 Package pdftex.def Info: ../data/pics/ALC_modified_servo.pdf  used on input lin
-e 491.
+e 556.
 (pdftex.def)             Requested size: 241.84842pt x 120.92314pt.
-<../data/pics/ACC_modified_servo.pdf, id=466, 1734.48pt x 867.24pt>
+<../data/pics/ACC_modified_servo.pdf, id=597, 1734.48pt x 867.24pt>
 File: ../data/pics/ACC_modified_servo.pdf Graphic file (type pdf)
 <use ../data/pics/ACC_modified_servo.pdf>
 Package pdftex.def Info: ../data/pics/ACC_modified_servo.pdf  used on input lin
-e 492.
+e 557.
 (pdftex.def)             Requested size: 241.84842pt x 120.92314pt.
-<../data/pics/ALC_modified_boston.pdf, id=467, 1734.48pt x 867.24pt>
+<../data/pics/ALC_modified_boston.pdf, id=598, 1734.48pt x 867.24pt>
 File: ../data/pics/ALC_modified_boston.pdf Graphic file (type pdf)
 <use ../data/pics/ALC_modified_boston.pdf>
 Package pdftex.def Info: ../data/pics/ALC_modified_boston.pdf  used on input li
-ne 493.
+ne 558.
 (pdftex.def)             Requested size: 241.84842pt x 120.92314pt.
-<../data/pics/ACC_modified_boston.pdf, id=468, 1734.48pt x 867.24pt>
+<../data/pics/ACC_modified_boston.pdf, id=599, 1734.48pt x 867.24pt>
 File: ../data/pics/ACC_modified_boston.pdf Graphic file (type pdf)
 <use ../data/pics/ACC_modified_boston.pdf>
 Package pdftex.def Info: ../data/pics/ACC_modified_boston.pdf  used on input li
-ne 494.
+ne 559.
 (pdftex.def)             Requested size: 241.84842pt x 120.92314pt.
-<../data/pics/ALC_modified_diabetes.pdf, id=469, 1734.48pt x 867.24pt>
+<../data/pics/ALC_modified_diabetes.pdf, id=600, 1734.48pt x 867.24pt>
 File: ../data/pics/ALC_modified_diabetes.pdf Graphic file (type pdf)
 <use ../data/pics/ALC_modified_diabetes.pdf>
 Package pdftex.def Info: ../data/pics/ALC_modified_diabetes.pdf  used on input 
-line 495.
+line 560.
 (pdftex.def)             Requested size: 241.84842pt x 120.92314pt.
-<../data/pics/ACC_modified_diabetes.pdf, id=470, 1734.48pt x 867.24pt>
+<../data/pics/ACC_modified_diabetes.pdf, id=601, 1734.48pt x 867.24pt>
 File: ../data/pics/ACC_modified_diabetes.pdf Graphic file (type pdf)
 <use ../data/pics/ACC_modified_diabetes.pdf>
 Package pdftex.def Info: ../data/pics/ACC_modified_diabetes.pdf  used on input 
-line 496.
+line 561.
 (pdftex.def)             Requested size: 241.84842pt x 120.92314pt.
 
-Overfull \hbox (7.83142pt too wide) in paragraph at lines 489--498
+Overfull \hbox (7.83142pt too wide) in paragraph at lines 554--563
  [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 503--510
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 514--515
-
- []
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-No file Buchnev2019Project44.bbl.
-
 Underfull \hbox (badness 10000) has occurred while \output is active
 
  []
 
-[12]
+[13 <../data/pics/synthetic_W_from_tau.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 568--575
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 579--580
+
+ []
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -1814,7 +1844,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
  []
 
-[13 <../data/pics/ALC_modified_servo.pdf> <../data/pics/ACC_modified_servo.pdf
+[14 <../data/pics/ALC_modified_servo.pdf> <../data/pics/ACC_modified_servo.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ../data/pics/ACC_modified_servo.pdf): P
 DF inclusion: multiple pdfs with page group included in a single page
@@ -1835,51 +1865,56 @@ pdfTeX warning: /usr/bin/pdflatex (file ../data/pics/ALC_modified_diabetes.pdf)
 pdfTeX warning: /usr/bin/pdflatex (file ../data/pics/ACC_modified_diabetes.pdf)
 : PDF inclusion: multiple pdfs with page group included in a single page
 >]
+No file Buchnev2019Project44.bbl.
+
 Underfull \hbox (badness 10000) has occurred while \output is active
 
  []
 
-[14] (./Buchnev2019Project44.aux) ) 
+[15] (./Buchnev2019Project44.aux)
+
+LaTeX Warning: There were undefined references.
+
+ ) 
 Here is how much of TeX's memory you used:
- 29516 strings out of 492982
- 672627 string characters out of 6134896
- 899857 words of memory out of 5000000
- 32378 multiletter control sequences out of 15000+600000
+ 29532 strings out of 492982
+ 673174 string characters out of 6134896
+ 895857 words of memory out of 5000000
+ 32392 multiletter control sequences out of 15000+600000
  33413 words of font info for 91 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  69i,16n,98p,3278b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/cm-super/c
-m-super-t2a.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.p
-fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></u
-sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/sha
-re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cms
-y10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb
-></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/
-share/texlive/texmf-dist/fonts/type1/public/doublestroke/dsrom12.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/share/t
-exlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/te
-xlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/tex
-mf/fonts/type1/public/cm-super/sfbi1200.pfb></usr/share/texmf/fonts/type1/publi
-c/cm-super/sfbx0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1095.
-pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texm
-f/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public
-/cm-super/sfrm1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.p
-fb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1440.pfb></usr/share/texmf
-/fonts/type1/public/cm-super/sfsx1728.pfb></usr/share/texmf/fonts/type1/public/
-cm-super/sfti1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1095.pf
-b>
-Output written on Buchnev2019Project44.pdf (14 pages, 5857682 bytes).
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t2a.enc}</usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.p
+fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr
+/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/t
+exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/doublestroke/dsrom12.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/euler/eufm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
+lic/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/amsfonts/symbols/msbm10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sf
+bi1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx0800.pfb></usr/sha
+re/texmf/fonts/type1/public/cm-super/sfbx1095.pfb></usr/share/texmf/fonts/type1
+/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfr
+m1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1095.pfb></usr/shar
+e/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/
+public/cm-super/sfsx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx
+1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1000.pfb></usr/share
+/texmf/fonts/type1/public/cm-super/sfti1095.pfb>
+Output written on Buchnev2019Project44.pdf (15 pages, 944946 bytes).
 PDF statistics:
- 836 PDF objects out of 1000 (max. 8388607)
- 260 compressed objects within 3 object streams
+ 991 PDF objects out of 1000 (max. 8388607)
+ 292 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
- 113 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 123 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -51,14 +51,12 @@ $$
 где $\textbf{x}_i \in \mathbb{R}^{n}$ --- вектор признаков, $~y_i \in \mathbb{Y}$.
 
 
-Предполагается, что выборка $\mathfrak D$ не противоречит гипотезе порождения данных: модель, порождающая данные, задается в следующем виде:
+Выборка является простой: элементы порождены независимо из одного распределения с фиксированными неизвестными параметрами, вероятность попадания каждого элемента в выборку одинакова. Предполагается, что выборка $\mathfrak D$ порождена согласно следующей гипотезе: модель, порождающая данные, задается в следующем виде:
 
 \begin{equation}\label{f}
 y_i = f(\mathbf{x}_i, \mathbf{w}, \beta),
 \end{equation}
-где $\textbf{w} \in \mathbb{W}$ --- вектор параметров, $\beta$ --- параметр, отвечающий за шум в данных.
-
-Зависимая переменная $y$ аппроксимируется обобщенно линейной моделью:
+где $\textbf{w} \in \mathbb{W}$ --- вектор параметров, $\beta$ --- дисперсия зависимой переменной. Зависимая переменная $y$ аппроксимируется обобщенно линейной моделью:
 
 \begin{equation}\label{y_f}
 \hat{y_i} = f(\mathbf{x}_i, \mathbf{w}) = \mu(\mathbf{w}^{\top}\mathbf{x}_i),
@@ -66,21 +64,19 @@ y_i = f(\mathbf{x}_i, \mathbf{w}, \beta),
 где $\mu$ --- функция связи, для модели линейной регрессии:
 
 \begin{equation}\label{lin_reg_lf}
- \mu(\mathbf{w}^{\top}\mathbf{x}_i) =  \mathbf{w}^{\top}\mathbf{x}_i,
+ \mu = id,
 \end{equation}
 для логистической регрессии:
 \begin{equation}\label{log_reg_lf}
-\mu(\mathbf{w}^{\top}\mathbf{x}_i) = \frac{1}{1 + \exp(-\mathbf{w}^{\top}\mathbf{x})}.
+\mu(\mathbf{w}^{\top}\mathbf{x}_i) = \frac{1}{1 + \exp(-\mathbf{w}^{\top}\mathbf{x}_i)}.
 \end{equation}
 
 %Рассмотрим параметрическое семейство функций для модели линейной регрессии:
 Предпологается, что при восстановлении параметров линейной регрессии (\ref{lin_reg_lf}), зависимая переменная порождается нормальным распределением:
 $$
-p(y | \mathbf{x}, \mathbf{w}) \sim \mathcal{N}(f(\mathbf{x}, \mathbf{w}), S(\mathbf{w}^{\top}\mathbf{x})),
+p(y | \mathbf{x}, \mathbf{w}) \sim \mathcal{N}(f(\mathbf{x}, \mathbf{w}), \hat{\beta}),
 $$
-где $S(\mathbf{w}^{\top}\mathbf{x})$ --- выборочная дисперсия выборки $\{\mathbf{w}^{\top}\mathbf{x}_i\}_{i=1}^{m}$.
-
-Для модели логистической регрессии зависимая переменная порождается бернуллиевским распределением:
+где $\hat{\beta}$ --- выборочная дисперсия зависимой переменной $y$. Для модели логистической регрессии зависимая переменная порождается бернуллиевским распределением:
 $$
 p(y | \mathbf{x}, \mathbf{w}) \sim \mathcal{B}e \bigl( f(\mathbf{x}, \mathbf{w})\bigr).
 $$
@@ -90,9 +86,9 @@ $$
 %$$
 
 Для модели $f$ с вектором параметров $\textbf{w}$ определим функцию правдоподобия и логарифмическую функцию правдоподобия выборки $\mathfrak D$:
-$$
-L(\textbf{w} | \mathfrak D) = \prod_{y, \textbf{x} \in \mathfrak D} p(y | \textbf{x}, \textbf{w}),~~~ l(\textbf w | \mathfrak D) = \sum_{y, \textbf{x} \in \mathfrak D}\log p(y | \textbf{x}, \textbf{w}),
-$$.
+\begin{equation}\label{L_l}
+L(\textbf{w} | \mathfrak D) = \prod_{y, \textbf{x} \in \mathfrak D} p(y | \textbf{x}, \textbf{w}),~~~ l(\textbf w | \mathfrak D) = \sum_{y, \textbf{x} \in \mathfrak D}\log p(y | \textbf{x}, \textbf{w}).
+\end{equation}
 
 %Рассмотрим правдоподобие выборки $\mathfrak D_{\mathcal L_m}$:
 
@@ -112,67 +108,79 @@ $$.
 %\tilde{l}(\mathfrak D)  = \underset{y, \textbf{x} \in \mathfrak D}{\mathsf E} l(\{y, \textbf{x}\}, \textbf w).
 %$$
 
-Для произвольного множества $\mathcal{A} = \{a_1, ..., a_k\} \subset \mathbb{J} = \{1, 2, ..., n\}$, определим:
-$$
-\mathbf{w}_{\mathcal{A}} = (\mathbf{w}_{a_1}, ..., \mathbf{w}_{a_k}),
-$$
-$$
-\mathbf{x}_{i{\mathcal{A}}} = (\mathbf{x}_{i{a_1}}, ..., \mathbf{x}_{i{a_k}}),
-$$
-$$
-\mathbf{x}_{\mathcal{A}} = (\mathbf{x}_{1\mathcal{A}}, ..., \mathbf{x}_{m\mathcal{A}})^{\top},
-$$
-$$
-\mathfrak{D}_{\mathcal{A}} =  \{\mathbf{x}_{i\mathcal{A}}, y_i\}_{i=1}^m,
-$$
+Для множества индексов $\mathcal{A}$ независимой переменной $\mathbf{x} = [x_1, ..., x_n]^{\top}$, в векторы $\mathbf{x}_{\mathcal{A}}, \mathbf{w}_{\mathcal{A}}$ входят только те элементы, индексы которых принадлежат $\mathcal{A}$. Определим выборку $\mathfrak{D}_{\mathcal{A}}$ как множество независимых переменных $\mathbf{x}_{\mathcal{A}}$ и соответствующих им зависимых переменных $y$.
 
-Для оптимального набора параметров и оценки вектора параметров используется принцип максимума правдоподобия:
+%$$
+%\mathbf{w}_{\mathcal{A}} = (\mathbf{w}_{a_1}, ..., \mathbf{w}_{a_k}),
+%$$
+%$$
+%\mathbf{x}_{i{\mathcal{A}}} = (\mathbf{x}_{i{a_1}}, ..., \mathbf{x}_{i{a_k}}),
+%$$
+%$$
+%\mathbf{x}_{\mathcal{A}} = (\mathbf{x}_{1\mathcal{A}}, ..., \mathbf{x}_{m\mathcal{A}})^{\top},
+%$$
+%$$
+%\mathfrak{D}_{\mathcal{A}} =  \{\mathbf{x}_{i\mathcal{A}}, y_i\}_{i=1}^m,
+%$$
+
+Для получения оптимального набора параметров и оценки вектора параметров используется принцип максимума правдоподобия:
 
 \begin{equation}\label{argmax_L}
-\hat{\textbf{w}}, \hat{\mathcal{A}} = \argmax_{\mathbf{w} \in \mathbb{W}, \mathcal{A} \subseteq \mathbb{J}} L(\textbf{w}_{\mathcal{A}} | \mathfrak D_{\mathcal{A}}).
+\hat{\textbf{w}}, \hat{\mathcal{A}} = \argmax_{\mathbf{w} \in \mathbb{W}, \mathcal{A} \subseteq \mathbb{J}} L(\textbf{w}_{\mathcal{A}} | \mathfrak D_{\mathcal{A}}),
+\end{equation}
+где $\mathbb{J} = \{1, 2, ..., n\}$ --- множество индексов.
+
+%Оптимизационная задача (\ref{argmax_L}) эквивалентна оптимизационной задаче:
+%\begin{equation}\label{argmin_MSE}
+%\hat{\mathbf{w}}, \hat{\mathcal{A}} = \argmin_{\mathbf{w} \in \mathbb{W}, \mathcal{A} \subseteq \mathbb{J}} MSE(\mathbf{x}%_{\mathcal{A}}, y, \mathbf{w}_{\mathcal{A}}),
+%\end{equation}
+%где $MSE(\mathbf{x}, y, \mathbf{w})$ --- функция ошибки:
+В качестве функции ошибки используются следующие функции:
+\begin{equation}\label{MSE_CE}
+S_{reg}(\mathbf{x}, y, \textbf{w}) = \frac{1}{m}\sum\limits_{i=1}^{m}(y_i - \textbf{w}^{\top}\mathbf{x}_i )^2, ~~~ S_{class} = \sum\limits_{i=1}^{m}(y_i\ln f(\mathbf{x}_i, \mathbf{w}) + (1 - y_i)\ln(1 - f(\mathbf{x}_i, \mathbf{w}))).
 \end{equation}
 
-Оптимизационная задача (\ref{argmax_L}) эквивалентна оптимизационной задаче:
-\begin{equation}\label{argmin_MSE}
-\hat{\mathbf{w}}, \hat{\mathcal{A}} = \argmin_{\mathbf{w} \in \mathbb{W}, \mathcal{A} \subseteq \mathbb{J}} MSE(\mathbf{x}_{\mathcal{A}}, y, \mathbf{w}_{\mathcal{A}}),
-\end{equation}
-где $MSE(\mathbf{x}, y, \mathbf{w})$ --- функция ошибки:
-\begin{equation}\label{MSE}
-MSE(\mathbf{x}, y, \textbf{w}) = \frac{1}{m}\sum\limits_{i=1}^{m}(y_i - \textbf{w}^{\top}\mathbf{x}_i )^2.
-\end{equation}
-
-
-Для введения понятия достаточности объёма  выборки, рассмотрим ожидаемое значение усредненного логарифма правдоподобия по разным обучающим выборкам $\mathfrak D_{m_0}$ размера $m_0$ на оценке вектора параметров $\hat{\mathbf{w}}$:
+Требуется по начально заданной выборке размера $m_0 \ll m$ получить оценку минимального достаточного объёма $m^{*}$. Для введения понятия достаточности объёма  выборки рассмотрим ожидаемое значение усредненного логарифма правдоподобия (\ref{L_l}) по разным подвыборкам $\mathfrak D^{\prime}$ размера $m_0$ обучающей выборки $\mathfrak{D}$ на оценке вектора параметров $\hat{\mathbf{w}}$:
 
 $$
-l(m_0) = \frac{1}{m_0}\underset{\mathfrak D^{\prime} \subset \mathfrak D, |\mathfrak D^{\prime}| = m_0}{\mathsf E} l(\hat{\mathbf{w}} | \mathfrak D^{\prime}).
+l(m_0) = m_0^{-1}\underset{|\mathfrak D^{\prime}| = m_0}{\underset{\mathfrak D^{\prime} \subset \mathfrak D}{\mathsf E}} l(\hat{\mathbf{w}} | \mathfrak D^{\prime}).
 $$
 
-Будем считать, что объем выборки достаточный, если:
+Будем считать, что объем выборки достаточен, если:
 
 $$
 \forall m_1, m_2 > m^* ~~~ |l(m_1) - l(m_2)| < \delta,
 $$
-где $\delta$ - достаточно малое пороговое значение.
+где $\delta$ --- достаточно малое пороговое значение.
 
 Для получения аппроксимации функции $l(m_0)$ по выборке $\mathfrak D_{m_0}$ введем процедуру бутстрепа:
 
 \begin{enumerate}
-	\item Генерируется случайный вектор индексов $\mathbf{i} = (i_1, ..., i_{m_0})$, где:
+	\item Из равномерного распределения генерируется случайный вектор индексов $\mathbf{i} = (i_1, ..., i_{m_0})$, где:
 	\begin{itemize}
 		\item $i_j \sim U(\{1, ..., m_0\})$ --- эксплутационный вариант.
 		\item $i_j \sim U(\{1, ..., m\})$ --- теоретический вариант.
 	\end{itemize}
 	\item Для полученной выборки $\mathfrak D_{\mathbf{i}} = \{\mathbf{x}_{i_j}, y_{i_j}\}_{j=1}^{m_0}$ считается усредненный логарифм правдоподобия на оценке вектора параметров $\hat{\mathbf{w}}$:
 $$
-\hat{l}_{\mathbf{i}}(m_0) = \frac{1}{m_0}l(\hat{\mathbf{w}} | \mathfrak D_{\mathbf{i}})
+\hat{l}_{k}(m_0) = \frac{1}{m_0}l(\hat{\mathbf{w}} | \mathfrak D_{\mathbf{i}})
 $$
 	\item пп. 1-2 повторяются $K$ раз, оценка $\hat{l}(m_0)$ функции $l(m_0)$ задается формулой:
 $$
-\hat{l}(m_0) = \frac{1}{K}\sum\limits_{k=1}^K \hat{l}_{\mathbf{i}_k}(m_0),
+\hat{l}(m_0) = \frac{1}{K}\sum\limits_{k=1}^K \hat{l}_{k}(m_0).
 $$
-где $\mathbf{i}_k$ --- вектор индексов, сгенерированный на итерации $k$.
 \end{enumerate}
+
+Для предсказания значения функции $\hat{l}(m)$ при $m > m_0$ введем семейство функций $\Phi = \{\phi(m) =  a + b\cdot m^c ~|~ a, b \in \mathbb{R}, c \in (-\infty, 0)\}$
+Функция $\hat{l}$ приближается функцией вида:
+
+\begin{equation}\label{argmin_MAPE}
+\hat{\phi} =  \argmin_{\phi \in \Phi}\text{MAPE}(\hat{l}, \phi, 1, m_0),
+\end{equation}
+где $\text{MAPE}$ --- средняя абсолютная процентная ошибка:
+\begin{equation}\label{MAPE}
+\text{MAPE}(\psi, \phi, m_1, m_2) = \frac{1}{m_2 - m_1 + 1}\sum_{i=m_1}^{m_2}\frac{|\phi(i) - \psi(i)|}{\psi(i)}.
+\end{equation}
 
 %Рассмотрим матрицу информации Фишера:
 
@@ -297,7 +305,7 @@ $$
 
 Решается задача линейной регрессии (\ref{y_f}), (\ref{lin_reg_lf}). Вектор параметров  $\mathbf{w}$ --- реализация случайной величины из многомерного равномерного  распределения $\mathcal{U}(\mathbf{0}, \mathbf{1})$.
 
-Оценка вектора параметров $\hat{\mathbf{w}}$ является решением задач (\ref{argmax_L}), (\ref{argmin_MSE}):
+Оценка вектора параметров $\hat{\mathbf{w}}$ является решением задачи (\ref{argmax_L}):
 
 На рис. 1 отображена зависимость значения функции ошибки от объема выборки. Видно, что при достаточно больших $m$ значение функции ошибки почти не меняется, и увеличение объёма выборки не приводит к улучшению модели.
 
@@ -305,45 +313,102 @@ $$
 
 \begin{enumerate}
 	\item Генерируются случайные непересекающиеся подвыборки $\mathfrak D_{\mathcal{L}}, \mathfrak D_{\mathcal{T}} \subset \mathfrak D$, $|\mathfrak D_{\mathcal{L}}| = m,~ |\mathfrak D_{\mathcal{T}}| = 50$.
-	\item Вычисляется оценка вектора параметров $\hat{\mathbf{w}}$ как решение оптимизационной задачи (\ref{argmin_MSE}) на выборке $\mathfrak D_{\mathcal{L}}$.
-	\item Считается функция ошибки (\ref{MSE}) на оценке вектора параметров $\hat{\mathbf{w}}$ на выборке $\mathfrak D_{\mathcal{T}}$:
-	\item пп. 1-3 повторяются $K$ раз, итоговая оценка равна среднему значению среди полученных оценок функций ошибок (\ref{MSE}).
+	\item Вычисляется оценка вектора параметров $\hat{\mathbf{w}}$ как решение оптимизационной задачи (\ref{argmax_L}) на выборке $\mathfrak D_{\mathcal{L}}$.
+	\item Считается функция ошибки для задачи регрессии (\ref{MSE_CE}) на оценке вектора параметров $\hat{\mathbf{w}}$ на выборке $\mathfrak D_{\mathcal{T}}$:
+	\item пп. 1-3 повторяются $K$ раз, итоговая оценка равна среднему значению среди полученных оценок функций ошибок.
 \end{enumerate}
-
-На рис. 2 представлена зависимость элементов ковариационной матрицы вектора параметров от объема выборки. [Комментарий?].
-Зависимость посчитана с помощью метода бутстреп:
-\begin{enumerate}
-	\item Генерируется случайная подвыборка $\mathfrak D_{\mathcal{L}} \subset \mathfrak D$, $|\mathfrak D_{\mathcal{L}}| = m$
-	\item Вычисляется оценка вектора параметров $\hat{\mathbf{w}}$ как решение оптимизационной задачи (\ref{argmin_MSE}) на выборке $\mathfrak D_{\mathcal{L}}$.
-	\item Вычисляется оценка ковариационной матрицы параметров $\hat{A}$ по формуле:
-\begin{equation}\label{Ahat}
-\hat{A} =  \frac{1}{n}\mathbf{w}^{\top}\mathbf{w}.
-\end{equation}
-	\item пп. 1-3 повторяются $K$ раз, итоговая оценка равна среднему значению среди полученных оценок матрицы ковариации (\ref{Ahat}).
-\end{enumerate}
-
-На рис. 3 представлена зависимость элементов матрицы Фишера от объема выборки. Оценка информационной матрицы Фишера $\hat{I}$ выражена через оценку ковариационной матрицы по формуле (\ref{w_hat_I}).
-
-$\newline$
-$\newline$
-$\newline$
-$\newline$
-$\newline$
-$\newline$
-$\newline$
-$\newline$
-$\newline$
-$\newline$
-$\newline$
-$\newline$
-$\newline$
-$\newline$
 
 \begin{figure}[h!t]\center
 \includegraphics[width=1\textwidth]{../data/pics/synthetic_S.pdf}
 \caption{Зависимость значения функции ошибки от объема выборки}
 \label{fig1}
 \end{figure}
+
+$\newline$
+$\newline$
+$\newline$
+$\newline$
+$\newline$
+$\newline$
+$\newline$
+$\newline$
+$\newline$
+$\newline$
+$\newline$
+$\newline$
+$\newline$
+$\newline$
+
+\subsection{Аппроксимация $\hat{l}(m)$}
+
+На рис. 2 представлена функция $\hat{l}(m)$, посчитанная в двух вариантах: практическом и теоретическом. Для теоретического способа сходимость зависит только от объёма выборки $m$, а для практического сходимость зависит еще и от доступных элементов выборки $\mathfrak{D}$.
+
+\begin{figure}[h!t]\center
+\includegraphics[width=1\textwidth]{../data/pics/synthetic_l_comparison.pdf}
+\caption{Зависимость значения функции $\hat{l}$ от объема выборки}
+\label{fig1.5}
+\end{figure}
+
+На рис. 3 представлена зависимость функции ошибки MAPE от объёма выборки. В теоретическом варианте MAPE сильно меньше, так как функция $\hat{l}(m)$ лучше аппроксимируется семейством функций $\Phi$.
+
+\begin{figure}[h!t]\center
+\includegraphics[width=1\textwidth]{../data/pics/synthetic_l_MAPE_comparison.pdf}
+\caption{Зависимость значения функции ошибки MAPE от объема выборки}
+\label{fig1.7}
+\end{figure}
+
+\begin{figure}[h!t]\center
+\includegraphics[width=1\textwidth]{../data/pics/synthetic_l_MAPE_cheat_examples.pdf}
+\caption{Примеры аппркосимации функции $\hat{l}(m)$, теоретический способ}
+\label{fig1.8}
+\end{figure}
+
+\begin{figure}[h!t]\center
+\includegraphics[width=1\textwidth]{../data/pics/synthetic_l_MAPE_honest_examples.pdf}
+\caption{Примеры аппркосимации функции $\hat{l}(m)$, практический способ}
+\label{fig1.9}
+\end{figure}
+
+
+$\newline$
+$\newline$
+$\newline$
+$\newline$
+$\newline$
+$\newline$
+$\newline$
+
+
+\subsection{Использование оценки $\hat{A}$ для вычисления объёма $m_0$}
+
+На рис. 6 представлена зависимость элементов ковариационной матрицы вектора параметров от объема выборки. [Комментарий?].
+Зависимость посчитана с помощью метода бутстреп:
+\begin{enumerate}
+	\item Генерируется случайная подвыборка $\mathfrak D_{\mathcal{L}} \subset \mathfrak D$, $|\mathfrak D_{\mathcal{L}}| = m$
+	\item Вычисляется оценка вектора параметров $\hat{\mathbf{w}}_k$ как решение оптимизационной задачи (\ref{argmax_L}) на выборке $\mathfrak D_{\mathcal{L}}$.
+	\item Вычисляется оценка ковариационной матрицы параметров $\hat{A}_k$ по формуле:
+\begin{equation}\label{Ahat}
+\hat{A}_k =  \frac{1}{n}(\hat{\mathbf{w}}_k - \overline{\hat{\mathbf{w}}})^{\top}(\hat{\mathbf{w}}_k - \overline{\hat{\mathbf{w}}}).
+\end{equation}
+	\item пп. 1-3 повторяются $K$ раз, итоговая оценка равна среднему значению среди полученных оценок матрицы ковариации (\ref{Ahat}).
+\end{enumerate}
+
+На рис. 7 представлена зависимость элементов матрицы Фишера от объема выборки. Оценка информационной матрицы Фишера $\hat{I}$ выражена через оценку ковариационной матрицы по формуле (\ref{w_hat_I}).
+
+$\newline$
+$\newline$
+$\newline$
+$\newline$
+$\newline$
+$\newline$
+$\newline$
+$\newline$
+$\newline$
+$\newline$
+$\newline$
+$\newline$
+$\newline$
+$\newline$
 
 \begin{figure}[h!t]\center
 \includegraphics[width=1\textwidth]{../data/pics/synthetic_W.pdf}
@@ -357,17 +422,17 @@ $\newline$
 \label{fig3}
 \end{figure}
 
-\begin{figure}[h!t]\center
-\includegraphics[width=1\textwidth]{../data/pics/synthetic_approximation_l.pdf}
-\caption{Аппроксимация функции l(m) при $m_0 = 200$}
-\label{fig4}
-\end{figure}
+%\begin{figure}[h!t]\center
+%\includegraphics[width=1\textwidth]{../data/pics/synthetic_approximation_l.pdf}
+%\caption{Аппроксимация функции l(m) при $m_0 = 200$}
+%\label{fig4}
+%\%end{figure}
 
-\begin{figure}[h!t]\center
-\includegraphics[width=1\textwidth]{../data/pics/synthetic_approximation_m_opt_diff.pdf}
-\caption{Аппроксимация оптимального размера выборки при разных $m_0$ (по волатильности аппроксимации функции l(m))}
-\label{fig5}
-\end{figure}
+%\begin{figure}[h!t]\center
+%\includegraphics[width=1\textwidth]{../data/pics/synthetic_approximation_m_opt_diff.pdf}
+%\caption{Аппроксимация оптимального размера выборки при разных $m_0$ (по волатильности аппроксимации функции l(m))}
+%\label{fig5}
+%\end{figure}
 
 
 $\newline$
@@ -387,11 +452,11 @@ $\newline$
 MSE(\mathbf{x}, y, \textbf{w}) = \frac{1}{m}\sum\limits_{i=1}^{m}(y_i - \textbf{w}^{\top}\mathbf{x}_i )^2 + \tau \Vert \mathbf{w}\Vert_1.
 \end{equation}
 
-Используется тот факт, что Лассо регрессия обнуляет малозначимые признаки, и чем больше коэффициент $\tau$, тем больше признаков обнуляется. Таким образом можно упорядочить признаки по значимости. Для того, чтобы выбрать набор признаков $\mathcal{A}_{n^{\prime}}$ мощности $|\mathcal{A}_{n^{\prime}}| = n^{\prime}$ с наилучшей функцией ошибки, достаточно взять $n^{\prime}$ самых значимых признаков.  Для получения оценки $\hat{\mathbf{w}}$ на наборе признаков $\mathcal{A}_{n^{\prime}}$ решается оптимизационная задача (\ref{argmin_MSE}).
+Используется тот факт, что Лассо регрессия обнуляет малозначимые признаки, и чем больше коэффициент $\tau$, тем больше признаков обнуляется. Таким образом можно упорядочить признаки по значимости. Для того, чтобы выбрать набор признаков $\mathcal{A}_{n^{\prime}}$ мощности $|\mathcal{A}_{n^{\prime}}| = n^{\prime}$ с наилучшей функцией ошибки, достаточно взять $n^{\prime}$ самых значимых признаков.  Для получения оценки $\hat{\mathbf{w}}$ на наборе признаков $\mathcal{A}_{n^{\prime}}$ решается оптимизационная задача (\ref{argmax_L}).
 
-На рис. 6 построена зависимость среднего значения элементов вектора параметров $\hat{\mathbf{w}}$ от величины $\tau$ при обучении Лассо регрессии (\ref{argmin_MSE}), (\ref{MSE_lasso}) на подвыборках размера $m_0 = 100$.
+На рис. 8 построена зависимость среднего значения элементов вектора параметров $\hat{\mathbf{w}}$ от величины $\tau$ при обучении Лассо регрессии (\ref{argmax_L}), (\ref{MSE_lasso}) на подвыборках размера $m_0 = 100$.
 
-На рис. 7, 8 построены зависимости матожидания и дисперсии функции $e^{-MSE(\mathbf{x}, y, \hat{\mathbf{w}})}$ от объёма выборки и от количества используемых признаков.
+На рис. 9, 10 построены зависимости матожидания и дисперсии функции $e^{-MSE(\mathbf{x}, y, \hat{\mathbf{w}})}$ от объёма выборки и от количества используемых признаков.
 
 
 \begin{figure}[h!t]\center
@@ -424,9 +489,9 @@ $\newline$
 $\newline$
 $\newline$
 
-На рис. 9 построена зависимость значения элементов оценки ковариационной матрицы параметров $\hat{A}$ от количества используемых признаков $n^{\prime}$ при обучении модели линейной регрессии (\ref{argmin_MSE}), (\ref{MSE}). Можно заметить, что ковариация между парой признаков $\mathbf{w}_i, \mathbf{w}_j$, попавших в набор используемых признаков $\mathcal{A}_{n^{\prime}}$, слабо зависит от $n^{\prime}$ и остается практически неизменной.
+На рис. 11 построена зависимость значения элементов оценки ковариационной матрицы параметров $\hat{A}$ от количества используемых признаков $n^{\prime}$ при обучении модели линейной регрессии (\ref{argmax_L}), (\ref{MSE}). Можно заметить, что ковариация между парой признаков $\mathbf{w}_i, \mathbf{w}_j$, попавших в набор используемых признаков $\mathcal{A}_{n^{\prime}}$, слабо зависит от $n^{\prime}$ и остается практически неизменной.
 
-На рис. 10 построена зависимость значения элементов оценки ковариационной матрицы параметров $\hat{A}$ от коэффициента регуляризации $\tau$ при обучении Лассо регрессии (\ref{argmin_MSE}), (\ref{MSE_lasso}). Можно заметить, что ковариация $cov(\mathbf{w}_i, \mathbf{w}_j)$ обратно пропорциональна величине $\tau$.
+На рис. 12 построена зависимость значения элементов оценки ковариационной матрицы параметров $\hat{A}$ от коэффициента регуляризации $\tau$ при обучении Лассо регрессии (\ref{argmax_MSE}), (\ref{MSE_lasso}). Можно заметить, что ковариация $cov(\mathbf{w}_i, \mathbf{w}_j)$ обратно пропорциональна величине $\tau$.
 
 \begin{figure}[h!t]\center
 \includegraphics[width=1\textwidth]{../data/pics/synthetic_W_from_N.pdf}
