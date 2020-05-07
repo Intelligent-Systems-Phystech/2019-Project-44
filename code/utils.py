@@ -203,13 +203,16 @@ def define_model(y):
         model = lambda y, X: LinearModel(y, X, alpha = 0.01)
     return model
 
-def get_params(X, y):
-    if len(list(set(list(y)))) == 2:
+def get_params(X, y, model=None):
+    if model is 'regression':
+        w_hat = np.linalg.inv(0.01*np.eye(X.shape[1]) + X.T@X)@X.T@y
+    elif model is 'classification' or len(list(set(list(y)))) == 2:
         model_sk_learn = LogisticRegression(C = 100)
         model_sk_learn.fit(X, y)
         w_hat = model_sk_learn.coef_[0]
     else:
         w_hat = np.linalg.inv(0.01*np.eye(X.shape[1]) + X.T@X)@X.T@y
+        
     return w_hat
 
 def RS(X, y):
