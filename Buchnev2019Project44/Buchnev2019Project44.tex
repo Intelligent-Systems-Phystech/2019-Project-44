@@ -162,8 +162,8 @@ $$
 $$
 где:
 	\begin{itemize}
-		\item $i_j \sim U(\{1, ..., m_0\})$ --- эмпирический вариант,
-		\item $i_j \sim U(\{1, ..., m\})$ --- теоретический вариант.
+		\item $i_j \sim U(\{1, ..., m\})$ --- вариант 1,
+		\item $i_j \sim U(\{1, ..., m_0\})$ --- вариант 2.
 	\end{itemize}
 	\item Для полученной выборки $\mathfrak D_{\mathbf{i}} = \{\mathbf{x}_{i_j}, y_{i_j}\}_{j=1}^{m_0}$ считается усредненный логарифм правдоподобия на оценке вектора параметров $\hat{\mathbf{w}}$:
 $$
@@ -347,38 +347,91 @@ $\newline$
 
 \subsection{Аппроксимация $\hat{l}(m, n)$}
 
-На рис. 2 представлена функция $\hat{l}(m, n)$, посчитанная в теоретическом варианте.
+Пусть $\mathbf{X} = [\chi_1, ..., \chi_n]$ --- набор векторов-столбцов. Построим зависимость $\hat{l}(m, n)$ для различных конфигураций выборок:
+
+\begin{enumerate}
+	\item Адекватная случайная выборка ($m = 600, n = 10$): 
+$$ 
+\chi_i \sim U(5, 6), ~ \mathbf{w} \sim U(\mathbf{0}, \mathbf{1}), ~ y = \mathbf{w}^{\top}\mathbf{X} + \varepsilon,
+$$
+где $\varepsilon \sim \mathcal{N}(0, 0.1)$.
+	\item Адекватная скоррелированная выборка ($m = 600, n = 10$):
+$$
+\chi_1, ..., \chi_3 \sim \mathcal{N}(1, 1),~ \chi_4, ..., \chi_6 \sim \chi_0 + \varepsilon, ~\chi_7, ..., \chi_{10} \sim \chi_1 + \varepsilon,
+$$
+$$
+	y = 0.3\chi_1 + 0.7\chi_2 + \varepsilon,
+$$
+где $\varepsilon \sim \mathcal{N}(0, 0.1)$,
+	\item Адекватная ортогональная выборка ($m = 600, n = 10$):
+$$
+	\{\chi_i \in \mathbb{R}^{m}\}_{i=1}^{n}  \text{ --- ортогональный набор}, ~\mathbf{w} \sim \mathcal{N}(\mathbf{1}, I), ~y = \mathbf{w}^{\top}\mathbf{X} + \varepsilon,
+$$
+где $\varepsilon \sim \mathcal{N}(0, 0.1)$.
+	\item Адекватная избыточная выборка:
+$$
+	\chi_i \sim \mathcal{N}(1, 1), 
+$$
+$$
+	w_i \sim U(1, 1), ~i \leq 5, 
+$$
+$$
+	w_i = 0, ~i > 5,
+$$
+$$
+	y = \mathbf{w}^{\top}\mathbf{X} + \varepsilon,
+$$
+где $\varepsilon \sim \mathcal{N}(0, 0.1)$
+	\item Неадекватная скоррелированная выборка:
+$$
+	y \perp \chi_0 \in \mathbb{R}^m, ~\chi_i = \chi_0 + \mathcal{N}(0, 0.1).
+$$
+\end{enumerate}
+
+На рис. 2 представлена функция $\hat{l}(m, n)$, посчитанная  с помощью бутстрепа в варианте 1.
+
+$\newline$
+$\newline$
 
 \begin{figure}[h!t]\center
-\includegraphics[width=1\textwidth]{../data/pics/adequate_random_sample_llh.pdf}
-\caption{Зависимость значения функции $\hat{l}$ от объема выборки $m$ и количества параметров $n$.}
-\label{fig1.5}
+\centering\begin{tabular}{@{}c@{ }c@{ }c@{}}
+\subfloat[Адекватная случайная выборка]{\includegraphics[width=0.5\textwidth]{../data/pics/theoretical_adequate_random_sample_llh.pdf}}&
+\subfloat[Адекватная скоррелированная выборка]{\includegraphics[width=0.5\textwidth]{../data/pics/theoretical_adequate_correlated_sample_llh.pdf}}\\
+\subfloat[Адекватная ортогональная выборка]{\includegraphics[width=0.5\textwidth]{../data/pics/theoretical_adequate_orthogonal_sample_llh.pdf}}&
+\subfloat[Адекватная избыточная выборка]{\includegraphics[width=0.5\textwidth]{../data/pics/theoretical_adequate_redundant_sample_llh.pdf}}\\
+\subfloat[Недекватная скоррелированная выборка]{\includegraphics[width=0.5\textwidth]{../data/pics/theoretical_adequate_random_sample_llh.pdf}}&\\
+\end{tabular}
+
+\caption{Зависимость значения функции $\hat{l}(m, n)$ от объема выборки $m$ и количества параметров $n$}
+\label{fig100}
 \end{figure}
 
 На рис. 3 представлена аппроксимация $\phi(p, \hat{A}(m, n), m, n) \sim \hat{l}(m, n)$ при $m_0 = 100$.
 
 \begin{figure}[h!t]\center
-\includegraphics[width=1\textwidth]{../data/pics/adequate_random_sample_llh_phi.pdf}
-\caption{Функции $\hat{l}(m, n)$ и $\phi(p, \hat{A}(m, n), m, n)$}
-\label{fig1.7}
+\centering\begin{tabular}{@{}c@{ }c@{ }c@{}}
+\textbf{Вариант 1} & \textbf{Вариант 2}\\
+\subfloat[Адекватная случайная выборка]{\includegraphics[width=0.5\textwidth]{../data/pics/theoretical_adequate_random_sample_llh_phi.pdf}}&
+\subfloat[Адекватная случайная выборка]{\includegraphics[width=0.5\textwidth]{../data/pics/exploitational_adequate_random_sample_llh_phi.pdf}}\\
+\subfloat[Адекватная скоррелированная выборка]{\includegraphics[width=0.5\textwidth]{../data/pics/theoretical_adequate_correlated_sample_llh_phi.pdf}}&
+\subfloat[Адекватная скоррелированная выборка]{\includegraphics[width=0.5\textwidth]{../data/pics/exploitational_adequate_correlated_sample_llh_phi.pdf}}\\
+\subfloat[Адекватная ортогональная выборка]{\includegraphics[width=0.5\textwidth]{../data/pics/theoretical_adequate_orthogonal_sample_llh_phi.pdf}}&
+\subfloat[Адекватная ортогональная выборка]{\includegraphics[width=0.5\textwidth]{../data/pics/exploitational_adequate_orthogonal_sample_llh_phi.pdf}}\\
+\subfloat[Адекватная избыточная выборка]{\includegraphics[width=0.5\textwidth]{../data/pics/theoretical_adequate_redundant_sample_llh_phi.pdf}}&
+\subfloat[Адекватная избыточная выборка]{\includegraphics[width=0.5\textwidth]{../data/pics/exploitational_adequate_redundant_sample_llh_phi.pdf}}\\
+\end{tabular}
+
+\caption{Зависимость значения функции $\hat{l}(m, n)$ от объема выборки $m$ и количества параметров $n$}
+\label{fig101}
 \end{figure}
 
 На рис. 4 представлены функции ошибки MAPE для 4 функций $\phi \in \Phi$, аппроксимирующих $\hat{l}$, посчитанную в теоретическом и эмпирическом вариантах, с использованием или без использования ковариационной матрицы $\hat{A}$ вектора параметров $\hat{\mathbf{w}}$.
 
 \begin{figure}[h!t]\center
 \includegraphics[width=1\textwidth]{../data/pics/adequate_random_sample_MAPE_comparison.pdf}
-\caption{Функции $\hat{l}(m, n)$ и $\phi(p, \hat{A}(m, n), m, n)$}
+\caption{Функции $\hat{l}(m, n)$ и $\phi(p, \hat{A}(m, n), m, n)$ для адекватной случайной выборки}
 \label{fig1.7}
 \end{figure}
-
-$\newline$
-$\newline$
-$\newline$
-$\newline$
-$\newline$
-$\newline$
-$\newline$
-
 
 \subsection{Использование оценки $\hat{A}$ для вычисления объёма $m_0$}
 
