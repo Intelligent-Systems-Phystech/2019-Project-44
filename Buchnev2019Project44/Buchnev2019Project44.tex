@@ -399,7 +399,7 @@ $\newline$
 \subfloat[Адекватная скоррелированная выборка]{\includegraphics[width=0.5\textwidth]{../data/pics/theoretical_adequate_correlated_sample_llh.pdf}}\\
 \subfloat[Адекватная ортогональная выборка]{\includegraphics[width=0.5\textwidth]{../data/pics/theoretical_adequate_orthogonal_sample_llh.pdf}}&
 \subfloat[Адекватная избыточная выборка]{\includegraphics[width=0.5\textwidth]{../data/pics/theoretical_adequate_redundant_sample_llh.pdf}}\\
-\subfloat[Недекватная скоррелированная выборка]{\includegraphics[width=0.5\textwidth]{../data/pics/theoretical_adequate_random_sample_llh.pdf}}&\\
+\subfloat[Недекватная скоррелированная выборка]{\includegraphics[width=0.5\textwidth]{../data/pics/theoretical_inadequate_correlated_sample_llh.pdf}}&\\
 \end{tabular}
 
 \caption{Зависимость значения функции $\hat{l}(m, n)$ от объема выборки $m$ и количества параметров $n$}
@@ -423,6 +423,16 @@ $\newline$
 
 \caption{Зависимость значения функции $\hat{l}(m, n)$ от объема выборки $m$ и количества параметров $n$}
 \label{fig101}
+\end{figure}
+
+\begin{figure}[h!t]\center
+\centering\begin{tabular}{@{}c@{ }c@{ }c@{}}
+\subfloat[Адекватная избыточная выборка]{\includegraphics[width=0.5\textwidth]{../data/pics/theoretical_inadequate_correlated_sample_llh_phi.pdf}}&
+\subfloat[Адекватная избыточная выборка]{\includegraphics[width=0.5\textwidth]{../data/pics/exploitational_inadequate_correlated_sample_llh_phi.pdf}}\\
+\end{tabular}
+
+\caption{Зависимость значения функции $\hat{l}(m, n)$ от объема выборки $m$ и количества параметров $n$}
+\label{fig102}
 \end{figure}
 
 На рис. 4 представлены функции ошибки MAPE для 4 функций $\phi \in \Phi$, аппроксимирующих $\hat{l}$, посчитанную в теоретическом и эмпирическом вариантах, с использованием или без использования ковариационной матрицы $\hat{A}$ вектора параметров $\hat{\mathbf{w}}$.
