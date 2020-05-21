@@ -66,7 +66,7 @@ class LinearModel():
     def score(self, params):
         return self.X.T@self.y - self.X.T@self.X@params
 
-    def hessian(self, params):
+    def hessian(self):
         return -self.X.T@self.X
 
     def loglike_fixed(self, params):
@@ -75,11 +75,11 @@ class LinearModel():
     def score_fixed(self, params):
         return self.score(params) - self.alpha*params
 
-    def hessian_fixed(self, params):
-        return self.hessian(params) - self.alpha*np.eye(self.n)
+    def hessian_fixed(self):
+        return self.hessian() - self.alpha*np.eye(self.n)
     
     def covariance(self, params):
-        return np.linalg.inv(-self.hessian_fixed(params))
+        return np.linalg.inv(-self.hessian_fixed())
 
 
 class LogitModel():
@@ -127,10 +127,10 @@ class LogitModel():
         return self.score(params) - self.alpha*params
 
     def hessian_fixed(self, params):
-        return self.hessian(params) - self.alpha*np.eye(self.n)
+        return self.hessian() - self.alpha*np.eye(self.n)
 
     def covariance(self, params):
-        return np.linalg.inv(-self.hessian_fixed(params))
+        return np.linalg.inv(-self.hessian_fixed())
 
 
 class multicalculated():
@@ -242,7 +242,7 @@ def iDistribution(X, y, l = 0.5):
     statmodel = define_model(y)
 
     w_hat = get_params(X, y)
-    cov = np.linalg.inv(0.01*np.eye(w_hat.shape[0]) - statmodel(y, X).hessian(w_hat))
+    cov = np.linalg.inv(0.01*np.eye(w_hat.shape[0]) - statmodel(y, X).hessian())
 
     W = sps.multivariate_normal(mean=w_hat, cov = cov).rvs(size=10000)
 
@@ -254,7 +254,7 @@ def aDistribution(X, y, alpha = 0.1):
     statmodel = define_model(y)
 
     w_hat = get_params(X, y)
-    cov = np.linalg.inv(0.01*np.eye(w_hat.shape[0]) - statmodel(y, X).hessian(w_hat))
+    cov = np.linalg.inv(0.01*np.eye(w_hat.shape[0]) - statmodel(y, X).hessian())
 
     W = sps.multivariate_normal(mean=np.zeros(w_hat.shape[0]), cov = cov).rvs(size=10000)
 
@@ -271,7 +271,7 @@ def uFunction(X, y, c = 0.005):
 
     w_hat = get_params(X, y)
 
-    cov = np.linalg.inv(0.01*np.eye(X.shape[1]) - statmodel(y, X).hessian(w_hat))
+    cov = np.linalg.inv(0.01*np.eye(X.shape[1]) - statmodel(y, X).hessian())
 
     W = sps.multivariate_normal(mean=w_hat, cov = cov).rvs(size=100)
 
@@ -300,7 +300,7 @@ def klFunction(X, y):
 
     model_0 = statmodel(y, X)
     m_0 = get_params(X, y)
-    cov_0_inv = 0.01*np.eye(m_0.shape[0]) - model_0.hessian(m_0)
+    cov_0_inv = 0.01*np.eye(m_0.shape[0]) - model_0.hessian()
     cov_0 = np.linalg.inv(cov_0_inv)
 
     # ind = np.random.randint(0, X.shape[0])
@@ -314,7 +314,7 @@ def klFunction(X, y):
 
         model_1 = statmodel(y_new, X_new)
         m_1 = get_params(X_new, y_new)
-        cov_1_inv = 0.01*np.eye(m_1.shape[0]) - model_1.hessian(m_1)
+        cov_1_inv = 0.01*np.eye(m_1.shape[0]) - model_1.hessian()
         cov_1 = np.linalg.inv(cov_1_inv)
         list_of_res.append(D_KL_normal(m_0, cov_0, m_1, cov_1, cov_0_inv, cov_1_inv))
 

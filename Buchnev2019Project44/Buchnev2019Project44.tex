@@ -175,7 +175,7 @@ $$
 $$
 \end{enumerate}
 
-Для предсказания значения функции $\hat{l}(m)$ при $m > m_0$ введем семейство функций $\Phi = \{\phi(m) =  a + b\cdot m^c ~|~ a, b \in \mathbb{R}, c \in (-\infty, 0)\}$
+Для предсказания значения функции $\hat{l}(m)$ при $m > m_0$ введем семейство функций $\Phi = \{\phi(m) =  a + b\cdot e^{c \cdot m} ~|~ a, b \in \mathbb{R}, c \in (-\infty, 0)\}$
 Функция $\hat{l}$ приближается функцией вида:
 
 \begin{equation}\label{argmin_MAPE}
@@ -388,60 +388,78 @@ $$
 $$
 \end{enumerate}
 
-На рис. 2 представлена функция $\hat{l}(m, n)$, посчитанная  с помощью бутстрепа в варианте 1.
+На рис. 2 представлена функция $e^{-S_{\text{reg}}(m, n)}$, посчитанная  с помощью бутстрепа в варианте 1.
 
 $\newline$
 $\newline$
 
 \begin{figure}[h!t]\center
 \centering\begin{tabular}{@{}c@{ }c@{ }c@{}}
-\subfloat[Адекватная случайная выборка]{\includegraphics[width=0.5\textwidth]{../data/pics/theoretical_adequate_random_sample_llh.pdf}}&
-\subfloat[Адекватная скоррелированная выборка]{\includegraphics[width=0.5\textwidth]{../data/pics/theoretical_adequate_correlated_sample_llh.pdf}}\\
-\subfloat[Адекватная ортогональная выборка]{\includegraphics[width=0.5\textwidth]{../data/pics/theoretical_adequate_orthogonal_sample_llh.pdf}}&
-\subfloat[Адекватная избыточная выборка]{\includegraphics[width=0.5\textwidth]{../data/pics/theoretical_adequate_redundant_sample_llh.pdf}}\\
-\subfloat[Недекватная скоррелированная выборка]{\includegraphics[width=0.5\textwidth]{../data/pics/theoretical_inadequate_correlated_sample_llh.pdf}}&\\
+\subfloat[Адекватная случайная выборка]{\includegraphics[width=0.5\textwidth]{../data/pics/adequate_random_sample_llh.pdf}}&
+\subfloat[Адекватная скоррелированная выборка]{\includegraphics[width=0.5\textwidth]{../data/pics/adequate_correlated_sample_llh.pdf}}\\
+\subfloat[Адекватная ортогональная выборка]{\includegraphics[width=0.5\textwidth]{../data/pics/adequate_orthogonal_sample_llh.pdf}}&
+\subfloat[Адекватная избыточная выборка]{\includegraphics[width=0.5\textwidth]{../data/pics/adequate_redundant_sample_llh.pdf}}\\
 \end{tabular}
 
-\caption{Зависимость значения функции $\hat{l}(m, n)$ от объема выборки $m$ и количества параметров $n$}
+\caption{Зависимость значения функции $e^{-S_{\text{reg}}(m, n)}$ от объема выборки $m$ и количества параметров $n$}
 \label{fig100}
 \end{figure}
 
-На рис. 3 представлена аппроксимация $\phi(p, \hat{A}(m, n), m, n) \sim \hat{l}(m, n)$ при $m_0 = 100$.
+На рис. 3 представлена аппроксимация $\phi(p, \hat{A}(m, n), m, n) \sim e^{-S_{\text{reg}}(m, n)}$ при $m_0 = 50$.
 
 \begin{figure}[h!t]\center
 \centering\begin{tabular}{@{}c@{ }c@{ }c@{}}
-\textbf{С использованием $\hat{A}(m, n)$} & \textbf{Без использования $\hat{A}(m, n)$}\\
-\subfloat[Адекватная случайная выборка]{\includegraphics[width=0.5\textwidth]{../data/pics/theoretical_adequate_random_sample_llh_phi.pdf}}&
-\subfloat[Адекватная случайная выборка]{\includegraphics[width=0.5\textwidth]{../data/pics/exploitational_adequate_random_sample_llh_phi.pdf}}\\
-\subfloat[Адекватная скоррелированная выборка]{\includegraphics[width=0.5\textwidth]{../data/pics/theoretical_adequate_correlated_sample_llh_phi.pdf}}&
-\subfloat[Адекватная скоррелированная выборка]{\includegraphics[width=0.5\textwidth]{../data/pics/exploitational_adequate_correlated_sample_llh_phi.pdf}}\\
-\subfloat[Адекватная ортогональная выборка]{\includegraphics[width=0.5\textwidth]{../data/pics/theoretical_adequate_orthogonal_sample_llh_phi.pdf}}&
-\subfloat[Адекватная ортогональная выборка]{\includegraphics[width=0.5\textwidth]{../data/pics/exploitational_adequate_orthogonal_sample_llh_phi.pdf}}\\
-\subfloat[Адекватная избыточная выборка]{\includegraphics[width=0.5\textwidth]{../data/pics/theoretical_adequate_redundant_sample_llh_phi.pdf}}&
-\subfloat[Адекватная избыточная выборка]{\includegraphics[width=0.5\textwidth]{../data/pics/exploitational_adequate_redundant_sample_llh_phi.pdf}}\\
+\subfloat[Адекватная случайная выборка]{\includegraphics[width=0.5\textwidth]{../data/pics/adequate_random_sample_llh_phi.pdf}}&
+\subfloat[Адекватная скоррелированная выборка]{\includegraphics[width=0.5\textwidth]{../data/pics/adequate_correlated_sample_llh_phi.pdf}}\\
+\subfloat[Адекватная ортогональная выборка]{\includegraphics[width=0.5\textwidth]{../data/pics/adequate_orthogonal_sample_llh_phi.pdf}}&
+\subfloat[Адекватная избыточная выборка]{\includegraphics[width=0.5\textwidth]{../data/pics/adequate_redundant_sample_llh_phi.pdf}}\\
 \end{tabular}
 
-\caption{Зависимость значения функции $\hat{l}(m, n)$ от объема выборки $m$ и количества параметров $n$}
+\caption{Аппроксимация  $\phi(m, n) \sim e^{-S_{\text{reg}}(m, n)}$}
 \label{fig101}
 \end{figure}
 
 \begin{figure}[h!t]\center
 \centering\begin{tabular}{@{}c@{ }c@{ }c@{}}
-\subfloat[Адекватная избыточная выборка]{\includegraphics[width=0.5\textwidth]{../data/pics/theoretical_inadequate_correlated_sample_llh_phi.pdf}}&
-\subfloat[Адекватная избыточная выборка]{\includegraphics[width=0.5\textwidth]{../data/pics/exploitational_inadequate_correlated_sample_llh_phi.pdf}}\\
+\subfloat[Адекватная случайная выборка]{\includegraphics[width=0.5\textwidth]{../data/pics/adequate_random_sample_MAPE_comparison.pdf}}&
+\subfloat[Адекватная скоррелированная выборка]{\includegraphics[width=0.5\textwidth]{../data/pics/adequate_correlated_sample_MAPE_comparison.pdf}}\\
+\subfloat[Адекватная ортогональная выборка]{\includegraphics[width=0.5\textwidth]{../data/pics/adequate_orthogonal_sample_MAPE_comparison.pdf}}&
+\subfloat[Адекватная избыточная выборка]{\includegraphics[width=0.5\textwidth]{../data/pics/adequate_redundant_sample_MAPE_comparison.pdf}}\\
 \end{tabular}
 
-\caption{Зависимость значения функции $\hat{l}(m, n)$ от объема выборки $m$ и количества параметров $n$}
+\caption{Зависимость значения функции $MAPE(\phi(m, n), e^{-S_{\text{reg}}(m, n)})$ от объема выборки $m_0$}
 \label{fig102}
 \end{figure}
 
-На рис. 4 представлены функции ошибки MAPE для 4 функций $\phi \in \Phi$, аппроксимирующих $\hat{l}$, посчитанную в теоретическом и эмпирическом вариантах, с использованием или без использования ковариационной матрицы $\hat{A}$ вектора параметров $\hat{\mathbf{w}}$.
+На рис. 4 представлены функции ошибки MAPE для 4 функций $\phi \in \Phi$, аппроксимирующих $e^{-S_{\text{reg}}(m, n)}$, посчитанную в двух вариантах.
+
+Получились следующие значения $m_0, n$ для различных конфигураций выборок:
+
+\begin{enumerate}
+	\item Адекватная случайная выборка: $m_0 = 16, n = 10$.
+	\item Адекватная скоррелированная выборка: $m_0 = 3, n = 2$.
+	\item Адекватная ортогональная выборка: $m_0 = 11, n = 10$.
+	\item Адекватная избыточная выборка: $m_0 = 7, n = 5$.
+\end{enumerate}
 
 \begin{figure}[h!t]\center
-\includegraphics[width=1\textwidth]{../data/pics/adequate_random_sample_MAPE_comparison.pdf}
-\caption{Функции $\hat{l}(m, n)$ и $\phi(p, \hat{A}(m, n), m, n)$ для адекватной случайной выборки}
-\label{fig1.7}
+\centering\begin{tabular}{@{}c@{ }c@{ }c@{}}
+\subfloat[Адекватная случайная выборка]{\includegraphics[width=0.5\textwidth]{../data/pics/adequate_random_sample_MAPE_m_comparison_n10.pdf}}&
+\subfloat[Адекватная скоррелированная выборка]{\includegraphics[width=0.5\textwidth]{../data/pics/adequate_correlated_sample_MAPE_m_comparison_n2.pdf}}\\
+\subfloat[Адекватная ортогональная выборка]{\includegraphics[width=0.5\textwidth]{../data/pics/adequate_orthogonal_sample_MAPE_m_comparison_n10.pdf}}&
+\subfloat[Адекватная избыточная выборка]{\includegraphics[width=0.5\textwidth]{../data/pics/adequate_redundant_sample_MAPE_m_comparison_n7.pdf}}\\
+\end{tabular}
+
+\caption{Зависимость значения функции $MAPE(m^*_{\text{pred}}, m^*)$ от объема выборки $m_0$}
+\label{fig103}
 \end{figure}
+
+$\newline$
+$\newline$
+$\newline$
+$\newline$
+$\newline$
+
 
 \subsection{Использование оценки $\hat{A}$ для вычисления объёма $m_0$}
 
