@@ -773,7 +773,7 @@ def DataLoader(name = "servo", is_binary_answ = True, folder_path = '../data/dat
         y = np.array(y, dtype = np.float64)
 
     if name == 'wine':
-        X, y = LoadData(url = "https://raw.githubusercontent.com/ttgadaev/SampleSize/master/datasets/wine.csv", 
+        X, y = LoadData(url = "https://raw.githubusercontent.com/ttgadaev/SampleSizeEstimation/master/datasets/wine.csv", 
                         path = folder_path + 'wine.csv')
 
         X = np.array(X, dtype = np.float64)
@@ -790,7 +790,7 @@ def DataLoader(name = "servo", is_binary_answ = True, folder_path = '../data/dat
         y = np.array(y, dtype = np.float64)
         
     if name == 'iris':
-        X, y = LoadData(url = "https://raw.githubusercontent.com/ttgadaev/SampleSize/master/datasets/iris.csv", 
+        X, y = LoadData(url = "https://raw.githubusercontent.com/ttgadaev/SampleSizeEstimation/master/datasets/iris.csv", 
                         path = folder_path + 'iris.csv')
 
         X = np.array(X, dtype = np.float64)
@@ -810,7 +810,7 @@ def DataLoader(name = "servo", is_binary_answ = True, folder_path = '../data/dat
         y = np.array(y, dtype = np.int64)
 
     if name == 'abalone':
-        X, y = LoadData(url = "https://raw.githubusercontent.com/ttgadaev/SampleSize/master/datasets/abalone.csv", 
+        X, y = LoadData(url = "https://raw.githubusercontent.com/ttgadaev/SampleSizeEstimation/master/datasets/abalone.csv", 
                         path = folder_path + 'abalone.csv')
 
         X = np.array(X, dtype = np.float64)

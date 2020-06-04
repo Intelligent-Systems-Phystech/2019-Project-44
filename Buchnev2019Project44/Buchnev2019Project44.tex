@@ -395,62 +395,86 @@ $\newline$
 
 \begin{figure}[h!t]\center
 \centering\begin{tabular}{@{}c@{ }c@{ }c@{}}
+\textbf{Матожидание} & \textbf{Дисперсия}\\
 \subfloat[Адекватная случайная выборка]{\includegraphics[width=0.5\textwidth]{../data/pics/adequate_random_sample_llh.pdf}}&
-\subfloat[Адекватная скоррелированная выборка]{\includegraphics[width=0.5\textwidth]{../data/pics/adequate_correlated_sample_llh.pdf}}\\
+\subfloat[Адекватная случайная выборка]{\includegraphics[width=0.5\textwidth]{../data/pics/adequate_random_sample_llh_std.pdf}}\\
+\subfloat[Адекватная скоррелированная выборка]{\includegraphics[width=0.5\textwidth]{../data/pics/adequate_correlated_sample_llh.pdf}}&
+\subfloat[Адекватная скоррелированная выборка]{\includegraphics[width=0.5\textwidth]{../data/pics/adequate_correlated_sample_llh_std.pdf}}\\
 \subfloat[Адекватная ортогональная выборка]{\includegraphics[width=0.5\textwidth]{../data/pics/adequate_orthogonal_sample_llh.pdf}}&
-\subfloat[Адекватная избыточная выборка]{\includegraphics[width=0.5\textwidth]{../data/pics/adequate_redundant_sample_llh.pdf}}\\
+\subfloat[Адекватная ортогональная выборка]{\includegraphics[width=0.5\textwidth]{../data/pics/adequate_orthogonal_sample_llh_std.pdf}}\\
+\subfloat[Адекватная избыточная выборка]{\includegraphics[width=0.5\textwidth]{../data/pics/adequate_redundant_sample_llh.pdf}}&\subfloat[Адекватная избыточная выборка]{\includegraphics[width=0.5\textwidth]{../data/pics/adequate_redundant_sample_llh_std.pdf}}\\
+%\subfloat[Diabetes]{\includegraphics[width=0.5\textwidth]{../data/pics/diabetes_sample_llh.pdf}}&
+%\subfloat[Boston]{\includegraphics[width=0.5\textwidth]{../data/pics/boston_sample_llh.pdf}}\\
+%\subfloat[Wine]{\includegraphics[width=0.5\textwidth]{../data/pics/wine_sample_llh.pdf}}\\
 \end{tabular}
 
-\caption{Зависимость значения функции $e^{-S_{\text{reg}}(m, n)}$ от объема выборки $m$ и количества параметров $n$}
+\caption{Зависимость значения функции $e^{-S(m, n)}$ от объема выборки $m$ и количества параметров $n$ для синтетических выборок}
 \label{fig100}
 \end{figure}
 
-На рис. 3 представлена аппроксимация $\phi(p, \hat{A}(m, n), m, n) \sim e^{-S_{\text{reg}}(m, n)}$ при $m_0 = 50$.
-
 \begin{figure}[h!t]\center
 \centering\begin{tabular}{@{}c@{ }c@{ }c@{}}
-\subfloat[Адекватная случайная выборка]{\includegraphics[width=0.5\textwidth]{../data/pics/adequate_random_sample_llh_phi.pdf}}&
-\subfloat[Адекватная скоррелированная выборка]{\includegraphics[width=0.5\textwidth]{../data/pics/adequate_correlated_sample_llh_phi.pdf}}\\
-\subfloat[Адекватная ортогональная выборка]{\includegraphics[width=0.5\textwidth]{../data/pics/adequate_orthogonal_sample_llh_phi.pdf}}&
-\subfloat[Адекватная избыточная выборка]{\includegraphics[width=0.5\textwidth]{../data/pics/adequate_redundant_sample_llh_phi.pdf}}\\
+\textbf{Аппроксимация $e^{-S(m, n)}$} & \textbf{Предсказание $m^*$}\\
+\subfloat[Адекватная случайная выборка]{\includegraphics[width=0.5\textwidth]{../data/pics/adequate_random_sample_MAPE_comparison.pdf}}&
+\subfloat[Адекватная случайная выборка]{\includegraphics[width=0.5\textwidth]{../data/pics/adequate_random_sample_MAPE_m_comparison_n10.pdf}}\\
+\subfloat[Адекватная скоррелированная выборка]{\includegraphics[width=0.5\textwidth]{../data/pics/adequate_correlated_sample_MAPE_comparison.pdf}}&
+\subfloat[Адекватная скоррелированная выборка]{\includegraphics[width=0.5\textwidth]{../data/pics/adequate_correlated_sample_MAPE_m_comparison_n2.pdf}}\\
+\subfloat[Адекватная ортогональная выборка]{\includegraphics[width=0.5\textwidth]{../data/pics/adequate_orthogonal_sample_MAPE_comparison.pdf}}&
+\subfloat[Адекватная ортогональная выборка]{\includegraphics[width=0.5\textwidth]{../data/pics/adequate_orthogonal_sample_MAPE_m_comparison_n10.pdf}}\\
+\subfloat[Адекватная избыточная выборка]{\includegraphics[width=0.5\textwidth]{../data/pics/adequate_redundant_sample_MAPE_comparison.pdf}}&
+\subfloat[Адекватная избыточная выборка]{\includegraphics[width=0.5\textwidth]{../data/pics/adequate_redundant_sample_MAPE_m_comparison_n5.pdf}}\\
 \end{tabular}
 
-\caption{Аппроксимация  $\phi(m, n) \sim e^{-S_{\text{reg}}(m, n)}$}
+\caption{Качество предсказания $e^{-S(m, n)}$ и $m^*$ в зависимости от объема обучающей выборки $m_0$ для синтетических выборок}
 \label{fig101}
 \end{figure}
 
 \begin{figure}[h!t]\center
 \centering\begin{tabular}{@{}c@{ }c@{ }c@{}}
-\subfloat[Адекватная случайная выборка]{\includegraphics[width=0.5\textwidth]{../data/pics/adequate_random_sample_MAPE_comparison.pdf}}&
-\subfloat[Адекватная скоррелированная выборка]{\includegraphics[width=0.5\textwidth]{../data/pics/adequate_correlated_sample_MAPE_comparison.pdf}}\\
-\subfloat[Адекватная ортогональная выборка]{\includegraphics[width=0.5\textwidth]{../data/pics/adequate_orthogonal_sample_MAPE_comparison.pdf}}&
-\subfloat[Адекватная избыточная выборка]{\includegraphics[width=0.5\textwidth]{../data/pics/adequate_redundant_sample_MAPE_comparison.pdf}}\\
+\textbf{Матожидание} & \textbf{Дисперсия}\\
+\subfloat[Diabetes]{\includegraphics[width=0.5\textwidth]{../data/pics/diabetes_sample_llh.pdf}}&
+\subfloat[Diabetes]{\includegraphics[width=0.5\textwidth]{../data/pics/diabetes_sample_llh_std.pdf}}\\
+\subfloat[Boston]{\includegraphics[width=0.5\textwidth]{../data/pics/boston_sample_llh.pdf}}&
+\subfloat[Boston]{\includegraphics[width=0.5\textwidth]{../data/pics/boston_sample_llh_std.pdf}}\\
+\subfloat[Wine]{\includegraphics[width=0.5\textwidth]{../data/pics/wine_sample_llh.pdf}}&
+\subfloat[Wine]{\includegraphics[width=0.5\textwidth]{../data/pics/wine_sample_llh_std.pdf}}\\
 \end{tabular}
 
-\caption{Зависимость значения функции $MAPE(\phi(m, n), e^{-S_{\text{reg}}(m, n)})$ от объема выборки $m_0$}
+\caption{Зависимость значения функции $e^{-S(m, n)}$ от объема выборки $m$ и количества параметров $n$ для выборок из UCI репозитория}
 \label{fig102}
 \end{figure}
 
 На рис. 4 представлены функции ошибки MAPE для 4 функций $\phi \in \Phi$, аппроксимирующих $e^{-S_{\text{reg}}(m, n)}$, посчитанную в двух вариантах.
 
-Получились следующие значения $m_0, n$ для различных конфигураций выборок:
+\begin{figure}[h!t]\center
+\centering\begin{tabular}{@{}c@{ }c@{ }c@{}}
+\textbf{Аппроксимация $e^{-S(m, n)}$} & \textbf{Предсказание $m^*$}\\
+\subfloat[Diabetees]{\includegraphics[width=0.5\textwidth]{../data/pics/diabetes_sample_MAPE_comparison.pdf}}&
+\subfloat[Diabetees]{\includegraphics[width=0.5\textwidth]{../data/pics/diabetes_sample_MAPE_m_comparison_n11.pdf}}\\
+\subfloat[Boston]{\includegraphics[width=0.5\textwidth]{../data/pics/boston_sample_MAPE_comparison.pdf}}&
+\subfloat[Boston]{\includegraphics[width=0.5\textwidth]{../data/pics/boston_sample_MAPE_m_comparison_n14.pdf}}\\
+\subfloat[Wine]{\includegraphics[width=0.5\textwidth]{../data/pics/wine_sample_MAPE_comparison.pdf}}&
+\subfloat[Wine]{\includegraphics[width=0.5\textwidth]{../data/pics/wine_sample_MAPE_m_comparison_n14.pdf}}\\
+\end{tabular}
 
-\begin{enumerate}
-	\item Адекватная случайная выборка: $m_0 = 16, n = 10$.
-	\item Адекватная скоррелированная выборка: $m_0 = 3, n = 2$.
-	\item Адекватная ортогональная выборка: $m_0 = 11, n = 10$.
-	\item Адекватная избыточная выборка: $m_0 = 7, n = 5$.
-\end{enumerate}
+\caption{Качество предсказания $e^{-S(m, n)}$ и $m^*$ в зависимости от объема обучающей выборки $m_0$ для выборок из UCI репозитория}
+\label{fig103}
+\end{figure}
 
 \begin{figure}[h!t]\center
 \centering\begin{tabular}{@{}c@{ }c@{ }c@{}}
-\subfloat[Адекватная случайная выборка]{\includegraphics[width=0.5\textwidth]{../data/pics/adequate_random_sample_MAPE_m_comparison_n10.pdf}}&
-\subfloat[Адекватная скоррелированная выборка]{\includegraphics[width=0.5\textwidth]{../data/pics/adequate_correlated_sample_MAPE_m_comparison_n2.pdf}}\\
-\subfloat[Адекватная ортогональная выборка]{\includegraphics[width=0.5\textwidth]{../data/pics/adequate_orthogonal_sample_MAPE_m_comparison_n10.pdf}}&
-\subfloat[Адекватная избыточная выборка]{\includegraphics[width=0.5\textwidth]{../data/pics/adequate_redundant_sample_MAPE_m_comparison_n7.pdf}}\\
+\textbf{Аппроксимация $e^{-S(m, n)}$} & \textbf{Предсказание $m^*$}\\
+\subfloat[Адекватная случайная выборка]{\includegraphics[width=0.5\textwidth]{../data/pics/adequate_random_sample_models_distance_10.pdf}}&
+\subfloat[Адекватная скоррелированная выборка]{\includegraphics[width=0.5\textwidth]{../data/pics/adequate_correlated_sample_models_distance_2.pdf}}\\
+\subfloat[Адекватная ортогональная выборка]{\includegraphics[width=0.5\textwidth]{../data/pics/adequate_orthogonal_sample_models_distance_10.pdf}}&
+\subfloat[Адекватная избыточная выборка]{\includegraphics[width=0.5\textwidth]{../data/pics/adequate_redundant_sample_models_distance_5.pdf}}\\
+\subfloat[Diabetees]{\includegraphics[width=0.5\textwidth]{../data/pics/diabetes_sample_models_distance_11.pdf}}&
+\subfloat[Boston]{\includegraphics[width=0.5\textwidth]{../data/pics/boston_sample_models_distance_14.pdf}}\\
+\subfloat[Wine]{\includegraphics[width=0.5\textwidth]{../data/pics/wine_sample_models_distance_14.pdf}}\\
+
 \end{tabular}
 
-\caption{Зависимость значения функции $MAPE(m^*_{\text{pred}}, m^*)$ от объема выборки $m_0$}
+\caption{Расстояние между моделями с различным количеством параметров}
 \label{fig103}
 \end{figure}
 

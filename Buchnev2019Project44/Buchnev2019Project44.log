@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.3.10)  21 MAY 2020 19:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.3.10)  4 JUN 2020 13:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1496,6 +1496,9 @@ Package: dsfont 1995/08/01 v0.1 Double stroke roman fonts
 )
 (./Buchnev2019Project44.aux
 
+LaTeX Warning: Label `fig103' multiply defined.
+
+
 LaTeX Warning: Label `fig100' multiply defined.
 
 )
@@ -1624,30 +1627,61 @@ Underfull \hbox (badness 10000) in paragraph at lines 393--395
 File: ../data/pics/adequate_random_sample_llh.pdf Graphic file (type pdf)
 <use ../data/pics/adequate_random_sample_llh.pdf>
 Package pdftex.def Info: ../data/pics/adequate_random_sample_llh.pdf  used on i
-nput line 398.
+nput line 399.
 (pdftex.def)             Requested size: 241.84842pt x 128.02927pt.
-<../data/pics/adequate_correlated_sample_llh.pdf, id=56, 2457.18pt x 1300.86pt>
+<../data/pics/adequate_random_sample_llh_std.pdf, id=56, 2457.18pt x 1300.86pt>
+
+File: ../data/pics/adequate_random_sample_llh_std.pdf Graphic file (type pdf)
+<use ../data/pics/adequate_random_sample_llh_std.pdf>
+Package pdftex.def Info: ../data/pics/adequate_random_sample_llh_std.pdf  used 
+on input line 400.
+(pdftex.def)             Requested size: 241.84842pt x 128.02927pt.
+<../data/pics/adequate_correlated_sample_llh.pdf, id=57, 2457.18pt x 1300.86pt>
 
 File: ../data/pics/adequate_correlated_sample_llh.pdf Graphic file (type pdf)
 <use ../data/pics/adequate_correlated_sample_llh.pdf>
 Package pdftex.def Info: ../data/pics/adequate_correlated_sample_llh.pdf  used 
-on input line 399.
+on input line 401.
 (pdftex.def)             Requested size: 241.84842pt x 128.02927pt.
-<../data/pics/adequate_orthogonal_sample_llh.pdf, id=57, 2457.18pt x 1300.86pt>
+<../data/pics/adequate_correlated_sample_llh_std.pdf, id=58, 2457.18pt x 1300.8
+6pt>
+File: ../data/pics/adequate_correlated_sample_llh_std.pdf Graphic file (type pd
+f)
+<use ../data/pics/adequate_correlated_sample_llh_std.pdf>
+Package pdftex.def Info: ../data/pics/adequate_correlated_sample_llh_std.pdf  u
+sed on input line 402.
+(pdftex.def)             Requested size: 241.84842pt x 128.02927pt.
+<../data/pics/adequate_orthogonal_sample_llh.pdf, id=59, 2457.18pt x 1300.86pt>
 
 File: ../data/pics/adequate_orthogonal_sample_llh.pdf Graphic file (type pdf)
 <use ../data/pics/adequate_orthogonal_sample_llh.pdf>
 Package pdftex.def Info: ../data/pics/adequate_orthogonal_sample_llh.pdf  used 
-on input line 400.
+on input line 403.
 (pdftex.def)             Requested size: 241.84842pt x 128.02927pt.
-<../data/pics/adequate_redundant_sample_llh.pdf, id=58, 2457.18pt x 1300.86pt>
+<../data/pics/adequate_orthogonal_sample_llh_std.pdf, id=60, 2457.18pt x 1300.8
+6pt>
+File: ../data/pics/adequate_orthogonal_sample_llh_std.pdf Graphic file (type pd
+f)
+<use ../data/pics/adequate_orthogonal_sample_llh_std.pdf>
+Package pdftex.def Info: ../data/pics/adequate_orthogonal_sample_llh_std.pdf  u
+sed on input line 404.
+(pdftex.def)             Requested size: 241.84842pt x 128.02927pt.
+<../data/pics/adequate_redundant_sample_llh.pdf, id=61, 2457.18pt x 1300.86pt>
 File: ../data/pics/adequate_redundant_sample_llh.pdf Graphic file (type pdf)
 <use ../data/pics/adequate_redundant_sample_llh.pdf>
 Package pdftex.def Info: ../data/pics/adequate_redundant_sample_llh.pdf  used o
-n input line 401.
+n input line 405.
+(pdftex.def)             Requested size: 241.84842pt x 128.02927pt.
+<../data/pics/adequate_redundant_sample_llh_std.pdf, id=62, 2457.18pt x 1300.86
+pt>
+File: ../data/pics/adequate_redundant_sample_llh_std.pdf Graphic file (type pdf
+)
+<use ../data/pics/adequate_redundant_sample_llh_std.pdf>
+Package pdftex.def Info: ../data/pics/adequate_redundant_sample_llh_std.pdf  us
+ed on input line 405.
 (pdftex.def)             Requested size: 241.84842pt x 128.02927pt.
 
-Overfull \hbox (7.83142pt too wide) in paragraph at lines 397--403
+Overfull \hbox (7.83142pt too wide) in paragraph at lines 397--410
  [] 
  []
 
@@ -1657,118 +1691,246 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  []
 
 [6 <../data/pics/synthetic_S.pdf>]
-<../data/pics/adequate_random_sample_llh_phi.pdf, id=117, 2457.18pt x 1300.86pt
->
-File: ../data/pics/adequate_random_sample_llh_phi.pdf Graphic file (type pdf)
-<use ../data/pics/adequate_random_sample_llh_phi.pdf>
-Package pdftex.def Info: ../data/pics/adequate_random_sample_llh_phi.pdf  used 
-on input line 412.
-(pdftex.def)             Requested size: 241.84842pt x 128.02927pt.
-<../data/pics/adequate_correlated_sample_llh_phi.pdf, id=118, 2457.18pt x 1300.
-86pt>
-File: ../data/pics/adequate_correlated_sample_llh_phi.pdf Graphic file (type pd
-f)
-<use ../data/pics/adequate_correlated_sample_llh_phi.pdf>
-Package pdftex.def Info: ../data/pics/adequate_correlated_sample_llh_phi.pdf  u
-sed on input line 413.
-(pdftex.def)             Requested size: 241.84842pt x 128.02927pt.
-<../data/pics/adequate_orthogonal_sample_llh_phi.pdf, id=119, 2457.18pt x 1300.
-86pt>
-File: ../data/pics/adequate_orthogonal_sample_llh_phi.pdf Graphic file (type pd
-f)
-<use ../data/pics/adequate_orthogonal_sample_llh_phi.pdf>
-Package pdftex.def Info: ../data/pics/adequate_orthogonal_sample_llh_phi.pdf  u
-sed on input line 414.
-(pdftex.def)             Requested size: 241.84842pt x 128.02927pt.
-<../data/pics/adequate_redundant_sample_llh_phi.pdf, id=120, 2457.18pt x 1300.8
-6pt>
-File: ../data/pics/adequate_redundant_sample_llh_phi.pdf Graphic file (type pdf
-)
-<use ../data/pics/adequate_redundant_sample_llh_phi.pdf>
-Package pdftex.def Info: ../data/pics/adequate_redundant_sample_llh_phi.pdf  us
-ed on input line 415.
-(pdftex.def)             Requested size: 241.84842pt x 128.02927pt.
-
-Overfull \hbox (7.83142pt too wide) in paragraph at lines 411--417
- [] 
- []
-
 <../data/pics/adequate_random_sample_MAPE_comparison.pdf, id=121, 1734.48pt x 8
 67.24pt>
 File: ../data/pics/adequate_random_sample_MAPE_comparison.pdf Graphic file (typ
 e pdf)
 <use ../data/pics/adequate_random_sample_MAPE_comparison.pdf>
 Package pdftex.def Info: ../data/pics/adequate_random_sample_MAPE_comparison.pd
-f  used on input line 424.
+f  used on input line 418.
 (pdftex.def)             Requested size: 241.84842pt x 120.92314pt.
-<../data/pics/adequate_correlated_sample_MAPE_comparison.pdf, id=122, 1734.48pt
- x 867.24pt>
-File: ../data/pics/adequate_correlated_sample_MAPE_comparison.pdf Graphic file 
-(type pdf)
-<use ../data/pics/adequate_correlated_sample_MAPE_comparison.pdf>
-Package pdftex.def Info: ../data/pics/adequate_correlated_sample_MAPE_compariso
-n.pdf  used on input line 425.
-(pdftex.def)             Requested size: 241.84842pt x 120.92314pt.
-<../data/pics/adequate_orthogonal_sample_MAPE_comparison.pdf, id=123, 1734.48pt
- x 867.24pt>
-File: ../data/pics/adequate_orthogonal_sample_MAPE_comparison.pdf Graphic file 
-(type pdf)
-<use ../data/pics/adequate_orthogonal_sample_MAPE_comparison.pdf>
-Package pdftex.def Info: ../data/pics/adequate_orthogonal_sample_MAPE_compariso
-n.pdf  used on input line 426.
-(pdftex.def)             Requested size: 241.84842pt x 120.92314pt.
-<../data/pics/adequate_redundant_sample_MAPE_comparison.pdf, id=124, 1734.48pt 
-x 867.24pt>
-File: ../data/pics/adequate_redundant_sample_MAPE_comparison.pdf Graphic file (
-type pdf)
-<use ../data/pics/adequate_redundant_sample_MAPE_comparison.pdf>
-Package pdftex.def Info: ../data/pics/adequate_redundant_sample_MAPE_comparison
-.pdf  used on input line 427.
-(pdftex.def)             Requested size: 241.84842pt x 120.92314pt.
-
-Overfull \hbox (7.83142pt too wide) in paragraph at lines 423--429
- [] 
- []
-
-<../data/pics/adequate_random_sample_MAPE_m_comparison_n10.pdf, id=125, 1734.48
+<../data/pics/adequate_random_sample_MAPE_m_comparison_n10.pdf, id=122, 1734.48
 pt x 867.24pt>
 File: ../data/pics/adequate_random_sample_MAPE_m_comparison_n10.pdf Graphic fil
 e (type pdf)
 <use ../data/pics/adequate_random_sample_MAPE_m_comparison_n10.pdf>
 Package pdftex.def Info: ../data/pics/adequate_random_sample_MAPE_m_comparison_
-n10.pdf  used on input line 447.
+n10.pdf  used on input line 419.
 (pdftex.def)             Requested size: 241.84842pt x 120.92314pt.
-<../data/pics/adequate_correlated_sample_MAPE_m_comparison_n2.pdf, id=126, 1734
+<../data/pics/adequate_correlated_sample_MAPE_comparison.pdf, id=123, 1734.48pt
+ x 867.24pt>
+File: ../data/pics/adequate_correlated_sample_MAPE_comparison.pdf Graphic file 
+(type pdf)
+<use ../data/pics/adequate_correlated_sample_MAPE_comparison.pdf>
+Package pdftex.def Info: ../data/pics/adequate_correlated_sample_MAPE_compariso
+n.pdf  used on input line 420.
+(pdftex.def)             Requested size: 241.84842pt x 120.92314pt.
+<../data/pics/adequate_correlated_sample_MAPE_m_comparison_n2.pdf, id=124, 1734
 .48pt x 867.24pt>
 File: ../data/pics/adequate_correlated_sample_MAPE_m_comparison_n2.pdf Graphic 
 file (type pdf)
 <use ../data/pics/adequate_correlated_sample_MAPE_m_comparison_n2.pdf>
 Package pdftex.def Info: ../data/pics/adequate_correlated_sample_MAPE_m_compari
-son_n2.pdf  used on input line 448.
+son_n2.pdf  used on input line 421.
 (pdftex.def)             Requested size: 241.84842pt x 120.92314pt.
-<../data/pics/adequate_orthogonal_sample_MAPE_m_comparison_n10.pdf, id=127, 173
+<../data/pics/adequate_orthogonal_sample_MAPE_comparison.pdf, id=125, 1734.48pt
+ x 867.24pt>
+File: ../data/pics/adequate_orthogonal_sample_MAPE_comparison.pdf Graphic file 
+(type pdf)
+<use ../data/pics/adequate_orthogonal_sample_MAPE_comparison.pdf>
+Package pdftex.def Info: ../data/pics/adequate_orthogonal_sample_MAPE_compariso
+n.pdf  used on input line 422.
+(pdftex.def)             Requested size: 241.84842pt x 120.92314pt.
+<../data/pics/adequate_orthogonal_sample_MAPE_m_comparison_n10.pdf, id=126, 173
 4.48pt x 867.24pt>
 File: ../data/pics/adequate_orthogonal_sample_MAPE_m_comparison_n10.pdf Graphic
  file (type pdf)
 <use ../data/pics/adequate_orthogonal_sample_MAPE_m_comparison_n10.pdf>
 Package pdftex.def Info: ../data/pics/adequate_orthogonal_sample_MAPE_m_compari
-son_n10.pdf  used on input line 449.
+son_n10.pdf  used on input line 423.
 (pdftex.def)             Requested size: 241.84842pt x 120.92314pt.
-<../data/pics/adequate_redundant_sample_MAPE_m_comparison_n7.pdf, id=128, 1734.
+<../data/pics/adequate_redundant_sample_MAPE_comparison.pdf, id=127, 1734.48pt 
+x 867.24pt>
+File: ../data/pics/adequate_redundant_sample_MAPE_comparison.pdf Graphic file (
+type pdf)
+<use ../data/pics/adequate_redundant_sample_MAPE_comparison.pdf>
+Package pdftex.def Info: ../data/pics/adequate_redundant_sample_MAPE_comparison
+.pdf  used on input line 424.
+(pdftex.def)             Requested size: 241.84842pt x 120.92314pt.
+<../data/pics/adequate_redundant_sample_MAPE_m_comparison_n5.pdf, id=128, 1734.
 48pt x 867.24pt>
-File: ../data/pics/adequate_redundant_sample_MAPE_m_comparison_n7.pdf Graphic f
+File: ../data/pics/adequate_redundant_sample_MAPE_m_comparison_n5.pdf Graphic f
 ile (type pdf)
-<use ../data/pics/adequate_redundant_sample_MAPE_m_comparison_n7.pdf>
+<use ../data/pics/adequate_redundant_sample_MAPE_m_comparison_n5.pdf>
 Package pdftex.def Info: ../data/pics/adequate_redundant_sample_MAPE_m_comparis
-on_n7.pdf  used on input line 450.
+on_n5.pdf  used on input line 425.
 (pdftex.def)             Requested size: 241.84842pt x 120.92314pt.
 
-Overfull \hbox (7.83142pt too wide) in paragraph at lines 446--452
+Overfull \hbox (7.83142pt too wide) in paragraph at lines 416--427
+ [] 
+ []
+
+<../data/pics/diabetes_sample_llh.pdf, id=129, 2457.18pt x 1300.86pt>
+File: ../data/pics/diabetes_sample_llh.pdf Graphic file (type pdf)
+<use ../data/pics/diabetes_sample_llh.pdf>
+Package pdftex.def Info: ../data/pics/diabetes_sample_llh.pdf  used on input li
+ne 435.
+(pdftex.def)             Requested size: 241.84842pt x 128.02927pt.
+<../data/pics/diabetes_sample_llh_std.pdf, id=130, 2457.18pt x 1300.86pt>
+File: ../data/pics/diabetes_sample_llh_std.pdf Graphic file (type pdf)
+<use ../data/pics/diabetes_sample_llh_std.pdf>
+Package pdftex.def Info: ../data/pics/diabetes_sample_llh_std.pdf  used on inpu
+t line 436.
+(pdftex.def)             Requested size: 241.84842pt x 128.02927pt.
+<../data/pics/boston_sample_llh.pdf, id=131, 2457.18pt x 1300.86pt>
+File: ../data/pics/boston_sample_llh.pdf Graphic file (type pdf)
+<use ../data/pics/boston_sample_llh.pdf>
+Package pdftex.def Info: ../data/pics/boston_sample_llh.pdf  used on input line
+ 437.
+(pdftex.def)             Requested size: 241.84842pt x 128.02927pt.
+<../data/pics/boston_sample_llh_std.pdf, id=132, 2457.18pt x 1300.86pt>
+File: ../data/pics/boston_sample_llh_std.pdf Graphic file (type pdf)
+<use ../data/pics/boston_sample_llh_std.pdf>
+Package pdftex.def Info: ../data/pics/boston_sample_llh_std.pdf  used on input 
+line 438.
+(pdftex.def)             Requested size: 241.84842pt x 128.02927pt.
+<../data/pics/wine_sample_llh.pdf, id=133, 2457.18pt x 1300.86pt>
+File: ../data/pics/wine_sample_llh.pdf Graphic file (type pdf)
+<use ../data/pics/wine_sample_llh.pdf>
+Package pdftex.def Info: ../data/pics/wine_sample_llh.pdf  used on input line 4
+39.
+(pdftex.def)             Requested size: 241.84842pt x 128.02927pt.
+<../data/pics/wine_sample_llh_std.pdf, id=134, 2457.18pt x 1300.86pt>
+File: ../data/pics/wine_sample_llh_std.pdf Graphic file (type pdf)
+<use ../data/pics/wine_sample_llh_std.pdf>
+Package pdftex.def Info: ../data/pics/wine_sample_llh_std.pdf  used on input li
+ne 440.
+(pdftex.def)             Requested size: 241.84842pt x 128.02927pt.
+
+Overfull \hbox (7.83142pt too wide) in paragraph at lines 433--442
+ [] 
+ []
+
+<../data/pics/diabetes_sample_MAPE_comparison.pdf, id=135, 1734.48pt x 867.24pt
+>
+File: ../data/pics/diabetes_sample_MAPE_comparison.pdf Graphic file (type pdf)
+<use ../data/pics/diabetes_sample_MAPE_comparison.pdf>
+Package pdftex.def Info: ../data/pics/diabetes_sample_MAPE_comparison.pdf  used
+ on input line 452.
+(pdftex.def)             Requested size: 241.84842pt x 120.92314pt.
+<../data/pics/diabetes_sample_MAPE_m_comparison_n11.pdf, id=136, 1734.48pt x 86
+7.24pt>
+File: ../data/pics/diabetes_sample_MAPE_m_comparison_n11.pdf Graphic file (type
+ pdf)
+<use ../data/pics/diabetes_sample_MAPE_m_comparison_n11.pdf>
+Package pdftex.def Info: ../data/pics/diabetes_sample_MAPE_m_comparison_n11.pdf
+  used on input line 453.
+(pdftex.def)             Requested size: 241.84842pt x 120.92314pt.
+<../data/pics/boston_sample_MAPE_comparison.pdf, id=137, 1734.48pt x 867.24pt>
+File: ../data/pics/boston_sample_MAPE_comparison.pdf Graphic file (type pdf)
+<use ../data/pics/boston_sample_MAPE_comparison.pdf>
+Package pdftex.def Info: ../data/pics/boston_sample_MAPE_comparison.pdf  used o
+n input line 454.
+(pdftex.def)             Requested size: 241.84842pt x 120.92314pt.
+<../data/pics/boston_sample_MAPE_m_comparison_n14.pdf, id=138, 1734.48pt x 867.
+24pt>
+File: ../data/pics/boston_sample_MAPE_m_comparison_n14.pdf Graphic file (type p
+df)
+<use ../data/pics/boston_sample_MAPE_m_comparison_n14.pdf>
+Package pdftex.def Info: ../data/pics/boston_sample_MAPE_m_comparison_n14.pdf  
+used on input line 455.
+(pdftex.def)             Requested size: 241.84842pt x 120.92314pt.
+<../data/pics/wine_sample_MAPE_comparison.pdf, id=139, 1734.48pt x 867.24pt>
+File: ../data/pics/wine_sample_MAPE_comparison.pdf Graphic file (type pdf)
+<use ../data/pics/wine_sample_MAPE_comparison.pdf>
+Package pdftex.def Info: ../data/pics/wine_sample_MAPE_comparison.pdf  used on 
+input line 456.
+(pdftex.def)             Requested size: 241.84842pt x 120.92314pt.
+<../data/pics/wine_sample_MAPE_m_comparison_n14.pdf, id=140, 1734.48pt x 867.24
+pt>
+File: ../data/pics/wine_sample_MAPE_m_comparison_n14.pdf Graphic file (type pdf
+)
+<use ../data/pics/wine_sample_MAPE_m_comparison_n14.pdf>
+Package pdftex.def Info: ../data/pics/wine_sample_MAPE_m_comparison_n14.pdf  us
+ed on input line 457.
+(pdftex.def)             Requested size: 241.84842pt x 120.92314pt.
+
+Overfull \hbox (7.83142pt too wide) in paragraph at lines 450--459
+ [] 
+ []
+
+<../data/pics/adequate_random_sample_models_distance_10.pdf, id=141, 1734.48pt 
+x 867.24pt>
+File: ../data/pics/adequate_random_sample_models_distance_10.pdf Graphic file (
+type pdf)
+<use ../data/pics/adequate_random_sample_models_distance_10.pdf>
+Package pdftex.def Info: ../data/pics/adequate_random_sample_models_distance_10
+.pdf  used on input line 467.
+(pdftex.def)             Requested size: 241.84842pt x 120.92314pt.
+<../data/pics/adequate_correlated_sample_models_distance_2.pdf, id=142, 1734.48
+pt x 867.24pt>
+File: ../data/pics/adequate_correlated_sample_models_distance_2.pdf Graphic fil
+e (type pdf)
+<use ../data/pics/adequate_correlated_sample_models_distance_2.pdf>
+Package pdftex.def Info: ../data/pics/adequate_correlated_sample_models_distanc
+e_2.pdf  used on input line 468.
+(pdftex.def)             Requested size: 241.84842pt x 120.92314pt.
+<../data/pics/adequate_orthogonal_sample_models_distance_10.pdf, id=143, 1734.4
+8pt x 867.24pt>
+File: ../data/pics/adequate_orthogonal_sample_models_distance_10.pdf Graphic fi
+le (type pdf)
+<use ../data/pics/adequate_orthogonal_sample_models_distance_10.pdf>
+Package pdftex.def Info: ../data/pics/adequate_orthogonal_sample_models_distanc
+e_10.pdf  used on input line 469.
+(pdftex.def)             Requested size: 241.84842pt x 120.92314pt.
+<../data/pics/adequate_redundant_sample_models_distance_5.pdf, id=144, 1734.48p
+t x 867.24pt>
+File: ../data/pics/adequate_redundant_sample_models_distance_5.pdf Graphic file
+ (type pdf)
+<use ../data/pics/adequate_redundant_sample_models_distance_5.pdf>
+Package pdftex.def Info: ../data/pics/adequate_redundant_sample_models_distance
+_5.pdf  used on input line 470.
+(pdftex.def)             Requested size: 241.84842pt x 120.92314pt.
+<../data/pics/diabetes_sample_models_distance_11.pdf, id=145, 1734.48pt x 867.2
+4pt>
+File: ../data/pics/diabetes_sample_models_distance_11.pdf Graphic file (type pd
+f)
+<use ../data/pics/diabetes_sample_models_distance_11.pdf>
+Package pdftex.def Info: ../data/pics/diabetes_sample_models_distance_11.pdf  u
+sed on input line 471.
+(pdftex.def)             Requested size: 241.84842pt x 120.92314pt.
+<../data/pics/boston_sample_models_distance_14.pdf, id=146, 1734.48pt x 867.24p
+t>
+File: ../data/pics/boston_sample_models_distance_14.pdf Graphic file (type pdf)
+
+<use ../data/pics/boston_sample_models_distance_14.pdf>
+Package pdftex.def Info: ../data/pics/boston_sample_models_distance_14.pdf  use
+d on input line 472.
+(pdftex.def)             Requested size: 241.84842pt x 120.92314pt.
+<../data/pics/wine_sample_models_distance_14.pdf, id=147, 1734.48pt x 867.24pt>
+
+File: ../data/pics/wine_sample_models_distance_14.pdf Graphic file (type pdf)
+<use ../data/pics/wine_sample_models_distance_14.pdf>
+Package pdftex.def Info: ../data/pics/wine_sample_models_distance_14.pdf  used 
+on input line 473.
+(pdftex.def)             Requested size: 241.84842pt x 120.92314pt.
+
+Overfull \hbox (7.83142pt too wide) in paragraph at lines 465--476
  [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 457--462
+Underfull \hbox (badness 10000) in paragraph at lines 481--486
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 504--518
+
+ []
+
+<../data/pics/synthetic_W.pdf, id=148, 1734.48pt x 867.24pt>
+File: ../data/pics/synthetic_W.pdf Graphic file (type pdf)
+<use ../data/pics/synthetic_W.pdf>
+Package pdftex.def Info: ../data/pics/synthetic_W.pdf  used on input line 520.
+(pdftex.def)             Requested size: 483.69684pt x 241.8463pt.
+<../data/pics/synthetic_I.pdf, id=149, 1734.48pt x 867.24pt>
+File: ../data/pics/synthetic_I.pdf Graphic file (type pdf)
+<use ../data/pics/synthetic_I.pdf>
+Package pdftex.def Info: ../data/pics/synthetic_I.pdf  used on input line 526.
+(pdftex.def)             Requested size: 483.69684pt x 241.8463pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 544--554
 
  []
 
@@ -1777,113 +1939,99 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
  []
 
-[7 <../data/pics/adequate_random_sample_llh.pdf> <../data/pics/adequate_correla
-ted_sample_llh.pdf
+[7]
+
+LaTeX Warning: Text page 8 contains only floats.
+
+
+Overfull \vbox (10.69754pt too high) has occurred while \output is active []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+
+ []
+
+[8 <../data/pics/adequate_random_sample_llh.pdf> <../data/pics/adequate_random_
+sample_llh_std.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ../data/pics/adequate_random_sample_llh
+_std.pdf): PDF inclusion: multiple pdfs with page group included in a single pa
+ge
+> <../data/pics/adequate_correlated_sample_llh.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ../data/pics/adequate_correlated_sample
 _llh.pdf): PDF inclusion: multiple pdfs with page group included in a single pa
 ge
+> <../data/pics/adequate_correlated_sample_llh_std.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ../data/pics/adequate_correlated_sample
+_llh_std.pdf): PDF inclusion: multiple pdfs with page group included in a singl
+e page
 > <../data/pics/adequate_orthogonal_sample_llh.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ../data/pics/adequate_orthogonal_sample
 _llh.pdf): PDF inclusion: multiple pdfs with page group included in a single pa
 ge
+> <../data/pics/adequate_orthogonal_sample_llh_std.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ../data/pics/adequate_orthogonal_sample
+_llh_std.pdf): PDF inclusion: multiple pdfs with page group included in a singl
+e page
 > <../data/pics/adequate_redundant_sample_llh.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ../data/pics/adequate_redundant_sample_
 llh.pdf): PDF inclusion: multiple pdfs with page group included in a single pag
 e
+> <../data/pics/adequate_redundant_sample_llh_std.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ../data/pics/adequate_redundant_sample_
+llh_std.pdf): PDF inclusion: multiple pdfs with page group included in a single
+ page
 >]
-
-LaTeX Warning: Text page 8 contains only floats.
-
-
-Overfull \vbox (4.36693pt too high) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \hbox (badness 10000) has occurred while \output is active
 
  []
 
-[8 <../data/pics/adequate_random_sample_llh_phi.pdf> <../data/pics/adequate_cor
-related_sample_llh_phi.pdf
-
-pdfTeX warning: /usr/bin/pdflatex (file ../data/pics/adequate_correlated_sample
-_llh_phi.pdf): PDF inclusion: multiple pdfs with page group included in a singl
-e page
-> <../data/pics/adequate_orthogonal_sample_llh_phi.pdf
-
-pdfTeX warning: /usr/bin/pdflatex (file ../data/pics/adequate_orthogonal_sample
-_llh_phi.pdf): PDF inclusion: multiple pdfs with page group included in a singl
-e page
-> <../data/pics/adequate_redundant_sample_llh_phi.pdf
-
-pdfTeX warning: /usr/bin/pdflatex (file ../data/pics/adequate_redundant_sample_
-llh_phi.pdf): PDF inclusion: multiple pdfs with page group included in a single
- page
-> <../data/pics/adequate_random_sample_MAPE_comparison.pdf
+[9 <../data/pics/adequate_random_sample_MAPE_comparison.pdf> <../data/pics/adeq
+uate_random_sample_MAPE_m_comparison_n10.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ../data/pics/adequate_random_sample_MAP
-E_comparison.pdf): PDF inclusion: multiple pdfs with page group included in a s
-ingle page
+E_m_comparison_n10.pdf): PDF inclusion: multiple pdfs with page group included 
+in a single page
 > <../data/pics/adequate_correlated_sample_MAPE_comparison.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ../data/pics/adequate_correlated_sample
 _MAPE_comparison.pdf): PDF inclusion: multiple pdfs with page group included in
  a single page
+> <../data/pics/adequate_correlated_sample_MAPE_m_comparison_n2.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ../data/pics/adequate_correlated_sample
+_MAPE_m_comparison_n2.pdf): PDF inclusion: multiple pdfs with page group includ
+ed in a single page
 > <../data/pics/adequate_orthogonal_sample_MAPE_comparison.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ../data/pics/adequate_orthogonal_sample
 _MAPE_comparison.pdf): PDF inclusion: multiple pdfs with page group included in
  a single page
-> <../data/pics/adequate_redundant_sample_MAPE_comparison.pdf
-
-pdfTeX warning: /usr/bin/pdflatex (file ../data/pics/adequate_redundant_sample_
-MAPE_comparison.pdf): PDF inclusion: multiple pdfs with page group included in 
-a single page
->]
-Underfull \hbox (badness 10000) in paragraph at lines 480--494
-
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-
- []
-
-[9 <../data/pics/adequate_random_sample_MAPE_m_comparison_n10.pdf> <../data/pic
-s/adequate_correlated_sample_MAPE_m_comparison_n2.pdf
-
-pdfTeX warning: /usr/bin/pdflatex (file ../data/pics/adequate_correlated_sample
-_MAPE_m_comparison_n2.pdf): PDF inclusion: multiple pdfs with page group includ
-ed in a single page
 > <../data/pics/adequate_orthogonal_sample_MAPE_m_comparison_n10.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ../data/pics/adequate_orthogonal_sample
 _MAPE_m_comparison_n10.pdf): PDF inclusion: multiple pdfs with page group inclu
 ded in a single page
-> <../data/pics/adequate_redundant_sample_MAPE_m_comparison_n7.pdf
+> <../data/pics/adequate_redundant_sample_MAPE_comparison.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ../data/pics/adequate_redundant_sample_
-MAPE_m_comparison_n7.pdf): PDF inclusion: multiple pdfs with page group include
+MAPE_comparison.pdf): PDF inclusion: multiple pdfs with page group included in 
+a single page
+> <../data/pics/adequate_redundant_sample_MAPE_m_comparison_n5.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ../data/pics/adequate_redundant_sample_
+MAPE_m_comparison_n5.pdf): PDF inclusion: multiple pdfs with page group include
 d in a single page
 >]
-<../data/pics/synthetic_W.pdf, id=956, 1734.48pt x 867.24pt>
-File: ../data/pics/synthetic_W.pdf Graphic file (type pdf)
-<use ../data/pics/synthetic_W.pdf>
-Package pdftex.def Info: ../data/pics/synthetic_W.pdf  used on input line 496.
-(pdftex.def)             Requested size: 483.69684pt x 241.8463pt.
-<../data/pics/synthetic_I.pdf, id=957, 1734.48pt x 867.24pt>
-File: ../data/pics/synthetic_I.pdf Graphic file (type pdf)
-<use ../data/pics/synthetic_I.pdf>
-Package pdftex.def Info: ../data/pics/synthetic_I.pdf  used on input line 502.
-(pdftex.def)             Requested size: 483.69684pt x 241.8463pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 520--530
-
- []
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -1891,60 +2039,133 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
  []
 
-[10 <../data/pics/synthetic_W.pdf>]
-<../data/pics/synthetic_lasso_W.pdf, id=1002, 1734.48pt x 867.24pt>
+[10 <../data/pics/diabetes_sample_llh.pdf> <../data/pics/diabetes_sample_llh_st
+d.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ../data/pics/diabetes_sample_llh_std.pd
+f): PDF inclusion: multiple pdfs with page group included in a single page
+> <../data/pics/boston_sample_llh.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ../data/pics/boston_sample_llh.pdf): PD
+F inclusion: multiple pdfs with page group included in a single page
+> <../data/pics/boston_sample_llh_std.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ../data/pics/boston_sample_llh_std.pdf)
+: PDF inclusion: multiple pdfs with page group included in a single page
+> <../data/pics/wine_sample_llh.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ../data/pics/wine_sample_llh.pdf): PDF 
+inclusion: multiple pdfs with page group included in a single page
+> <../data/pics/wine_sample_llh_std.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ../data/pics/wine_sample_llh_std.pdf): 
+PDF inclusion: multiple pdfs with page group included in a single page
+>]
+Underfull \hbox (badness 10000) has occurred while \output is active
+
+ []
+
+[11 <../data/pics/diabetes_sample_MAPE_comparison.pdf> <../data/pics/diabetes_s
+ample_MAPE_m_comparison_n11.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ../data/pics/diabetes_sample_MAPE_m_com
+parison_n11.pdf): PDF inclusion: multiple pdfs with page group included in a si
+ngle page
+> <../data/pics/boston_sample_MAPE_comparison.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ../data/pics/boston_sample_MAPE_compari
+son.pdf): PDF inclusion: multiple pdfs with page group included in a single pag
+e
+> <../data/pics/boston_sample_MAPE_m_comparison_n14.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ../data/pics/boston_sample_MAPE_m_compa
+rison_n14.pdf): PDF inclusion: multiple pdfs with page group included in a sing
+le page
+> <../data/pics/wine_sample_MAPE_comparison.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ../data/pics/wine_sample_MAPE_compariso
+n.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <../data/pics/wine_sample_MAPE_m_comparison_n14.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ../data/pics/wine_sample_MAPE_m_compari
+son_n14.pdf): PDF inclusion: multiple pdfs with page group included in a single
+ page
+>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+
+ []
+
+[12 <../data/pics/adequate_random_sample_models_distance_10.pdf> <../data/pics/
+adequate_correlated_sample_models_distance_2.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ../data/pics/adequate_correlated_sample
+_models_distance_2.pdf): PDF inclusion: multiple pdfs with page group included 
+in a single page
+> <../data/pics/adequate_orthogonal_sample_models_distance_10.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ../data/pics/adequate_orthogonal_sample
+_models_distance_10.pdf): PDF inclusion: multiple pdfs with page group included
+ in a single page
+> <../data/pics/adequate_redundant_sample_models_distance_5.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ../data/pics/adequate_redundant_sample_
+models_distance_5.pdf): PDF inclusion: multiple pdfs with page group included i
+n a single page
+> <../data/pics/diabetes_sample_models_distance_11.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ../data/pics/diabetes_sample_models_dis
+tance_11.pdf): PDF inclusion: multiple pdfs with page group included in a singl
+e page
+> <../data/pics/boston_sample_models_distance_14.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ../data/pics/boston_sample_models_dista
+nce_14.pdf): PDF inclusion: multiple pdfs with page group included in a single 
+page
+> <../data/pics/wine_sample_models_distance_14.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ../data/pics/wine_sample_models_distanc
+e_14.pdf): PDF inclusion: multiple pdfs with page group included in a single pa
+ge
+>]
+<../data/pics/synthetic_lasso_W.pdf, id=1825, 1734.48pt x 867.24pt>
 File: ../data/pics/synthetic_lasso_W.pdf Graphic file (type pdf)
 <use ../data/pics/synthetic_lasso_W.pdf>
 Package pdftex.def Info: ../data/pics/synthetic_lasso_W.pdf  used on input line
- 545.
+ 569.
 (pdftex.def)             Requested size: 483.69684pt x 241.8463pt.
-<../data/pics/synthetic_MSE_surface.pdf, id=1003, 2168.1pt x 1156.32pt>
+<../data/pics/synthetic_MSE_surface.pdf, id=1826, 2168.1pt x 1156.32pt>
 File: ../data/pics/synthetic_MSE_surface.pdf Graphic file (type pdf)
 <use ../data/pics/synthetic_MSE_surface.pdf>
 Package pdftex.def Info: ../data/pics/synthetic_MSE_surface.pdf  used on input 
-line 551.
+line 575.
 (pdftex.def)             Requested size: 483.69684pt x 257.95528pt.
-<../data/pics/synthetic_MSE_std_surface.pdf, id=1004, 2168.1pt x 1156.32pt>
+<../data/pics/synthetic_MSE_std_surface.pdf, id=1827, 2168.1pt x 1156.32pt>
 File: ../data/pics/synthetic_MSE_std_surface.pdf Graphic file (type pdf)
 <use ../data/pics/synthetic_MSE_std_surface.pdf>
 Package pdftex.def Info: ../data/pics/synthetic_MSE_std_surface.pdf  used on in
-put line 557.
+put line 581.
 (pdftex.def)             Requested size: 483.69684pt x 257.95528pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 563--573
+Underfull \hbox (badness 10000) in paragraph at lines 587--597
 
  []
 
 
-LaTeX Warning: Reference `MSE' on page 11 undefined on input line 574.
+Underfull \vbox (badness 7685) has occurred while \output is active []
 
 
 Underfull \hbox (badness 10000) has occurred while \output is active
 
  []
 
-[11 <../data/pics/synthetic_I.pdf>]
+[13 <../data/pics/synthetic_W.pdf> <../data/pics/synthetic_I.pdf
 
-LaTeX Warning: Reference `argmax_MSE' on page 12 undefined on input line 576.
-
-<../data/pics/synthetic_W_from_N.pdf, id=1046, 1734.48pt x 867.24pt>
-File: ../data/pics/synthetic_W_from_N.pdf Graphic file (type pdf)
-<use ../data/pics/synthetic_W_from_N.pdf>
-Package pdftex.def Info: ../data/pics/synthetic_W_from_N.pdf  used on input lin
-e 579.
-(pdftex.def)             Requested size: 483.69684pt x 241.8463pt.
-<../data/pics/synthetic_W_from_tau.pdf, id=1047, 1734.48pt x 867.24pt>
-File: ../data/pics/synthetic_W_from_tau.pdf Graphic file (type pdf)
-<use ../data/pics/synthetic_W_from_tau.pdf>
-Package pdftex.def Info: ../data/pics/synthetic_W_from_tau.pdf  used on input l
-ine 585.
-(pdftex.def)             Requested size: 483.69684pt x 241.8463pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 591--607
-
- []
-
-
+pdfTeX warning: /usr/bin/pdflatex (file ../data/pics/synthetic_I.pdf): PDF incl
+usion: multiple pdfs with page group included in a single page
+>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -1952,76 +2173,110 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
  []
 
-[12 <../data/pics/synthetic_lasso_W.pdf> <../data/pics/synthetic_MSE_surface.pd
+[14 <../data/pics/synthetic_lasso_W.pdf> <../data/pics/synthetic_MSE_surface.pd
 f
 
 pdfTeX warning: /usr/bin/pdflatex (file ../data/pics/synthetic_MSE_surface.pdf)
 : PDF inclusion: multiple pdfs with page group included in a single page
 >]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+
+LaTeX Warning: Reference `MSE' on page 15 undefined on input line 598.
+
+
+LaTeX Warning: Reference `argmax_MSE' on page 15 undefined on input line 600.
+
+<../data/pics/synthetic_W_from_N.pdf, id=1996, 1734.48pt x 867.24pt>
+File: ../data/pics/synthetic_W_from_N.pdf Graphic file (type pdf)
+<use ../data/pics/synthetic_W_from_N.pdf>
+Package pdftex.def Info: ../data/pics/synthetic_W_from_N.pdf  used on input lin
+e 603.
+(pdftex.def)             Requested size: 483.69684pt x 241.8463pt.
+<../data/pics/synthetic_W_from_tau.pdf, id=1997, 1734.48pt x 867.24pt>
+File: ../data/pics/synthetic_W_from_tau.pdf Graphic file (type pdf)
+<use ../data/pics/synthetic_W_from_tau.pdf>
+Package pdftex.def Info: ../data/pics/synthetic_W_from_tau.pdf  used on input l
+ine 609.
+(pdftex.def)             Requested size: 483.69684pt x 241.8463pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 615--631
+
+ []
+
+
+Underfull \vbox (badness 6944) has occurred while \output is active []
 
 
 Underfull \hbox (badness 10000) has occurred while \output is active
 
  []
 
-[13 <../data/pics/synthetic_MSE_std_surface.pdf> <../data/pics/synthetic_W_from
-_N.pdf
+[15 <../data/pics/synthetic_MSE_std_surface.pdf>]
 
-pdfTeX warning: /usr/bin/pdflatex (file ../data/pics/synthetic_W_from_N.pdf): P
-DF inclusion: multiple pdfs with page group included in a single page
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+
+ []
+
+[16 <../data/pics/synthetic_W_from_N.pdf> <../data/pics/synthetic_W_from_tau.pd
+f
+
+pdfTeX warning: /usr/bin/pdflatex (file ../data/pics/synthetic_W_from_tau.pdf):
+ PDF inclusion: multiple pdfs with page group included in a single page
 >]
-Underfull \hbox (badness 10000) has occurred while \output is active
-
- []
-
-[14 <../data/pics/synthetic_W_from_tau.pdf>]
-<../data/pics/ALC_modified_servo.pdf, id=1264, 1734.48pt x 867.24pt>
+<../data/pics/ALC_modified_servo.pdf, id=2128, 1734.48pt x 867.24pt>
 File: ../data/pics/ALC_modified_servo.pdf Graphic file (type pdf)
 <use ../data/pics/ALC_modified_servo.pdf>
 Package pdftex.def Info: ../data/pics/ALC_modified_servo.pdf  used on input lin
-e 638.
+e 662.
 (pdftex.def)             Requested size: 241.84842pt x 120.92314pt.
-<../data/pics/ACC_modified_servo.pdf, id=1265, 1734.48pt x 867.24pt>
+<../data/pics/ACC_modified_servo.pdf, id=2129, 1734.48pt x 867.24pt>
 File: ../data/pics/ACC_modified_servo.pdf Graphic file (type pdf)
 <use ../data/pics/ACC_modified_servo.pdf>
 Package pdftex.def Info: ../data/pics/ACC_modified_servo.pdf  used on input lin
-e 639.
+e 663.
 (pdftex.def)             Requested size: 241.84842pt x 120.92314pt.
-<../data/pics/ALC_modified_boston.pdf, id=1266, 1734.48pt x 867.24pt>
+<../data/pics/ALC_modified_boston.pdf, id=2130, 1734.48pt x 867.24pt>
 File: ../data/pics/ALC_modified_boston.pdf Graphic file (type pdf)
 <use ../data/pics/ALC_modified_boston.pdf>
 Package pdftex.def Info: ../data/pics/ALC_modified_boston.pdf  used on input li
-ne 640.
+ne 664.
 (pdftex.def)             Requested size: 241.84842pt x 120.92314pt.
-<../data/pics/ACC_modified_boston.pdf, id=1267, 1734.48pt x 867.24pt>
+<../data/pics/ACC_modified_boston.pdf, id=2131, 1734.48pt x 867.24pt>
 File: ../data/pics/ACC_modified_boston.pdf Graphic file (type pdf)
 <use ../data/pics/ACC_modified_boston.pdf>
 Package pdftex.def Info: ../data/pics/ACC_modified_boston.pdf  used on input li
-ne 641.
+ne 665.
 (pdftex.def)             Requested size: 241.84842pt x 120.92314pt.
-<../data/pics/ALC_modified_diabetes.pdf, id=1268, 1734.48pt x 867.24pt>
+<../data/pics/ALC_modified_diabetes.pdf, id=2132, 1734.48pt x 867.24pt>
 File: ../data/pics/ALC_modified_diabetes.pdf Graphic file (type pdf)
 <use ../data/pics/ALC_modified_diabetes.pdf>
 Package pdftex.def Info: ../data/pics/ALC_modified_diabetes.pdf  used on input 
-line 642.
+line 666.
 (pdftex.def)             Requested size: 241.84842pt x 120.92314pt.
-<../data/pics/ACC_modified_diabetes.pdf, id=1269, 1734.48pt x 867.24pt>
+<../data/pics/ACC_modified_diabetes.pdf, id=2133, 1734.48pt x 867.24pt>
 File: ../data/pics/ACC_modified_diabetes.pdf Graphic file (type pdf)
 <use ../data/pics/ACC_modified_diabetes.pdf>
 Package pdftex.def Info: ../data/pics/ACC_modified_diabetes.pdf  used on input 
-line 643.
+line 667.
 (pdftex.def)             Requested size: 241.84842pt x 120.92314pt.
 
-Overfull \hbox (7.83142pt too wide) in paragraph at lines 636--645
+Overfull \hbox (7.83142pt too wide) in paragraph at lines 660--669
  [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 650--657
+Underfull \hbox (badness 10000) in paragraph at lines 674--681
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 685--686
+
+ []
+
+No file Buchnev2019Project44.bbl.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -2030,7 +2285,15 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
  []
 
-[15 <../data/pics/ALC_modified_servo.pdf> <../data/pics/ACC_modified_servo.pdf
+[17]
+Underfull \vbox (badness 3792) has occurred while \output is active []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+
+ []
+
+[18 <../data/pics/ALC_modified_servo.pdf> <../data/pics/ACC_modified_servo.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ../data/pics/ACC_modified_servo.pdf): P
 DF inclusion: multiple pdfs with page group included in a single page
@@ -2050,18 +2313,7 @@ pdfTeX warning: /usr/bin/pdflatex (file ../data/pics/ALC_modified_diabetes.pdf)
 
 pdfTeX warning: /usr/bin/pdflatex (file ../data/pics/ACC_modified_diabetes.pdf)
 : PDF inclusion: multiple pdfs with page group included in a single page
->]
-Underfull \hbox (badness 10000) in paragraph at lines 661--662
-
- []
-
-No file Buchnev2019Project44.bbl.
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-
- []
-
-[16] (./Buchnev2019Project44.aux)
+>] (./Buchnev2019Project44.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -2070,10 +2322,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 29591 strings out of 492982
- 676956 string characters out of 6134896
- 898857 words of memory out of 5000000
- 32439 multiletter control sequences out of 15000+600000
+ 29686 strings out of 492982
+ 682016 string characters out of 6134896
+ 909857 words of memory out of 5000000
+ 32515 multiletter control sequences out of 15000+600000
  33413 words of font info for 91 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  69i,16n,98p,3278b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2106,10 +2358,10 @@ public/cm-super/sfrm1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm
 /texmf/fonts/type1/public/cm-super/sfsx1728.pfb></usr/share/texmf/fonts/type1/p
 ublic/cm-super/sfti1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1
 095.pfb>
-Output written on Buchnev2019Project44.pdf (16 pages, 1298337 bytes).
+Output written on Buchnev2019Project44.pdf (18 pages, 2053448 bytes).
 PDF statistics:
- 1637 PDF objects out of 1728 (max. 8388607)
- 409 compressed objects within 5 object streams
+ 2500 PDF objects out of 2984 (max. 8388607)
+ 585 compressed objects within 6 object streams
  0 named destinations out of 1000 (max. 500000)
- 183 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 278 words of extra memory for PDF output out of 10000 (max. 10000000)
 
