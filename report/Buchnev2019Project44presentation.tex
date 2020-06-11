@@ -33,6 +33,9 @@
 \usepackage{algpseudocode}
 \usepackage{amsmath}
 
+\DeclareMathOperator*{\argmin}{arg\,min}
+\DeclareMathOperator*{\argmax}{arg\,max}
+
 \usepackage{graphics}
 \usepackage{graphicx} % Allows including images
 \usepackage{tabularx}
@@ -40,16 +43,13 @@
 \usetheme{Warsaw}
 \usecolortheme{sidebartab}
 %\definecolor{beamer@blendedblue}{RGB}{15,80,120}
-\DeclareMathOperator*{\argmax}{arg\,max}
 %----------------------------------------------------------------------------------------------------------
 \title[\hbox to 56mm{Достаточный объем выборки  \hfill\insertframenumber\,/\,\inserttotalframenumber}]
 {Раннее прогнозирование достаточного объема выборки для обобщенной линейной модели}
 \author[В.\,С.~Бучнев]{Валентин Бучнев}
 \institute{Московский физико-технический институт}
 \date{\footnotesize{
-\par\emph{Курс:} Численные методы обучения по прецедентам
-(практика, В. В. Стрижов), группа 694, весна 2019
-\par\emph{консультант:} А.\,В.~Грабовой
+группа 694, 2020
 \date{qq}
 }}
 
@@ -62,12 +62,32 @@
 \end{frame}
 
 \begin{frame}
-\frametitle{Прогнозирование объема выборки}
+\frametitle{Прогнозирование объема выборки}begin{frame}
+\frametitle{Результаты}
+
+
+\textbf{Предсказание достаточного объема выборки, ALC метод.}
+\begin{table}[h]
+\label{table2}
+\begin{tabularx}{0.7\textwidth}{|p{1in}|X|c|}
+\hline
+	\centering Выборка & \centering Реальное значение &Предсказание\\
+	\hline
+	 Servo & \centering не хватает данных & 450\\
+	\hline
+	Boston & \centering не хватает данных &1370\\
+	\hline
+	Diabetes & \centering 235 & 240\\
+\hline
+\end{tabularx}
+\end{table}
+
+\end{frame}
 \begin{block}{Цель исследования}
 Предложить метод предсказания достаточного объема выборки для обобщенной линейной модели на ранних этапах сбора данных.
 \end{block}
 \begin{block}{Проблема}
-Большинство неассимптотических методов требуют заведомо избыточного объема выборки.
+Большинство методов требуют заведомо избыточного объема выборки.
 \end{block}
 \begin{block}{Метод решения}
 Оценка объема строится по собранной выборке путем анализа свойств функции ошибки обобщенной линейной модели.
@@ -121,10 +141,10 @@ $$
 $$
 \end{block}
 \begin{block}{Ожидаемое значение}
-Рассмотрим ожидаемое значение логарифма правдоподобия по разным обучающим выборкам $\mathfrak D_{\mathcal L_m}$ размера $m^*$:
+Рассмотрим ожидаемое значение логарифма правдоподобия по разным обучающим выборкам $\mathfrak D_{\mathcal L_m}$ размера $m$:
 
 $$
-l(m^*) = \underset{\mathfrak D_{\mathcal L_m}}{\mathsf E} \tilde{l}(\mathfrak D_{\mathcal L_m}).
+l(m) = \underset{\mathfrak D_{\mathcal L_m}}{\mathsf E} \tilde{l}(\mathfrak D_{\mathcal L_m}).
 $$
 \end{block}
 \end{frame}
@@ -133,88 +153,49 @@ $$
 \begin{frame}
 \frametitle{Постановка задачи раннего прогнозирования}
 \begin{block}{Критерий достаточности объема}
-Будем считать, что объем выборки достаточный, если:
+Будем считать, что объем выборки $m^*$ достаточнен, если:
 
 $$
-\forall m_1, m_2 > m^* ~~~ |l(m_1) - l(m_2)| < \varepsilon,
+\forall m^{\prime} > m^* ~~~ l(m^{\prime}) > (1 - \delta)\max\limits_{m > m^*}l(m),
 $$
-где $\varepsilon$ - достаточно малое пороговое значение.
+где $\delta$ --- достаточно малое пороговое значение.
 \end{block}
 \end{frame}
 
 \begin{frame}
 \frametitle{Предлагаемый метод решения}
 
-\begin{block}{Критерий средней длины}
-$$
-A(\mathfrak{D}) = \{\textbf{w} : ||\textbf{w}- \hat{\textbf{w}}|| \leqslant r_m\}
-$$
-$$
-\mathsf{P}(A(\mathfrak{D})) = 1 - \alpha,
-$$
-где $\alpha$ --- некоторое малое значение. 
-
-Критерий средней длины выглядит следующим образом:
-
-$$
-\forall m \geqslant m^{*}~\mathsf{E}_{\mathfrak D_m} r_m \leqslant l , 
-$$
-где $r_m$ --- радиус шара $A(\mathfrak{D}_m)$, $l$ --- некоторое наперед заданное достаточно малое значение.
-\end{block}
-\end{frame}
-
-\begin{frame}
-\frametitle{Критерий средней длины}
-
-\begin{block}{Оценка вектора параметров}
-Для оценки вектора параметров используется принцип максимума правдоподобия:
-$$
-\hat{\textbf{w}} = \argmax_{\textbf{w} \in \mathbb{W}} L(\mathfrak D_{\mathcal L_m}, \textbf{w}).
-$$
+\begin{block}{Семейство функций $\Phi$}
+Для предсказания значения функции $\hat{l}(m)$ при $m > m_0$ введем параметрическое семейство функций 
+\begin{equation}\label{Phi}
+\Phi = \{\phi(m) =  a + b\cdot e^{c \cdot m} ~|~ a, b \in \mathbb{R}, c \in (-\infty, 0)\}
+\end{equation}
 \end{block}
 
+\begin{block}{Аппроксимация $\phi(m) \sim l(m)$}
+Аппроксимация функции  $\hat{l}(m)$ является решением следующей задачи:
 
-\begin{block}{Распределение оценки вектора параметров}
-Далее используется предположение о распределении оценки вектора параметров:
-
-$$
-\hat{\textbf{w}} \sim \mathcal{N}(\textbf{m}, \mathsf{D}\hat{\textbf{w}}),
-$$
-и с помощью сэмплирования вычисляется приближенное значение $r_m$.
-\end{block}
-\end{frame}
-
-\begin{frame}
-\frametitle{Модификация критерия средней длины}
-
-\begin{block}{Ковариационная матрица вектора параметров}
-Воспользуемся эффективностью оценки $\hat{\textbf{w}}$:
-
-$$
-\mathsf{D}\hat{\textbf{w}} = \textbf{I}^{-1}(\mathfrak D_m),
-$$
-где $\textbf{I}(\mathfrak D_m)$ --- информационная матрица Фишера.
+\begin{equation}\label{argmin_MAPE}
+\hat{\phi} =  \argmin_{\phi \in \Phi}\text{MAE}(\hat{l}, \phi, 1, m_0),
+\end{equation}
 \end{block}
 
-\begin{block}{Матрица Фишера}
-Для аппроксимации матрицы Фишера для $m$ наблюдений воспользуемся свойством:
-
-$$
-\hat{\textbf{I}}(\mathfrak D_m) = \frac{m}{m^{*}} ~\textbf{I}(\mathfrak D_{m^{*}}).
-$$
+\begin{block}{$\text{MAE}(\psi, \phi, m_1, m_2)$}
+\begin{equation}\label{MAE}
+\text{MAE}(\psi, \phi, m_1, m_2) = \frac{1}{m_2 - m_1 + 1}\sum_{i=m_1}^{m_2}|\phi(i) - \psi(i)|.
+\end{equation}
 \end{block}
 
 \end{frame}
 
-
 \begin{frame}
-\frametitle{Модификация критерия средней длины}
-\begin{block}{Вычисление функции эффективности}
-Таким образом, построена аппроксимация  параметров распределения $\hat{\textbf{w}}$ для $m$ наблюдений при использовании выборки размера $m^*$ для вычисления приближенного значения функции эффективности:
+\frametitle{Критерий достаточности объёма}
 
-$$
-\hat{\textbf{w}} \sim \mathcal{N}(\textbf{m},  \frac{m}{m^{*}}~\textbf{I}^{-1}(\mathfrak D_{m^{*}})).
-$$
+\begin{block}{Оценка $\hat{m^*}$}
+\begin{equation}\label{hat_m_star}
+\hat{m^*} = \min\limits_{m}\max\limits_{m^{\prime} > m}\hat{\phi}(m^{\prime}) > (1 - \delta)\hat{\phi}(m),
+\end{equation}
+где $\delta$ --- достаточно малое пороговое значение.
 \end{block}
 
 \end{frame}
@@ -227,54 +208,54 @@ $$
 
 $\newline$
 
-\textbf{Выборки из UCI репозитория.}
+\textbf{Выборки}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Результаты}
 
 \begin{table}[h!]
 \begin{center}
-\label{table2}
-\begin{tabularx}{\textwidth}{|p{1in}|X|X|c|}
+\label{table1}
+\begin{tabularx}{\textwidth}{|>{\centering\arraybackslash}X|>{\centering\arraybackslash}X|>{\centering\arraybackslash}X|>{\centering\arraybackslash}X|}
 \hline
-	\centering Выборка &\centeringТип задачи&\centering Размер выборки& Число признаков\\
+	\centering Выборка& Тип задачи & $m^*$ & $n^*$\\
 	\hline
-	Servo &регрессия&\centering167&4\\
+	Синтетическая, случайная выборка & регрессия & 72 & 10\\
 	\hline
-	Boston &регрессия&\centering506&13\\
+	Синтетическая, скоррелированная выборка & регрессия & 31 & 2\\
 	\hline
-	Diabetes&регрессия&\centering 442&5\\
-\hline
+	Синтетическая, ортогональная выборка & регрессия & 45 & 10\\
+	\hline
+	Синтетическая, избыточная выборка & регрессия & 22 & 5\\
+	\hline
 \end{tabularx}
 \end{center}
 \end{table}
-\end{frame}
 
-\begin{frame}
-\frametitle{Результаты}
-\begin{figure}[h!t]\center
-\subfloat{\includegraphics[width=1\textwidth]{../data/pics/ALC_modified_diabetes.pdf}}\\
-
-\caption{ALC метод, выборка Diabetes}
-\label{fig1}
-\end{figure}
 \end{frame}
 
 \begin{frame}
 \frametitle{Результаты}
 
-
-\textbf{Предсказание достаточного объема выборки, ALC метод.}
-\begin{table}[h]
-\label{table2}
-\begin{tabularx}{0.7\textwidth}{|p{1in}|X|c|}
+\begin{table}[h!]
+\begin{center}
+\label{table1}
+\begin{tabularx}{\textwidth}{|>{\centering\arraybackslash}X|>{\centering\arraybackslash}X|>{\centering\arraybackslash}X|>{\centering\arraybackslash}X|}
 \hline
-	\centering Выборка & \centering Реальное значение &Предсказание\\
+	\centering Выборка& Тип задачи & $m^*$ & $n^*$\\
 	\hline
-	 Servo & \centering не хватает данных & 450\\
+	UCI repo, Diabetes & регрессия & 442 & 11\\
 	\hline
-	Boston & \centering не хватает данных &1370\\
+	UCI repo, Boston & регрессия & 506 & 14\\
 	\hline
-	Diabetes & \centering 235 & 240\\
-\hline
+	UCI repo, Wine & классификация & 130 & 14\\
+	\hline
+	UCI repo, Nba & классификация & 400 & 20\\
+	\hline
 \end{tabularx}
+\end{center}
 \end{table}
 
 \end{frame}
@@ -283,9 +264,8 @@ $\newline$
 \frametitle{Заключение}
 
 \begin{itemize}
-  \item Задача прогнозирования достаточного объема выборки сведена к задаче аппроксимации корреляционной матрицы вектора параметров.
-  \item Показана работоспособность предложенного метода на тестовых выборках.
-  \item Далее предлагается строить аппроксимацию зависимости ожидаемого значения логарифма правдоподобия от размера выборки.
+  \item Задача прогнозирования достаточного объема выборки сведена к задаче аппроксимации функции ошибок.
+  \item Показана работоспособность предложенного метода на синтетических выборках, а также на выборках из UCI репозитория.
 \end{itemize}
 
 \end{frame}

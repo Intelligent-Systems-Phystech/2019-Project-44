@@ -800,7 +800,7 @@ def DataLoader(name = "servo", is_binary_answ = True, folder_path = '../data/dat
             y = np.delete(y, np.where(y == 2), axis = 0)
 
     if name == 'nba':
-        X, y = LoadData(url = "https://raw.githubusercontent.com/ttgadaev/SampleSize/master/datasets/nba.csv", 
+        X, y = LoadData(url = "https://raw.githubusercontent.com/ttgadaev/SampleSizeEstimation/master/datasets/nba.csv", 
                         path = folder_path + 'nba.csv')
 
         indexes = np.where(np.isnan(X) == True)[0]
