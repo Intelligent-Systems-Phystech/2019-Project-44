@@ -62,27 +62,6 @@
 \end{frame}
 
 \begin{frame}
-\frametitle{Прогнозирование объема выборки}begin{frame}
-\frametitle{Результаты}
-
-
-\textbf{Предсказание достаточного объема выборки, ALC метод.}
-\begin{table}[h]
-\label{table2}
-\begin{tabularx}{0.7\textwidth}{|p{1in}|X|c|}
-\hline
-	\centering Выборка & \centering Реальное значение &Предсказание\\
-	\hline
-	 Servo & \centering не хватает данных & 450\\
-	\hline
-	Boston & \centering не хватает данных &1370\\
-	\hline
-	Diabetes & \centering 235 & 240\\
-\hline
-\end{tabularx}
-\end{table}
-
-\end{frame}
 \begin{block}{Цель исследования}
 Предложить метод предсказания достаточного объема выборки для обобщенной линейной модели на ранних этапах сбора данных.
 \end{block}
@@ -118,45 +97,50 @@ models~//~Biometrics, 1988
 \begin{frame}
 \frametitle{Постановка задачи раннего прогнозирования}
 \begin{block}{Дано}
-Выборка размера m: $~\mathfrak D_m = \{\textbf{x}_i, y_i\}_{i=1}^m,$
+Выборка размера m: $~\mathfrak D = \{\textbf{x}_i, y_i\}_{i=1}^m,$
 
 где $\textbf{x}_i \in \mathbb{R}^{n}$ - вектор признаков, $~y_i \in \mathbb{Y}$.
 \end{block}
 \begin{block}{Функция правдоподобия}
 Определим функцию правдоподобия и логарифмическую функцию правдоподобия выборки $\mathfrak D$:
 $$
-L(\mathfrak D_m, \textbf{w}) = \prod_{y, \textbf{x} \in \mathfrak D_m} f(y, \textbf{x}, \textbf{w}),~~~ l(\mathfrak D_m, \textbf w) = \sum_{y, \textbf{x} \in \mathfrak D_m}\log f(y, \textbf{x}, \textbf{w}),
+L(\mathfrak D, \textbf{w}) = \prod_{y, \textbf{x} \in \mathfrak D} p(y | \textbf{x}, \textbf{w}),~~~ l(\mathfrak D, \textbf w) = \sum_{y, \textbf{x} \in \mathfrak D_m}\log p(y | \textbf{x}, \textbf{w}),
 $$
-где $f(y, \textbf{x}, \textbf{w})$ - аппроксимация плотности апостериорной вероятности выборки $\mathfrak D_m$ при заданном векторе параметров $\textbf{w}$.
+где $p(y | \textbf{x}, \textbf{w})$ ---  плотность зависимой переменной.
 \end{block}
 \end{frame}
 
 \begin{frame}
 \frametitle{Постановка задачи раннего прогнозирования}
-\begin{block}{Логарифмическая функция правдоподобия}
-Будем рассматривать ожидаемое значение функции $l$:
-
+\begin{block}{Функция ошибки}
+Будем рассматривать ожидаемое значение функции $e^{-S(\hat{\mathbf{w}}(\mathfrak{D}_{\mathcal{L}}) | \mathfrak{D}_{\mathcal{T}}))}$ по разным обучающим и тестовым выборкам размера $m$:
 $$
-\tilde{l}(\mathfrak D)  = \underset{y, \textbf{x} \in \mathfrak D}{\mathsf E} l(\{y, \textbf{x}\}, \textbf w).
-$$
-\end{block}
-\begin{block}{Ожидаемое значение}
-Рассмотрим ожидаемое значение логарифма правдоподобия по разным обучающим выборкам $\mathfrak D_{\mathcal L_m}$ размера $m$:
-
-$$
-l(m) = \underset{\mathfrak D_{\mathcal L_m}}{\mathsf E} \tilde{l}(\mathfrak D_{\mathcal L_m}).
+l(m) = \mathsf E e^{-S(\hat{\mathbf{w}}(\mathfrak{D}_{\mathcal{L}}) | \mathfrak{D}_{\mathcal{T}}))}.
 $$
 \end{block}
+\begin{block}{Функция ошибки $S(\mathbf{w}, \mathfrak{D})$ для задач регрессии и классификации}
+$$
+S_{\text{reg}}(\textbf{w} | \mathfrak{D}) = \frac{1}{|\mathfrak{D}|}\sum\limits_{\mathbf{x}, y \in \mathfrak{D}}(y - f(\mathbf{x}, \mathbf{w}))^2,
+$$
+$$
+S_{\text{class}}(\textbf{w} | \mathfrak{D}) =  \frac{1}{|\mathfrak{D}|}\sum\limits_{\mathbf{x}, y \in \mathfrak{D}}\bigl(y\ln f(\mathbf{x}, \mathbf{w}) + (1 - y)\ln(1 - f(\mathbf{x}, \mathbf{w}))\bigr).
+$$
+\end{block}
+
 \end{frame}
 
 
 \begin{frame}
 \frametitle{Постановка задачи раннего прогнозирования}
+\begin{block}{Функция ошибки $l(m)$}
+$\hat{l}(m)$ --- оценка функции $l(m)$, посчитанная с помощью метода бутстреп по разным обучающим и тестовым подвыборкам выборки $\mathfrak{D}$.
+\end{block}
+
 \begin{block}{Критерий достаточности объема}
 Будем считать, что объем выборки $m^*$ достаточнен, если:
 
 $$
-\forall m^{\prime} > m^* ~~~ l(m^{\prime}) > (1 - \delta)\max\limits_{m > m^*}l(m),
+\forall m^{\prime} > m^* ~~~ \hat{l}(m^{\prime}) > (1 - \delta)\max\limits_{m > m^*}\hat{l}(m),
 $$
 где $\delta$ --- достаточно малое пороговое значение.
 \end{block}
@@ -166,24 +150,21 @@ $$
 \frametitle{Предлагаемый метод решения}
 
 \begin{block}{Семейство функций $\Phi$}
-Для предсказания значения функции $\hat{l}(m)$ при $m > m_0$ введем параметрическое семейство функций 
-\begin{equation}\label{Phi}
-\Phi = \{\phi(m) =  a + b\cdot e^{c \cdot m} ~|~ a, b \in \mathbb{R}, c \in (-\infty, 0)\}
-\end{equation}
+Для предсказания значения функции $l(m)$ при $m > m_0$ введем параметрическое семейство функций:
+$$
+\Phi = \{\phi(m) =  a + b\cdot e^{c \cdot m} ~|~ a, b \in \mathbb{R}, c \in (-\infty, 0)\}.
+$$
 \end{block}
 
 \begin{block}{Аппроксимация $\phi(m) \sim l(m)$}
-Аппроксимация функции  $\hat{l}(m)$ является решением следующей задачи:
-
-\begin{equation}\label{argmin_MAPE}
-\hat{\phi} =  \argmin_{\phi \in \Phi}\text{MAE}(\hat{l}, \phi, 1, m_0),
-\end{equation}
-\end{block}
-
-\begin{block}{$\text{MAE}(\psi, \phi, m_1, m_2)$}
-\begin{equation}\label{MAE}
+Аппроксимация функции  $l(m)$ является решением следующей задачи:
+$$
+\hat{\phi} =  \argmin_{\phi \in \Phi}\text{MAE}(l, \phi, 1, m_0),
+$$
+где
+$$
 \text{MAE}(\psi, \phi, m_1, m_2) = \frac{1}{m_2 - m_1 + 1}\sum_{i=m_1}^{m_2}|\phi(i) - \psi(i)|.
-\end{equation}
+$$
 \end{block}
 
 \end{frame}
@@ -192,9 +173,9 @@ $$
 \frametitle{Критерий достаточности объёма}
 
 \begin{block}{Оценка $\hat{m^*}$}
-\begin{equation}\label{hat_m_star}
+$$
 \hat{m^*} = \min\limits_{m}\max\limits_{m^{\prime} > m}\hat{\phi}(m^{\prime}) > (1 - \delta)\hat{\phi}(m),
-\end{equation}
+$$
 где $\delta$ --- достаточно малое пороговое значение.
 \end{block}
 
@@ -205,10 +186,6 @@ $$
 \begin{block}{Цель эксперимента}
 Проверить работоспособность предложенного метода.
 \end{block}
-
-$\newline$
-
-\textbf{Выборки}
 
 \end{frame}
 

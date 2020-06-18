@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.3.10)  11 JUN 2020 17:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.3.10)  18 JUN 2020 13:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1357,312 +1357,342 @@ LaTeX Info: Redefining \nameref on input line 38.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-<<t2a.cmap>>
-Underfull \hbox (badness 10000) in paragraph at lines 50--52
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 50--52
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 58--60
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 58--60
-
- []
-
-<<ot1.cmap>><<oml.cmap>><<oms.cmap>><<omx.cmap>>
-LaTeX Font Info:    Try loading font information for U+msa on input line 67.
-
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Try loading font information for U+msb on input line 67.
-
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-Underfull \hbox (badness 10000) in paragraph at lines 64--76
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 64--76
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 64--76
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 80--84
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 80--84
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 80--84
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 80--84
-
- []
-
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 88.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 88.
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 88.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 88.
-[1
-
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Try loading font information for T2A+cmss on input line 91.
+Excluding 'comment' comment.<<t2a.cmap>>
+LaTeX Font Info:    Try loading font information for T2A+cmss on input line 98.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/cyrillic/t2acmss.fd
 File: t2acmss.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
 )
-(./Buchnev2019Project44.toc)
+
+Package hyperref Warning: old toc file detected, not used; run LaTeX again.
+
 \tf@toc=\write5
 \openout5 = `Buchnev2019Project44.toc'.
 
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 92.
+(babel)             in language  on input line 99.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 92.
+(babel)             in language  on input line 99.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 92.
+(babel)             in language  on input line 99.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 92.
- [2]
+(babel)             in language  on input line 99.
+[2
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 105.
+(babel)             in language  on input line 112.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 105.
+(babel)             in language  on input line 112.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 105.
+(babel)             in language  on input line 112.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 105.
+(babel)             in language  on input line 112.
  [3]
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 107.
+(babel)             in language  on input line 114.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 107.
+(babel)             in language  on input line 114.
 
-Overfull \hbox (14.74283pt too wide) in paragraph at lines 114--115
+
+LaTeX Warning: Citation `Self-Mauritsen-1998' on page 4 undefined on input line
+ 117.
+
+
+LaTeX Warning: Citation `Shieh-2000' on page 4 undefined on input line 117.
+
+
+LaTeX Warning: Citation `Shieh-2005' on page 4 undefined on input line 117.
+
+
+LaTeX Warning: Citation `Wang-Gelfand-2002' on page 4 undefined on input line 1
+19.
+
+
+LaTeX Warning: Citation `Strijov-2012' on page 4 undefined on input line 121.
+
+
+LaTeX Warning: Citation `Figueroa-2012' on page 4 undefined on input line 123.
+
+
+LaTeX Warning: Citation `Dobbin-2008' on page 4 undefined on input line 123.
+
+
+LaTeX Warning: Citation `Dobbin-2008' on page 4 undefined on input line 123.
+
+
+Overfull \hbox (14.74283pt too wide) in paragraph at lines 123--124
 []\T2A/cmr/m/n/14.4 Существуют так-же мо-де-ли, ап-прок-си-ми-ру-ю-щие за-ви-си
 -мость функ-ции ошиб-
  []
 
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 117.
+(babel)             in language  on input line 125.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 117.
+(babel)             in language  on input line 125.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 117.
+(babel)             in language  on input line 125.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 117.
+(babel)             in language  on input line 125.
 [4]
+
+LaTeX Warning: Citation `Tibshirani-1996' on page 5 undefined on input line 127
+.
+
+
+LaTeX Warning: Citation `Hastie-2007' on page 5 undefined on input line 127.
+
+
+LaTeX Warning: Citation `Efron-2004' on page 5 undefined on input line 127.
+
+
+LaTeX Warning: Citation `Brieman-2001' on page 5 undefined on input line 127.
+
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 119.
+(babel)             in language  on input line 132.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 119.
+(babel)             in language  on input line 132.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 119.
+(babel)             in language  on input line 132.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 119.
- [5]
+(babel)             in language  on input line 132.
+[5]
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 120.
+(babel)             in language  on input line 133.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 120.
-LaTeX Font Info:    Try loading font information for U+euf on input line 125.
- (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/ueuf.fd
+(babel)             in language  on input line 133.
+<<ot1.cmap>><<oml.cmap>><<oms.cmap>><<omx.cmap>>
+LaTeX Font Info:    Try loading font information for U+msa on input line 135.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 135.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Try loading font information for U+euf on input line 137.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/ueuf.fd
 File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
 )
+
+LaTeX Warning: Reference `lin_reg_lf' on page 6 undefined on input line 159.
+
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 167.
+(babel)             in language  on input line 196.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 167.
+(babel)             in language  on input line 196.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 167.
+(babel)             in language  on input line 196.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 167.
- [6]
+(babel)             in language  on input line 196.
+[6]
+
+LaTeX Warning: Reference `MSE_CE' on page 7 undefined on input line 230.
+
+
+LaTeX Warning: Reference `argmax_L' on page 7 undefined on input line 235.
+
+
+LaTeX Warning: Reference `MSE_CE' on page 7 undefined on input line 239.
+
+
+LaTeX Warning: Reference `argmax_L' on page 7 undefined on input line 241.
+
+
+LaTeX Warning: Reference `exp_-S' on page 7 undefined on input line 247.
+
+
+LaTeX Warning: Reference `L_T' on page 7 undefined on input line 247.
+
+
+LaTeX Warning: Reference `argmax_exp' on page 7 undefined on input line 247.
+
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 243.
+(babel)             in language  on input line 248.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 243.
+(babel)             in language  on input line 248.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 243.
+(babel)             in language  on input line 248.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 243.
- [7]
+(babel)             in language  on input line 248.
+[7]
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 252.
+(babel)             in language  on input line 258.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 252.
+(babel)             in language  on input line 258.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 252.
+(hyperref)                removing `math shift' on input line 258.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 252.
+(hyperref)                removing `math shift' on input line 258.
+
+
+LaTeX Warning: Reference `exp_-S' on page 8 undefined on input line 269.
+
+
+LaTeX Warning: Reference `exp_-S' on page 8 undefined on input line 270.
 
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 267.
+(babel)             in language  on input line 273.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 267.
+(babel)             in language  on input line 273.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 267.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\phi' on input line 267.
+(hyperref)                removing `math shift' on input line 273.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\sim' on input line 267.
+(hyperref)                removing `\phi' on input line 273.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 267.
+(hyperref)                removing `\sim' on input line 273.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 273.
 
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 282.
+(babel)             in language  on input line 287.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 282.
+(babel)             in language  on input line 287.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 282.
+(babel)             in language  on input line 287.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 282.
+(babel)             in language  on input line 287.
 [8]
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 320.
+(babel)             in language  on input line 325.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 320.
+(babel)             in language  on input line 325.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 320.
+(babel)             in language  on input line 325.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 320.
+(babel)             in language  on input line 325.
  [9]
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 321.
+(babel)             in language  on input line 326.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 321.
+(babel)             in language  on input line 326.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 331.
+(babel)             in language  on input line 328.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 331.
+(babel)             in language  on input line 328.
+
+
+LaTeX Warning: Reference `l' on page 10 undefined on input line 330.
+
+
+LaTeX Warning: Reference `l' on page 10 undefined on input line 367.
+
+
+LaTeX Warning: Reference `l' on page 10 undefined on input line 367.
+
+
+LaTeX Warning: Reference `l' on page 10 undefined on input line 367.
+
+
+LaTeX Warning: Reference `l' on page 10 undefined on input line 367.
+
+
+LaTeX Warning: Reference `Phi' on page 10 undefined on input line 367.
+
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 360.
+(babel)             in language  on input line 370.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 360.
+(babel)             in language  on input line 370.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 360.
+(babel)             in language  on input line 370.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 360.
- [10]
+(babel)             in language  on input line 370.
+[10]
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 394.
+(babel)             in language  on input line 391.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 394.
+(babel)             in language  on input line 391.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 394.
+(babel)             in language  on input line 391.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 394.
+(babel)             in language  on input line 391.
  [11]
-<../data/pics/adequate_random_sample_llh.pdf, id=170, 2457.18pt x 1300.86pt>
+<../data/pics/adequate_random_sample_llh.pdf, id=104, 2457.18pt x 1300.86pt>
 File: ../data/pics/adequate_random_sample_llh.pdf Graphic file (type pdf)
 <use ../data/pics/adequate_random_sample_llh.pdf>
 Package pdftex.def Info: ../data/pics/adequate_random_sample_llh.pdf  used on i
-nput line 401.
+nput line 398.
 (pdftex.def)             Requested size: 248.96162pt x 131.80067pt.
-<../data/pics/adequate_random_sample_llh_std.pdf, id=171, 2457.18pt x 1300.86pt
+<../data/pics/adequate_random_sample_llh_std.pdf, id=105, 2457.18pt x 1300.86pt
 >
 File: ../data/pics/adequate_random_sample_llh_std.pdf Graphic file (type pdf)
 <use ../data/pics/adequate_random_sample_llh_std.pdf>
 Package pdftex.def Info: ../data/pics/adequate_random_sample_llh_std.pdf  used 
-on input line 402.
+on input line 399.
 (pdftex.def)             Requested size: 248.96162pt x 131.80067pt.
-<../data/pics/adequate_correlated_sample_llh.pdf, id=172, 2457.18pt x 1300.86pt
+<../data/pics/adequate_correlated_sample_llh.pdf, id=106, 2457.18pt x 1300.86pt
 >
 File: ../data/pics/adequate_correlated_sample_llh.pdf Graphic file (type pdf)
 <use ../data/pics/adequate_correlated_sample_llh.pdf>
 Package pdftex.def Info: ../data/pics/adequate_correlated_sample_llh.pdf  used 
-on input line 403.
+on input line 400.
 (pdftex.def)             Requested size: 248.96162pt x 131.80067pt.
-<../data/pics/adequate_correlated_sample_llh_std.pdf, id=173, 2457.18pt x 1300.
+<../data/pics/adequate_correlated_sample_llh_std.pdf, id=107, 2457.18pt x 1300.
 86pt>
 File: ../data/pics/adequate_correlated_sample_llh_std.pdf Graphic file (type pd
 f)
 <use ../data/pics/adequate_correlated_sample_llh_std.pdf>
 Package pdftex.def Info: ../data/pics/adequate_correlated_sample_llh_std.pdf  u
-sed on input line 404.
+sed on input line 401.
 (pdftex.def)             Requested size: 248.96162pt x 131.80067pt.
-<../data/pics/adequate_orthogonal_sample_llh.pdf, id=174, 2457.18pt x 1300.86pt
+<../data/pics/adequate_orthogonal_sample_llh.pdf, id=108, 2457.18pt x 1300.86pt
 >
 File: ../data/pics/adequate_orthogonal_sample_llh.pdf Graphic file (type pdf)
 <use ../data/pics/adequate_orthogonal_sample_llh.pdf>
 Package pdftex.def Info: ../data/pics/adequate_orthogonal_sample_llh.pdf  used 
-on input line 405.
+on input line 402.
 (pdftex.def)             Requested size: 248.96162pt x 131.80067pt.
-<../data/pics/adequate_orthogonal_sample_llh_std.pdf, id=175, 2457.18pt x 1300.
+<../data/pics/adequate_orthogonal_sample_llh_std.pdf, id=109, 2457.18pt x 1300.
 86pt>
 File: ../data/pics/adequate_orthogonal_sample_llh_std.pdf Graphic file (type pd
 f)
 <use ../data/pics/adequate_orthogonal_sample_llh_std.pdf>
 Package pdftex.def Info: ../data/pics/adequate_orthogonal_sample_llh_std.pdf  u
-sed on input line 406.
+sed on input line 403.
 (pdftex.def)             Requested size: 248.96162pt x 131.80067pt.
-<../data/pics/adequate_redundant_sample_llh.pdf, id=176, 2457.18pt x 1300.86pt>
+<../data/pics/adequate_redundant_sample_llh.pdf, id=110, 2457.18pt x 1300.86pt>
 
 File: ../data/pics/adequate_redundant_sample_llh.pdf Graphic file (type pdf)
 <use ../data/pics/adequate_redundant_sample_llh.pdf>
 Package pdftex.def Info: ../data/pics/adequate_redundant_sample_llh.pdf  used o
-n input line 407.
+n input line 404.
 (pdftex.def)             Requested size: 248.96162pt x 131.80067pt.
-<../data/pics/adequate_redundant_sample_llh_std.pdf, id=177, 2457.18pt x 1300.8
+<../data/pics/adequate_redundant_sample_llh_std.pdf, id=111, 2457.18pt x 1300.8
 6pt>
 File: ../data/pics/adequate_redundant_sample_llh_std.pdf Graphic file (type pdf
 )
 <use ../data/pics/adequate_redundant_sample_llh_std.pdf>
 Package pdftex.def Info: ../data/pics/adequate_redundant_sample_llh_std.pdf  us
-ed on input line 407.
+ed on input line 404.
 (pdftex.def)             Requested size: 248.96162pt x 131.80067pt.
 
-Overfull \hbox (7.83142pt too wide) in paragraph at lines 399--410
+Overfull \hbox (7.83142pt too wide) in paragraph at lines 396--407
  [] 
  []
 
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 414.
+(babel)             in language  on input line 411.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 414.
+(babel)             in language  on input line 411.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 414.
+(babel)             in language  on input line 411.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 414.
+(babel)             in language  on input line 411.
 [12 <../data/pics/adequate_random_sample_llh.pdf> <../data/pics/adequate_random
 _sample_llh_std.pdf
 
@@ -1700,106 +1730,99 @@ pdfTeX warning: /usr/bin/pdflatex (file ../data/pics/adequate_redundant_sample_
 llh_std.pdf): PDF inclusion: multiple pdfs with page group included in a single
  page
 >]
+
+LaTeX Warning: Reference `l' on page 13 undefined on input line 413.
+
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 424.
+(babel)             in language  on input line 415.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 424.
+(babel)             in language  on input line 415.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 424.
+(babel)             in language  on input line 415.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 424.
- [13]
-<../data/pics/adequate_random_sample_MAPE_comparison.pdf, id=586, 1734.48pt x 8
+(babel)             in language  on input line 415.
+[13]
+<../data/pics/adequate_random_sample_MAPE_comparison.pdf, id=521, 1734.48pt x 8
 67.24pt>
 File: ../data/pics/adequate_random_sample_MAPE_comparison.pdf Graphic file (typ
 e pdf)
 <use ../data/pics/adequate_random_sample_MAPE_comparison.pdf>
 Package pdftex.def Info: ../data/pics/adequate_random_sample_MAPE_comparison.pd
-f  used on input line 429.
+f  used on input line 420.
 (pdftex.def)             Requested size: 248.96162pt x 124.46959pt.
-<../data/pics/adequate_random_sample_MAPE_m_comparison_n10.pdf, id=587, 1734.48
+<../data/pics/adequate_random_sample_MAPE_m_comparison_n10.pdf, id=522, 1734.48
 pt x 867.24pt>
 File: ../data/pics/adequate_random_sample_MAPE_m_comparison_n10.pdf Graphic fil
 e (type pdf)
 <use ../data/pics/adequate_random_sample_MAPE_m_comparison_n10.pdf>
 Package pdftex.def Info: ../data/pics/adequate_random_sample_MAPE_m_comparison_
-n10.pdf  used on input line 430.
+n10.pdf  used on input line 421.
 (pdftex.def)             Requested size: 248.96162pt x 124.46959pt.
-<../data/pics/adequate_correlated_sample_MAPE_comparison.pdf, id=588, 1734.48pt
+<../data/pics/adequate_correlated_sample_MAPE_comparison.pdf, id=523, 1734.48pt
  x 867.24pt>
 File: ../data/pics/adequate_correlated_sample_MAPE_comparison.pdf Graphic file 
 (type pdf)
 <use ../data/pics/adequate_correlated_sample_MAPE_comparison.pdf>
 Package pdftex.def Info: ../data/pics/adequate_correlated_sample_MAPE_compariso
-n.pdf  used on input line 431.
+n.pdf  used on input line 422.
 (pdftex.def)             Requested size: 248.96162pt x 124.46959pt.
-<../data/pics/adequate_correlated_sample_MAPE_m_comparison_n2.pdf, id=589, 1734
+<../data/pics/adequate_correlated_sample_MAPE_m_comparison_n2.pdf, id=524, 1734
 .48pt x 867.24pt>
 File: ../data/pics/adequate_correlated_sample_MAPE_m_comparison_n2.pdf Graphic 
 file (type pdf)
 <use ../data/pics/adequate_correlated_sample_MAPE_m_comparison_n2.pdf>
 Package pdftex.def Info: ../data/pics/adequate_correlated_sample_MAPE_m_compari
-son_n2.pdf  used on input line 432.
+son_n2.pdf  used on input line 423.
 (pdftex.def)             Requested size: 248.96162pt x 124.46959pt.
-<../data/pics/adequate_orthogonal_sample_MAPE_comparison.pdf, id=590, 1734.48pt
+<../data/pics/adequate_orthogonal_sample_MAPE_comparison.pdf, id=525, 1734.48pt
  x 867.24pt>
 File: ../data/pics/adequate_orthogonal_sample_MAPE_comparison.pdf Graphic file 
 (type pdf)
 <use ../data/pics/adequate_orthogonal_sample_MAPE_comparison.pdf>
 Package pdftex.def Info: ../data/pics/adequate_orthogonal_sample_MAPE_compariso
-n.pdf  used on input line 433.
+n.pdf  used on input line 424.
 (pdftex.def)             Requested size: 248.96162pt x 124.46959pt.
-<../data/pics/adequate_orthogonal_sample_MAPE_m_comparison_n10.pdf, id=591, 173
+<../data/pics/adequate_orthogonal_sample_MAPE_m_comparison_n10.pdf, id=526, 173
 4.48pt x 867.24pt>
 File: ../data/pics/adequate_orthogonal_sample_MAPE_m_comparison_n10.pdf Graphic
  file (type pdf)
 <use ../data/pics/adequate_orthogonal_sample_MAPE_m_comparison_n10.pdf>
 Package pdftex.def Info: ../data/pics/adequate_orthogonal_sample_MAPE_m_compari
-son_n10.pdf  used on input line 434.
+son_n10.pdf  used on input line 425.
 (pdftex.def)             Requested size: 248.96162pt x 124.46959pt.
-<../data/pics/adequate_redundant_sample_MAPE_comparison.pdf, id=592, 1734.48pt 
+<../data/pics/adequate_redundant_sample_MAPE_comparison.pdf, id=527, 1734.48pt 
 x 867.24pt>
 File: ../data/pics/adequate_redundant_sample_MAPE_comparison.pdf Graphic file (
 type pdf)
 <use ../data/pics/adequate_redundant_sample_MAPE_comparison.pdf>
 Package pdftex.def Info: ../data/pics/adequate_redundant_sample_MAPE_comparison
-.pdf  used on input line 435.
+.pdf  used on input line 426.
 (pdftex.def)             Requested size: 248.96162pt x 124.46959pt.
-<../data/pics/adequate_redundant_sample_MAPE_m_comparison_n5.pdf, id=593, 1734.
+<../data/pics/adequate_redundant_sample_MAPE_m_comparison_n5.pdf, id=528, 1734.
 48pt x 867.24pt>
 File: ../data/pics/adequate_redundant_sample_MAPE_m_comparison_n5.pdf Graphic f
 ile (type pdf)
 <use ../data/pics/adequate_redundant_sample_MAPE_m_comparison_n5.pdf>
 Package pdftex.def Info: ../data/pics/adequate_redundant_sample_MAPE_m_comparis
-on_n5.pdf  used on input line 436.
+on_n5.pdf  used on input line 427.
 (pdftex.def)             Requested size: 248.96162pt x 124.46959pt.
 
-Overfull \hbox (7.83142pt too wide) in paragraph at lines 427--438
+Overfull \hbox (7.83142pt too wide) in paragraph at lines 418--429
  [] 
  []
 
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 443.
+(babel)             in language  on input line 434.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 443.
-
-Overfull \hbox (8.40945pt too wide) in paragraph at lines 463--463
- []|\T2A/cmr/m/n/12 классификация| 
- []
-
-
-Overfull \hbox (8.40945pt too wide) in paragraph at lines 463--463
- []|\T2A/cmr/m/n/12 классификация| 
- []
-
+(babel)             in language  on input line 434.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 465.
+(babel)             in language  on input line 456.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 465.
+(babel)             in language  on input line 456.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 465.
+(babel)             in language  on input line 456.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 465.
+(babel)             in language  on input line 456.
 [14 <../data/pics/adequate_random_sample_MAPE_comparison.pdf> <../data/pics/ade
 quate_random_sample_MAPE_m_comparison_n10.pdf
 
@@ -1837,76 +1860,79 @@ pdfTeX warning: /usr/bin/pdflatex (file ../data/pics/adequate_redundant_sample_
 MAPE_m_comparison_n5.pdf): PDF inclusion: multiple pdfs with page group include
 d in a single page
 >]
+
+LaTeX Warning: Reference `Phi' on page 15 undefined on input line 458.
+
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 491.
+(babel)             in language  on input line 482.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 491.
+(babel)             in language  on input line 482.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 491.
+(babel)             in language  on input line 482.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 491.
- [15]
-<../data/pics/diabetes_sample_llh.pdf, id=982, 2457.18pt x 1300.86pt>
+(babel)             in language  on input line 482.
+[15]
+<../data/pics/diabetes_sample_llh.pdf, id=918, 2457.18pt x 1300.86pt>
 File: ../data/pics/diabetes_sample_llh.pdf Graphic file (type pdf)
 <use ../data/pics/diabetes_sample_llh.pdf>
 Package pdftex.def Info: ../data/pics/diabetes_sample_llh.pdf  used on input li
-ne 496.
+ne 487.
 (pdftex.def)             Requested size: 248.96162pt x 131.80067pt.
-<../data/pics/diabetes_sample_llh_std.pdf, id=983, 2457.18pt x 1300.86pt>
+<../data/pics/diabetes_sample_llh_std.pdf, id=919, 2457.18pt x 1300.86pt>
 File: ../data/pics/diabetes_sample_llh_std.pdf Graphic file (type pdf)
 <use ../data/pics/diabetes_sample_llh_std.pdf>
 Package pdftex.def Info: ../data/pics/diabetes_sample_llh_std.pdf  used on inpu
-t line 497.
+t line 488.
 (pdftex.def)             Requested size: 248.96162pt x 131.80067pt.
-<../data/pics/boston_sample_llh.pdf, id=984, 2457.18pt x 1300.86pt>
+<../data/pics/boston_sample_llh.pdf, id=920, 2457.18pt x 1300.86pt>
 File: ../data/pics/boston_sample_llh.pdf Graphic file (type pdf)
 <use ../data/pics/boston_sample_llh.pdf>
 Package pdftex.def Info: ../data/pics/boston_sample_llh.pdf  used on input line
- 498.
+ 489.
 (pdftex.def)             Requested size: 248.96162pt x 131.80067pt.
-<../data/pics/boston_sample_llh_std.pdf, id=985, 2457.18pt x 1300.86pt>
+<../data/pics/boston_sample_llh_std.pdf, id=921, 2457.18pt x 1300.86pt>
 File: ../data/pics/boston_sample_llh_std.pdf Graphic file (type pdf)
 <use ../data/pics/boston_sample_llh_std.pdf>
 Package pdftex.def Info: ../data/pics/boston_sample_llh_std.pdf  used on input 
-line 499.
+line 490.
 (pdftex.def)             Requested size: 248.96162pt x 131.80067pt.
-<../data/pics/wine_sample_llh.pdf, id=986, 2457.18pt x 1300.86pt>
+<../data/pics/wine_sample_llh.pdf, id=922, 2457.18pt x 1300.86pt>
 File: ../data/pics/wine_sample_llh.pdf Graphic file (type pdf)
 <use ../data/pics/wine_sample_llh.pdf>
-Package pdftex.def Info: ../data/pics/wine_sample_llh.pdf  used on input line 5
-00.
+Package pdftex.def Info: ../data/pics/wine_sample_llh.pdf  used on input line 4
+91.
 (pdftex.def)             Requested size: 248.96162pt x 131.80067pt.
-<../data/pics/wine_sample_llh_std.pdf, id=987, 2457.18pt x 1300.86pt>
+<../data/pics/wine_sample_llh_std.pdf, id=923, 2457.18pt x 1300.86pt>
 File: ../data/pics/wine_sample_llh_std.pdf Graphic file (type pdf)
 <use ../data/pics/wine_sample_llh_std.pdf>
 Package pdftex.def Info: ../data/pics/wine_sample_llh_std.pdf  used on input li
-ne 501.
+ne 492.
 (pdftex.def)             Requested size: 248.96162pt x 131.80067pt.
-<../data/pics/nba_sample_llh.pdf, id=988, 2457.18pt x 1300.86pt>
+<../data/pics/nba_sample_llh.pdf, id=924, 2457.18pt x 1300.86pt>
 File: ../data/pics/nba_sample_llh.pdf Graphic file (type pdf)
 <use ../data/pics/nba_sample_llh.pdf>
-Package pdftex.def Info: ../data/pics/nba_sample_llh.pdf  used on input line 50
-2.
+Package pdftex.def Info: ../data/pics/nba_sample_llh.pdf  used on input line 49
+3.
 (pdftex.def)             Requested size: 248.96162pt x 131.80067pt.
-<../data/pics/nba_sample_llh_std.pdf, id=989, 2457.18pt x 1300.86pt>
+<../data/pics/nba_sample_llh_std.pdf, id=925, 2457.18pt x 1300.86pt>
 File: ../data/pics/nba_sample_llh_std.pdf Graphic file (type pdf)
 <use ../data/pics/nba_sample_llh_std.pdf>
 Package pdftex.def Info: ../data/pics/nba_sample_llh_std.pdf  used on input lin
-e 503.
+e 494.
 (pdftex.def)             Requested size: 248.96162pt x 131.80067pt.
 
-Overfull \hbox (7.83142pt too wide) in paragraph at lines 494--505
+Overfull \hbox (7.83142pt too wide) in paragraph at lines 485--496
  [] 
  []
 
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 511.
+(babel)             in language  on input line 502.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 511.
+(babel)             in language  on input line 502.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 511.
+(babel)             in language  on input line 502.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 511.
+(babel)             in language  on input line 502.
 [16 <../data/pics/diabetes_sample_llh.pdf> <../data/pics/diabetes_sample_llh_st
 d.pdf
 
@@ -1938,84 +1964,84 @@ pdfTeX warning: /usr/bin/pdflatex (file ../data/pics/nba_sample_llh_std.pdf): P
 DF inclusion: multiple pdfs with page group included in a single page
 >]
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 518.
+(babel)             in language  on input line 503.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 518.
+(babel)             in language  on input line 503.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 518.
+(babel)             in language  on input line 503.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 518.
+(babel)             in language  on input line 503.
  [17]
-<../data/pics/diabetes_sample_MAPE_comparison.pdf, id=1409, 1734.48pt x 867.24p
+<../data/pics/diabetes_sample_MAPE_comparison.pdf, id=1345, 1734.48pt x 867.24p
 t>
 File: ../data/pics/diabetes_sample_MAPE_comparison.pdf Graphic file (type pdf)
 <use ../data/pics/diabetes_sample_MAPE_comparison.pdf>
 Package pdftex.def Info: ../data/pics/diabetes_sample_MAPE_comparison.pdf  used
- on input line 523.
+ on input line 508.
 (pdftex.def)             Requested size: 248.96162pt x 124.46959pt.
-<../data/pics/diabetes_sample_MAPE_m_comparison_n11.pdf, id=1410, 1734.48pt x 8
+<../data/pics/diabetes_sample_MAPE_m_comparison_n11.pdf, id=1346, 1734.48pt x 8
 67.24pt>
 File: ../data/pics/diabetes_sample_MAPE_m_comparison_n11.pdf Graphic file (type
  pdf)
 <use ../data/pics/diabetes_sample_MAPE_m_comparison_n11.pdf>
 Package pdftex.def Info: ../data/pics/diabetes_sample_MAPE_m_comparison_n11.pdf
-  used on input line 524.
+  used on input line 509.
 (pdftex.def)             Requested size: 248.96162pt x 124.46959pt.
-<../data/pics/boston_sample_MAPE_comparison.pdf, id=1411, 1734.48pt x 867.24pt>
+<../data/pics/boston_sample_MAPE_comparison.pdf, id=1347, 1734.48pt x 867.24pt>
 
 File: ../data/pics/boston_sample_MAPE_comparison.pdf Graphic file (type pdf)
 <use ../data/pics/boston_sample_MAPE_comparison.pdf>
 Package pdftex.def Info: ../data/pics/boston_sample_MAPE_comparison.pdf  used o
-n input line 525.
+n input line 510.
 (pdftex.def)             Requested size: 248.96162pt x 124.46959pt.
-<../data/pics/boston_sample_MAPE_m_comparison_n14.pdf, id=1412, 1734.48pt x 867
+<../data/pics/boston_sample_MAPE_m_comparison_n14.pdf, id=1348, 1734.48pt x 867
 .24pt>
 File: ../data/pics/boston_sample_MAPE_m_comparison_n14.pdf Graphic file (type p
 df)
 <use ../data/pics/boston_sample_MAPE_m_comparison_n14.pdf>
 Package pdftex.def Info: ../data/pics/boston_sample_MAPE_m_comparison_n14.pdf  
-used on input line 526.
+used on input line 511.
 (pdftex.def)             Requested size: 248.96162pt x 124.46959pt.
-<../data/pics/wine_sample_MAPE_comparison.pdf, id=1413, 1734.48pt x 867.24pt>
+<../data/pics/wine_sample_MAPE_comparison.pdf, id=1349, 1734.48pt x 867.24pt>
 File: ../data/pics/wine_sample_MAPE_comparison.pdf Graphic file (type pdf)
 <use ../data/pics/wine_sample_MAPE_comparison.pdf>
 Package pdftex.def Info: ../data/pics/wine_sample_MAPE_comparison.pdf  used on 
-input line 527.
+input line 512.
 (pdftex.def)             Requested size: 248.96162pt x 124.46959pt.
-<../data/pics/wine_sample_MAPE_m_comparison_n14.pdf, id=1414, 1734.48pt x 867.2
+<../data/pics/wine_sample_MAPE_m_comparison_n14.pdf, id=1350, 1734.48pt x 867.2
 4pt>
 File: ../data/pics/wine_sample_MAPE_m_comparison_n14.pdf Graphic file (type pdf
 )
 <use ../data/pics/wine_sample_MAPE_m_comparison_n14.pdf>
 Package pdftex.def Info: ../data/pics/wine_sample_MAPE_m_comparison_n14.pdf  us
-ed on input line 528.
+ed on input line 513.
 (pdftex.def)             Requested size: 248.96162pt x 124.46959pt.
-<../data/pics/nba_sample_MAPE_comparison.pdf, id=1415, 1734.48pt x 867.24pt>
+<../data/pics/nba_sample_MAPE_comparison.pdf, id=1351, 1734.48pt x 867.24pt>
 File: ../data/pics/nba_sample_MAPE_comparison.pdf Graphic file (type pdf)
 <use ../data/pics/nba_sample_MAPE_comparison.pdf>
 Package pdftex.def Info: ../data/pics/nba_sample_MAPE_comparison.pdf  used on i
-nput line 529.
+nput line 514.
 (pdftex.def)             Requested size: 248.96162pt x 124.46959pt.
-<../data/pics/nba_sample_MAPE_m_comparison_n2.pdf, id=1416, 1734.48pt x 867.24p
+<../data/pics/nba_sample_MAPE_m_comparison_n2.pdf, id=1352, 1734.48pt x 867.24p
 t>
 File: ../data/pics/nba_sample_MAPE_m_comparison_n2.pdf Graphic file (type pdf)
 <use ../data/pics/nba_sample_MAPE_m_comparison_n2.pdf>
 Package pdftex.def Info: ../data/pics/nba_sample_MAPE_m_comparison_n2.pdf  used
- on input line 530.
+ on input line 515.
 (pdftex.def)             Requested size: 248.96162pt x 124.46959pt.
 
-Overfull \hbox (7.83142pt too wide) in paragraph at lines 521--532
+Overfull \hbox (7.83142pt too wide) in paragraph at lines 506--517
  [] 
  []
 
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 537.
+(babel)             in language  on input line 522.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 537.
+(babel)             in language  on input line 522.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 537.
+(babel)             in language  on input line 522.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 537.
+(babel)             in language  on input line 522.
 [18 <../data/pics/diabetes_sample_MAPE_comparison.pdf> <../data/pics/diabetes_s
 ample_MAPE_m_comparison_n11.pdf
 
@@ -2052,73 +2078,85 @@ on_n2.pdf): PDF inclusion: multiple pdfs with page group included in a single p
 age
 >]
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 538.
+(babel)             in language  on input line 523.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 538.
+(babel)             in language  on input line 523.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 544.
+(babel)             in language  on input line 529.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 544.
+(babel)             in language  on input line 529.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 544.
+(babel)             in language  on input line 529.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 544.
+(babel)             in language  on input line 529.
  [19]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 573.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 574.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 573.
+(babel)             in language  on input line 574.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 573.
+(babel)             in language  on input line 574.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 573.
+(babel)             in language  on input line 574.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 573.
+(babel)             in language  on input line 574.
  [20]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 573.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 574.
  (./Buchnev2019Project44.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 573.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 573.
-Package rerunfilecheck Info: File `Buchnev2019Project44.out' has not changed.
-(rerunfilecheck)             Checksum: 123C7EB8C62E3CC81F37247FAC8AEF06;1851.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 573.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 574.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 574.
+
+
+Package rerunfilecheck Warning: File `Buchnev2019Project44.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `Buchnev2019Project44.out':
+(rerunfilecheck)             Before: D41D8CD98F00B204E9800998ECF8427E;0
+(rerunfilecheck)             After:  C649756F2319B91CCFE7E3572A6BFA3F;2126.
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 574.
  ) 
 Here is how much of TeX's memory you used:
- 16737 strings out of 492982
- 255535 string characters out of 6134896
- 419452 words of memory out of 5000000
- 19873 multiletter control sequences out of 15000+600000
- 29473 words of font info for 78 fonts, out of 8000000 for 9000
+ 16734 strings out of 492982
+ 255458 string characters out of 6134896
+ 416852 words of memory out of 5000000
+ 19867 multiletter control sequences out of 15000+600000
+ 27975 words of font info for 80 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 50i,18n,54p,8847b,538s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{/usr/share/texmf
-/fonts/enc/dvips/cm-super/cm-super-t2a.enc}</usr/share/texlive/texmf-dist/fonts
+ 50i,19n,54p,8847b,538s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t2a.enc}{/usr/share/texmf
+/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texlive/texmf-dist/fonts
 /type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1
 /public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
 c/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
 onts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
 m/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi
-8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><
-/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/sh
-are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
-amsfonts/euler/eufm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
-fonts/symbols/msbm10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1000
-.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/tex
-mf/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf/fonts/type1/publi
-c/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.
-pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/texm
-f/fonts/type1/public/cm-super/sfsx1200.pfb></usr/share/texmf/fonts/type1/public
-/cm-super/sfsx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1728.p
-fb></usr/share/texmf/fonts/type1/public/cm-super/sfti1095.pfb></usr/share/texmf
-/fonts/type1/public/cm-super/sfti1440.pfb>
-Output written on Buchnev2019Project44.pdf (20 pages, 1636458 bytes).
+8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/t
+exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/font
+s/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
+nts/euler/eufm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/symbols/msbm10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1000.pfb>
+</usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fo
+nts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf/fonts/type1/public/cm-
+super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb><
+/usr/share/texmf/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/texmf/fon
+ts/type1/public/cm-super/sfsx1440.pfb></usr/share/texmf/fonts/type1/public/cm-s
+uper/sfsx1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1440.pfb>
+Output written on Buchnev2019Project44.pdf (19 pages, 1606691 bytes).
 PDF statistics:
- 1921 PDF objects out of 2073 (max. 8388607)
- 596 compressed objects within 6 object streams
- 98 named destinations out of 1000 (max. 500000)
- 245 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1865 PDF objects out of 2073 (max. 8388607)
+ 542 compressed objects within 6 object streams
+ 101 named destinations out of 1000 (max. 500000)
+ 181 words of extra memory for PDF output out of 10000 (max. 10000000)
 
