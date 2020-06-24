@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.3.10)  23 JUN 2020 16:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.3.10)  24 JUN 2020 11:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2555,7 +2555,7 @@ pdfTeX warning: /usr/bin/pdflatex (file ../data/pics/adequate_random_sample_llh
 _std.pdf): PDF inclusion: multiple pdfs with page group included in a single pa
 ge
 >]
-<../data/pics/adequate_random_sample_MAPE_comparison.pdf, id=586, 1734.48pt x 8
+<../data/pics/adequate_random_sample_MAPE_comparison.pdf, id=584, 1734.48pt x 8
 67.24pt>
 File: ../data/pics/adequate_random_sample_MAPE_comparison.pdf Graphic file (typ
 e pdf)
@@ -2563,7 +2563,7 @@ e pdf)
 Package pdftex.def Info: ../data/pics/adequate_random_sample_MAPE_comparison.pd
 f  used on input line 340.
 (pdftex.def)             Requested size: 169.01036pt x 84.49269pt.
-<../data/pics/adequate_random_sample_MAPE_m_comparison_n10.pdf, id=587, 1734.48
+<../data/pics/adequate_random_sample_MAPE_m_comparison_n10.pdf, id=585, 1734.48
 pt x 867.24pt>
 File: ../data/pics/adequate_random_sample_MAPE_m_comparison_n10.pdf Graphic fil
 e (type pdf)
@@ -2585,14 +2585,14 @@ pdfTeX warning: /usr/bin/pdflatex (file ../data/pics/adequate_random_sample_MAP
 E_m_comparison_n10.pdf): PDF inclusion: multiple pdfs with page group included 
 in a single page
 >]
-<../data/pics/adequate_redundant_sample_llh.pdf, id=708, 2457.18pt x 1300.86pt>
+<../data/pics/adequate_redundant_sample_llh.pdf, id=707, 2457.18pt x 1300.86pt>
 
 File: ../data/pics/adequate_redundant_sample_llh.pdf Graphic file (type pdf)
 <use ../data/pics/adequate_redundant_sample_llh.pdf>
 Package pdftex.def Info: ../data/pics/adequate_redundant_sample_llh.pdf  used o
 n input line 355.
 (pdftex.def)             Requested size: 153.64493pt x 81.3234pt.
-<../data/pics/adequate_redundant_sample_llh_std.pdf, id=709, 2457.18pt x 1300.8
+<../data/pics/adequate_redundant_sample_llh_std.pdf, id=708, 2457.18pt x 1300.8
 6pt>
 File: ../data/pics/adequate_redundant_sample_llh_std.pdf Graphic file (type pdf
 )
@@ -2619,7 +2619,7 @@ pdfTeX warning: /usr/bin/pdflatex (file ../data/pics/adequate_redundant_sample_
 llh_std.pdf): PDF inclusion: multiple pdfs with page group included in a single
  page
 >]
-<../data/pics/adequate_redundant_sample_MAPE_comparison.pdf, id=836, 1734.48pt 
+<../data/pics/adequate_redundant_sample_MAPE_comparison.pdf, id=835, 1734.48pt 
 x 867.24pt>
 File: ../data/pics/adequate_redundant_sample_MAPE_comparison.pdf Graphic file (
 type pdf)
@@ -2627,7 +2627,7 @@ type pdf)
 Package pdftex.def Info: ../data/pics/adequate_redundant_sample_MAPE_comparison
 .pdf  used on input line 370.
 (pdftex.def)             Requested size: 169.01036pt x 84.49269pt.
-<../data/pics/adequate_redundant_sample_MAPE_m_comparison_n5.pdf, id=837, 1734.
+<../data/pics/adequate_redundant_sample_MAPE_m_comparison_n5.pdf, id=836, 1734.
 48pt x 867.24pt>
 File: ../data/pics/adequate_redundant_sample_MAPE_m_comparison_n5.pdf Graphic f
 ile (type pdf)
@@ -2656,13 +2656,13 @@ d in a single page
 >] [19
 
 ]
-<../data/pics/boston_sample_llh.pdf, id=989, 2457.18pt x 1300.86pt>
+<../data/pics/boston_sample_llh.pdf, id=988, 2457.18pt x 1300.86pt>
 File: ../data/pics/boston_sample_llh.pdf Graphic file (type pdf)
 <use ../data/pics/boston_sample_llh.pdf>
 Package pdftex.def Info: ../data/pics/boston_sample_llh.pdf  used on input line
  409.
 (pdftex.def)             Requested size: 153.64493pt x 81.3234pt.
-<../data/pics/boston_sample_llh_std.pdf, id=990, 2457.18pt x 1300.86pt>
+<../data/pics/boston_sample_llh_std.pdf, id=989, 2457.18pt x 1300.86pt>
 File: ../data/pics/boston_sample_llh_std.pdf Graphic file (type pdf)
 <use ../data/pics/boston_sample_llh_std.pdf>
 Package pdftex.def Info: ../data/pics/boston_sample_llh_std.pdf  used on input 
@@ -2680,14 +2680,14 @@ Overfull \hbox (7.25331pt too wide) in paragraph at lines 409--409
 pdfTeX warning: /usr/bin/pdflatex (file ../data/pics/boston_sample_llh_std.pdf)
 : PDF inclusion: multiple pdfs with page group included in a single page
 >]
-<../data/pics/boston_sample_MAPE_comparison.pdf, id=1118, 1734.48pt x 867.24pt>
+<../data/pics/boston_sample_MAPE_comparison.pdf, id=1117, 1734.48pt x 867.24pt>
 
 File: ../data/pics/boston_sample_MAPE_comparison.pdf Graphic file (type pdf)
 <use ../data/pics/boston_sample_MAPE_comparison.pdf>
 Package pdftex.def Info: ../data/pics/boston_sample_MAPE_comparison.pdf  used o
 n input line 425.
 (pdftex.def)             Requested size: 153.64493pt x 76.81757pt.
-<../data/pics/boston_sample_MAPE_m_comparison_n14.pdf, id=1119, 1734.48pt x 867
+<../data/pics/boston_sample_MAPE_m_comparison_n14.pdf, id=1118, 1734.48pt x 867
 .24pt>
 File: ../data/pics/boston_sample_MAPE_m_comparison_n14.pdf Graphic file (type p
 df)
@@ -2709,13 +2709,13 @@ pdfTeX warning: /usr/bin/pdflatex (file ../data/pics/boston_sample_MAPE_m_compa
 rison_n14.pdf): PDF inclusion: multiple pdfs with page group included in a sing
 le page
 >]
-<../data/pics/nba_sample_llh.pdf, id=1236, 2457.18pt x 1300.86pt>
+<../data/pics/nba_sample_llh.pdf, id=1235, 2457.18pt x 1300.86pt>
 File: ../data/pics/nba_sample_llh.pdf Graphic file (type pdf)
 <use ../data/pics/nba_sample_llh.pdf>
 Package pdftex.def Info: ../data/pics/nba_sample_llh.pdf  used on input line 44
 1.
 (pdftex.def)             Requested size: 153.64493pt x 81.3234pt.
-<../data/pics/nba_sample_llh_std.pdf, id=1237, 2457.18pt x 1300.86pt>
+<../data/pics/nba_sample_llh_std.pdf, id=1236, 2457.18pt x 1300.86pt>
 File: ../data/pics/nba_sample_llh_std.pdf Graphic file (type pdf)
 <use ../data/pics/nba_sample_llh_std.pdf>
 Package pdftex.def Info: ../data/pics/nba_sample_llh_std.pdf  used on input lin
@@ -2738,13 +2738,13 @@ l.441 \end{frame}
 pdfTeX warning: /usr/bin/pdflatex (file ../data/pics/nba_sample_llh_std.pdf): P
 DF inclusion: multiple pdfs with page group included in a single page
 >]
-<../data/pics/nba_sample_MAPE_comparison.pdf, id=1367, 1734.48pt x 867.24pt>
+<../data/pics/nba_sample_MAPE_comparison.pdf, id=1366, 1734.48pt x 867.24pt>
 File: ../data/pics/nba_sample_MAPE_comparison.pdf Graphic file (type pdf)
 <use ../data/pics/nba_sample_MAPE_comparison.pdf>
 Package pdftex.def Info: ../data/pics/nba_sample_MAPE_comparison.pdf  used on i
 nput line 457.
 (pdftex.def)             Requested size: 153.64493pt x 76.81757pt.
-<../data/pics/nba_sample_MAPE_m_comparison_n2.pdf, id=1368, 1734.48pt x 867.24p
+<../data/pics/nba_sample_MAPE_m_comparison_n2.pdf, id=1367, 1734.48pt x 867.24p
 t>
 File: ../data/pics/nba_sample_MAPE_m_comparison_n2.pdf Graphic file (type pdf)
 <use ../data/pics/nba_sample_MAPE_m_comparison_n2.pdf>
@@ -2805,30 +2805,29 @@ Here is how much of TeX's memory you used:
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t2a.enc}</usr/share/texli
 ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss
-i8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
-></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/
-share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/t
-exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/
-texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf/fonts/
-type1/public/cm-super/sfss0600.pfb></usr/share/texmf/fonts/type1/public/cm-supe
-r/sfss0700.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss0800.pfb></usr
-/share/texmf/fonts/type1/public/cm-super/sfss0900.pfb></usr/share/texmf/fonts/t
-ype1/public/cm-super/sfss1000.pfb></usr/share/texmf/fonts/type1/public/cm-super
-/sfss1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss1440.pfb></usr/
-share/texmf/fonts/type1/public/cm-super/sfsx0800.pfb></usr/share/texmf/fonts/ty
-pe1/public/cm-super/sfsx1095.pfb>
-Output written on Buchnev2019Project44presentation.pdf (24 pages, 1254718 bytes
+t/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cms
+y10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/t
+exlive/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf
+/fonts/type1/public/cm-super/sfss0600.pfb></usr/share/texmf/fonts/type1/public/
+cm-super/sfss0700.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss0800.pf
+b></usr/share/texmf/fonts/type1/public/cm-super/sfss0900.pfb></usr/share/texmf/
+fonts/type1/public/cm-super/sfss1000.pfb></usr/share/texmf/fonts/type1/public/c
+m-super/sfss1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss1440.pfb
+></usr/share/texmf/fonts/type1/public/cm-super/sfsx0800.pfb></usr/share/texmf/f
+onts/type1/public/cm-super/sfsx1095.pfb>
+Output written on Buchnev2019Project44presentation.pdf (24 pages, 1247424 bytes
 ).
 PDF statistics:
- 1606 PDF objects out of 1728 (max. 8388607)
- 882 compressed objects within 9 object streams
+ 1602 PDF objects out of 1728 (max. 8388607)
+ 879 compressed objects within 9 object streams
  57 named destinations out of 1000 (max. 500000)
  216 words of extra memory for PDF output out of 10000 (max. 10000000)
 
